@@ -1,0 +1,21 @@
+{
+    "file": "site/modules/FieldtypeSelfHostedVideo/Pagevideos.php",
+    "textdomain": "site--modules--fieldtypeselfhostedvideo--pagevideos-php",
+    "translations": {
+        "b89b2bbb9cdf47bf9fdacd515b22389d": {
+            "text": "Dieses Video kann nicht wiederverwendet werden, weil sein Original nicht mehr existiert."
+        },
+        "87eb3a144268a989609c9030e5dff855": {
+            "text": "Ein Video muss gespeichert sein, bevor es auf einer anderen Seite wiederverwendet werden kann."
+        },
+        "da525e1aa902f5fa00dbfefbc18ee643": {
+            "text": "Ein Video, das noch hochgeladen wird, kann nicht wiederverwendet werden."
+        },
+        "1fffdc1219a464d6279cce0d5cf0d3a6": {
+            "text": "Ein Video auf einer Seite im Papierkorb kann nicht wiederverwendet werden."
+        },
+        "14c67ad7e2411dbdafc9888e182c40aa": {
+            "text": "Das Video „%1$s“ wurde nicht entfernt, weil es auf anderen Seiten verwendet wird: %2$s"
+        }
+    }
+}

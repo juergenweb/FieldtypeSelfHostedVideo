@@ -1,0 +1,249 @@
+{
+    "file": "site/modules/FieldtypeSelfHostedVideo/FieldtypeSelfHostedVideo.module.php",
+    "textdomain": "site--modules--fieldtypeselfhostedvideo--fieldtypeselfhostedvideo-module-php",
+    "translations": {
+        "c9e6527ee612511aac049d1e6dc90caf": {
+            "text": "Die Video-Eingabe für den Seiteneditor wurde installiert."
+        },
+        "aeebe30aef6538a28b9450f3ada334af": {
+            "text": "Die Übersicht aller Videos wurde installiert: Setup > Video-Manager."
+        },
+        "1843c10f89911ef4a759e58c59ee2b8a": {
+            "text": "Der Textformatierer „Videos im Text“ wurde installiert. Fügen Sie ihn einem Textfeld hinzu, um Videos in dessen Text zu platzieren."
+        },
+        "e2cf050df237a7d96553ebcab59c6329": {
+            "text": "Das Videofeld „%s“ akzeptiert jetzt auch MOV-Dateien, wie sie iPhones aufnehmen."
+        },
+        "4b8156552accbe79b65549d3a9c235b5": {
+            "text": "Video einfügen"
+        },
+        "fe5afc694d1448aa3b28bd56d5473039": {
+            "text": "Ein Video dieser Seite einfügen"
+        },
+        "34e2d1989a1dbf75cd631596133ee5ee": {
+            "text": "Video"
+        },
+        "60814cd969afb19a4419f88257bcc693": {
+            "text": "Text unter dem Video"
+        },
+        "6adf97f83acf6453d4a6a4b1070f3754": {
+            "text": "Keiner"
+        },
+        "b78a3223503896721cca1303f776159b": {
+            "text": "Titel"
+        },
+        "0379e51909b1a37e5e3b5f401bb9a3db": {
+            "text": "Titel, Dauer und Beschreibung"
+        },
+        "7b9cf007806ed854cd12ab800c8a982b": {
+            "text": "Position"
+        },
+        "24e61dc70866cb84d375a6270035c7cf": {
+            "text": "Volle Breite"
+        },
+        "d4ae735df8e58237a0a24cc9e043767c": {
+            "text": "Links vom Text, halbe Breite"
+        },
+        "8dcf67bed0606a26ab779a0437d346d3": {
+            "text": "Rechts vom Text, halbe Breite"
+        },
+        "4fa68f6c8edd1d2d483d82dea102aad2": {
+            "text": "Zentriert, halbe Breite"
+        },
+        "a458be0f08b7e4ff3c0f633c100176c0": {
+            "text": "Einfügen"
+        },
+        "ea4788705e6873b424c65e91c2846b19": {
+            "text": "Abbrechen"
+        },
+        "1116e27ec0914f00778a1dd19be52bc1": {
+            "text": "Diese Seite hat noch keine Videos. Laden Sie ein Video in ein Videofeld dieser Seite hoch oder verwenden Sie dort eines wieder, dann kann es im Text platziert werden."
+        },
+        "236f3c05606717b213945ec773376d2b": {
+            "text": "Die Videos dieser Seite konnten nicht geladen werden."
+        },
+        "f64ab9b4ba082c2833386a5249f56819": {
+            "text": "Im Text steht ein Tag wie [[video intro.mp4]]. Auf der Website erscheint an seiner Stelle das Video."
+        },
+        "554cfab3938e21d9270bd6b75931f96f": {
+            "text": "Videos"
+        },
+        "cd772737351d07e3eabc1f5025a24b9b": {
+            "text": "(auf der Seite %s unterhalb dieser Seite)"
+        },
+        "5cabaffeac8faab6cd8eac9eedace074": {
+            "text": "Diese Seite kann noch nicht in den Papierkorb verschoben werden"
+        },
+        "f6d7a94424c69d2dc1ba2f2fa07e5988": {
+            "text": "Videos dieser Seite werden auf anderen Seiten wiederverwendet und würden dort fehlen. Entfernen Sie diese Videos zuerst von den hier genannten Seiten:"
+        },
+        "66266a7b9895bd3cab374e3e50ed2e17": {
+            "text": "Der Video-Manager wurde unter Setup hinzugefügt."
+        },
+        "32eb289dfc9dad58bf066edab4627a3b": {
+            "text": "Der Video-Manager wurde aus Setup entfernt."
+        },
+        "c589940f30fbe639426b6ce26197364c": {
+            "text": "Uploads sind im Demo-Modus deaktiviert."
+        },
+        "19e19f4a4756855540072819276695e2": {
+            "text": "Diese Seite ist für die Bearbeitung gesperrt."
+        },
+        "e94d80c90203b71f172903535411fc8d": {
+            "text": "Sie haben keine Berechtigung, dieses Feld zu ändern."
+        },
+        "6b025136d4b5fb462bc5c6583c01431a": {
+            "text": "Dies ist kein Videofeld."
+        },
+        "9b8fcf7dfd8d4ef005f5547e4a1de2c4": {
+            "text": "Dauer (Sekunden)"
+        },
+        "2b5c1bc81f38d9fa7784a1f640da9f49": {
+            "text": "Breite (Pixel)"
+        },
+        "27d54d28714a7c7d3d81ea9776903e6b": {
+            "text": "Höhe (Pixel)"
+        },
+        "354157e6e0a1b371954b8071f72d1f9b": {
+            "text": "Seitenverhältnis (Breite ÷ Höhe)"
+        },
+        "0da8c1e9bea36db3509b2f25a269613e": {
+            "text": "wiederverwendet von Seite (ID)"
+        },
+        "b409956fd62d0e4c859336c048bcdf5c": {
+            "text": "Dateiname des wiederverwendeten Videos"
+        },
+        "9ba59fe468a092a5b8cabf32b6095281": {
+            "text": "Die Seite %1$s wurde nicht entfernt, weil ihre Videos auf anderen Seiten verwendet werden: %2$s"
+        },
+        "2ade8be83b6d00e22f37fc5a6b671be7": {
+            "text": "Einzelnes Video"
+        },
+        "14033191b450912d79c7998bdd05086e": {
+            "text": "Mehrere Videos"
+        },
+        "3a11748cb19f23a80b79a30870325511": {
+            "text": "Bezeichnungen für vordefinierte Tags"
+        },
+        "2b0408f9a38496f3cc5daa76153496cd": {
+            "text": "Geben Sie optional für jedes vordefinierte Tag eine Bezeichnung ein, eine pro Zeile, im Format: tag=Bezeichnung"
+        },
+        "57d08072e9d1a79a7d2307e91b812653": {
+            "text": "Bezeichnungen sind für die Anzeige auf der Website gedacht und können übersetzt werden. Ein Tag ohne Bezeichnung wird als das Tag selbst angezeigt."
+        },
+        "5dee902eaa80eb45feca45188f4c3237": {
+            "text": "Beispiel: tutorial=Schritt-für-Schritt-Anleitungen"
+        },
+        "e8be71000ff83cf73d14ff8e9f7f9fd7": {
+            "text": "Stylesheet und Skript für die Website"
+        },
+        "456d9959a08d1c8afe4e4d3df0d13667": {
+            "text": "Videos, die mit render() ausgegeben werden, brauchen ein kleines Stylesheet und ein Skript. Damit passen sie sich der Seitenbreite an, und Hintergrundvideos laufen."
+        },
+        "8f27e978a0f4d84e1410defc36869573": {
+            "text": "Automatisch dort hinzufügen, wo ein Video ausgegeben wird"
+        },
+        "437b07fac9e8b82c17cbb895b86914f6": {
+            "text": "Ich füge sie selbst in meine Templates ein"
+        },
+        "b95465ab77118d62e5ec5370a956f391": {
+            "text": "Um sie selbst einzufügen, geben Sie %1$s in Ihrem Template aus oder binden Sie diese Dateien ein: %2$s"
+        },
+        "d0d905da2ecfe7a671b4117c3ca539d9": {
+            "text": "Videos für Streaming vorbereiten"
+        },
+        "2266868151ee957cec4be2ca241eb708": {
+            "text": "MP4- und MOV-Dateien beim Hochladen oder Ersetzen für Streaming vorbereiten"
+        },
+        "92848075fc7b3cf2485914133c9a319c": {
+            "text": "Viele Programme schreiben das Inhaltsverzeichnis einer MP4-Datei an ihr Ende. Ein Browser muss dann die ganze Datei laden, bevor das Video startet. Ist dies angekreuzt, verschiebt das Modul das Inhaltsverzeichnis an den Anfang der Datei. Bild und Ton bleiben genau so, wie sie sind; nichts wird umgewandelt."
+        },
+        "317e4eba3fe64af82f83f45087255fd6": {
+            "text": "Bereits vorhandene Videos lassen sich im Seiteneditor vorbereiten: Ihre Checkliste bietet es an."
+        },
+        "9c3e636f712f9f5f189ede8afd6be2bf": {
+            "text": "CSS-Framework der Website"
+        },
+        "c9f8a9b2a4f96ba069ec63349a9441aa": {
+            "text": "Videos auf der Website können die Klassennamen eines CSS-Frameworks erhalten. Overlays, Kapitel und der Titel unter einem Video sehen dann aus wie der Rest Ihrer Website. Das Modul lädt das Framework nicht: Ihre Website muss es bereits einbinden."
+        },
+        "75fd21b7393f5cf42a272a05953677b2": {
+            "text": "Keines: das Aussehen des Moduls"
+        },
+        "2c4669ee7621c7bbd5042f3cb451eed7": {
+            "text": "Ein Framework ist eine Datei, die für jeden Teil eines Videos die Klassen nennt. Die Dateien in %1$s zeigen, wie das geht. Um ein Framework hinzuzufügen oder eines der obigen zu ändern, legen Sie eine eigene Datei in %2$s ab. Siehe „CSS frameworks“ in der README."
+        },
+        "ba0ae0827e34c1965a3cefc0f5d21cd5": {
+            "text": "Zwischen den anderen Feldern der Seite"
+        },
+        "9f76a03d8c34f39446baadfa1b7c2732": {
+            "text": "Jedes Video-Feld in einem eigenen Tab, der wie das Feld heißt, nach „Inhalt“"
+        },
+        "27f08180f27e3997576616c48606c596": {
+            "text": "Alle Video-Felder gemeinsam in einem Tab „Videos“, nach „Inhalt“"
+        },
+        "c704ab3e951958f8cce192834cbd1b86": {
+            "text": "Video-Felder im Seiteneditor"
+        },
+        "c58d484b38654c8c43490284d84ca931": {
+            "text": "Wo die Video-Felder einer Seite im Seiteneditor stehen. Eine Seite kann mehrere Video-Felder haben, für ein Video oder für viele."
+        },
+        "5c810f3d367b526250e3a64ece6225fc": {
+            "text": "Ein Video-Feld, das versteckt ist, in einem Fieldset oder Tab steht oder zu einem Repeater-Eintrag gehört, bleibt, wo es ist, ebenso eines, bei dem „Nie in einem Tab“ angekreuzt ist (Setup > Felder > das Feld > Eingabe). Für ein einzelnes Feld bietet ProcessWire einen eigenen Tab in den Einstellungen des Felds: Eingabe > Sichtbarkeit > Tab."
+        },
+        "a0803ea90bf80585db8742125e2d0885": {
+            "text": "Video-Manager"
+        },
+        "f97a1f38ec48fbe5d1cd7656b7b111ee": {
+            "text": "Video-Manager unter Setup anzeigen"
+        },
+        "a5ddc0b48ceb9b6e28f65fa9dfc771d2": {
+            "text": "Eine Übersicht aller Videos der Website, mit Suche, Filtern, Checklisten und Aktionen für mehrere Videos auf einmal. Wer ihn benutzen darf, legt die Berechtigung „video-overview“ fest."
+        },
+        "f4c1dfcdbec8403235ab9d50c3be80b4": {
+            "text": "Nicht angehakt, werden die Seite Setup > Video-Manager und ihre Berechtigung entfernt. Die Videos selbst bleiben unberührt, und erneutes Anhaken bringt den Video-Manager zurück."
+        },
+        "d2c262396d1351214b3383c134067948": {
+            "text": "Einbetten auf anderen Websites"
+        },
+        "da3a99ccb6f321992648851cdd604cea": {
+            "text": "Andere Websites können ein Video dieser Website mit der Adresse seiner Datei in ihre Seiten einbinden. Deren Besucher sehen es dann auf Kosten dieser Website."
+        },
+        "058ae716dab0138c4fa731c8dabb615b": {
+            "text": "Andere Websites dürfen Videos einbetten"
+        },
+        "bb5fe5cd9c8c778e81b05ef53c166612": {
+            "text": "Erlaubt"
+        },
+        "a9af2a9c9bf50318049fdafe5303a271": {
+            "text": "Blockiert: Nur diese Website (und ihre Subdomains) darf die Videos zeigen"
+        },
+        "ee4c0dc6472b4adc2cc4c457a45e0804": {
+            "text": "Jedes Video kann im Seiten-Editor anders eingestellt werden. Blockiert betrifft die Videodatei, ihr Vorschaubild und ihre Untertitel. Ein Link auf die Datei öffnet sie weiterhin, und wer ein Video ansehen darf, kann es auch speichern."
+        },
+        "9258dfa8e2d6c707899716afab587d09": {
+            "text": "Websites, die blockierte Videos trotzdem einbetten dürfen"
+        },
+        "af6b8030a8fbfd0a51670d46a9abd52b": {
+            "text": "Eine pro Zeile, z. B. partner.example. Jede gilt auch für ihre Subdomains."
+        },
+        "ff317a2fd508ee9bdd4b58574cb71204": {
+            "text": "Für Videos, die der Webserver ausliefert, schreibt das Modul die Regeln in eine Datei .htaccess im Ordner ihrer Seite. Geschützte Videos liefert das Modul selbst aus und wendet die Regeln selbst an."
+        },
+        "f710c76ff55ef274f2918c2a88a01f1c": {
+            "text": "Geschützte Videos liefert das Modul selbst aus und wendet die Regeln selbst an. Bei anderen Videos muss es der Webserver tun: Apache liest die Regeln, die das Modul in die Ordner der Seiten schreibt; nginx und andere brauchen eine Regel in ihrer Konfiguration, siehe „Embedding on other websites“ im README. Die Checkliste eines Videos sagt, ob es blockiert ist."
+        },
+        "34565428b7750b6f19cacb1123b5f052": {
+            "text": "Videodateien"
+        },
+        "19d9c6d2206925c4a4af396fc41af143": {
+            "text": "Feld für eine oder mehrere selbst gehostete Videodateien, mit Titel, Dauer, Abmessungen, Tags und Wiederverwendung auf anderen Seiten."
+        },
+        "824548a46a400df12a8351ba31e77fdd": {
+            "text": "Die Regeln für das Einbetten wurden für %d Seite geschrieben."
+        },
+        "f4a568a903009a0c9585e1bc0da9fe2f": {
+            "text": "Die Regeln für das Einbetten wurden für %d Seiten geschrieben."
+        }
+    }
+}

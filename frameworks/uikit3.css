@@ -1,0 +1,14 @@
+/**
+ * Video Files: what the class names of UIkit 3 cannot do alone
+ *
+ * Loaded after the stylesheet of the module, wherever a video uses the profile "uikit3".
+ *
+ * This file is part of the FieldtypeSelfHostedVideo module for ProcessWire 3.x
+ */
+
+/* UIkit gives every link its link colour while the pointer is on it. An overlay that is a
+   link is a box with colours of its own, and keeps them: light text on the secondary background. */
+a.shv-video__overlay.uk-light:hover,
+a.shv-video__overlay.uk-light:focus {
+	color: #fff;
+}

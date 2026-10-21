@@ -1,0 +1,839 @@
+/**
+ * Video Files: styles for videos on the website
+ *
+ * Rules that only set a look (margins, caption) are written with :where(), so that
+ * any rule of your own stylesheet takes precedence over them.
+ *
+ * A part that gets its class names from a CSS framework (see "CSS frameworks" in the README)
+ * carries the class shv-video-plain. The rules that give a part its look leave such a part
+ * alone: they are the ones with :not(.shv-video-plain). What makes a part work applies to all:
+ * where it sits, how it grows with the picture, the focus rings on the picture.
+ *
+ * Custom properties you can set on .shv-video or any element around it:
+ *   --shv-max-height   greatest height of an upright video (default 85vh)
+ *   --shv-shade        how much a background video is darkened, 0 to 1
+ *
+ * This file is part of the FieldtypeSelfHostedVideo module for ProcessWire 3.x
+ */
+
+/* A video with controls ************************************************************************/
+
+.shv-video {
+	display: block;
+	max-width: 100%;
+}
+
+:where(figure.shv-video) {
+	margin: 0;
+}
+
+/* A video with a caption is a figure. What a website says about the figures of its texts
+   (shown as a table, one pixel wide, so that a caption is as wide as its image) would leave
+   no room for the video. These two rules weigh more than rules for all figures and less
+   than any rule with a class name, so that .shv-video { width: … } of your own still decides. */
+html body figure:where(.shv-video) {
+	width: auto;
+}
+
+html body figure:where(.shv-video) > figcaption:where(.shv-video__caption) {
+	display: block;
+}
+
+.shv-video__video {
+	display: block;
+	width: 100%;
+	height: auto;
+	/* keeps the place of the video free while nothing of it is loaded */
+	aspect-ratio: var(--shv-ratio, auto);
+	background: #000;
+}
+
+/* an upright video never grows taller than the visible part of the page */
+.shv-video--portrait {
+	max-width: min(100%, calc(var(--shv-max-height, 85vh) * var(--shv-ratio, 0.5625)));
+}
+
+/* several videos in a row keep a distance from each other */
+:where(.shv-video ~ .shv-video:not(.shv-video-plain)) {
+	margin-top: 1.5rem;
+}
+
+/* Below the video, as on the page of a video on a video platform: the title, larger and bold,
+   a smaller line with the duration, the description, then the box with more about the video
+   and the chapters. Colours come from the text around: the box is a light shade of grey that
+   suits light and dark pages alike. */
+:where(.shv-video__caption:not(.shv-video-plain)) {
+	margin-top: 0.75em;
+}
+
+:where(.shv-video__title),
+:where(.shv-video__meta),
+:where(.shv-video__description) {
+	display: block;
+}
+
+:where(.shv-video__title:not(.shv-video-plain)) {
+	font-size: 1.2em;
+	line-height: 1.3;
+	font-weight: bold;
+}
+
+/* a reset that tells every span to take the weight of its parent (Bulma has one) weighs more than the rule above */
+html body span:where(.shv-video__title:not(.shv-video-plain)) {
+	font-weight: bold;
+}
+
+/* smaller, in the colour of the caption: many websites already give captions a grey of their
+   own, and a lighter grey on top of it would be too pale to read */
+:where(.shv-video__meta:not(.shv-video-plain)) {
+	margin-top: 0.2em;
+	font-size: 0.875em;
+}
+
+:where(.shv-video__description:not(.shv-video-plain)) {
+	margin-top: 0.6em;
+}
+
+/* a description of several paragraphs: the first and the last add no room */
+:where(.shv-video__description > :first-child) {
+	margin-top: 0;
+}
+
+:where(.shv-video__description > :last-child) {
+	margin-bottom: 0;
+}
+
+/* the duration with a clock in front */
+.shv-video__duration {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35em;
+	font-variant-numeric: tabular-nums;
+}
+
+.shv-video__clock {
+	flex: none;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* a word for screen readers only ("Duration:") */
+.shv-video__hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* the part that goes to full screen: the picture with its overlays */
+.shv-video__screen {
+	position: relative;
+}
+
+.shv-video__screen:fullscreen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: #000;
+}
+
+.shv-video__screen:-webkit-full-screen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: #000;
+}
+
+/* in full screen the picture is as large as the screen allows, and the overlays keep their places on it */
+.shv-video__screen:fullscreen .shv-video__frame {
+	flex: none;
+	width: min(100vw, calc(100vh * var(--shv-ratio, 1.7778)));
+}
+
+.shv-video__screen:-webkit-full-screen .shv-video__frame {
+	flex: none;
+	width: min(100vw, calc(100vh * var(--shv-ratio, 1.7778)));
+}
+
+/* the full screen button of the module, used in place of the browser's when a video has overlays */
+.shv-video__fullscreen {
+	position: absolute;
+	z-index: 2;
+	inset-block-start: 0.5rem;
+	inset-inline-end: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	/* large enough to hit, whatever gives it its look */
+	min-width: 1.5rem;
+	min-height: 1.5rem;
+	margin: 0;
+	cursor: pointer;
+}
+
+/* with the look of a framework: without what a browser gives a button, for the framework to build on */
+:where(.shv-video__fullscreen.shv-video-plain),
+:where(.shv-video__toggle.shv-video-plain) {
+	padding: 0;
+	border: 0;
+}
+
+/* "button" in front: a stylesheet that gives every [type=button] its look and a margin (Pico CSS)
+   weighs as much as a class name, and would win where it is loaded after this one */
+button.shv-video__fullscreen,
+button.shv-video__toggle {
+	margin: 0;
+}
+
+button.shv-video__fullscreen:where(:not(.shv-video-plain)) {
+	width: 2.75rem;
+	height: 2.75rem;
+	padding: 0;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.7);
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+
+.shv-video__fullscreen[hidden] {
+	display: none;
+}
+
+.shv-video__fullscreen:where(:not(.shv-video-plain)):hover {
+	background: #000;
+}
+
+/* a focus ring that can be seen on any picture */
+.shv-video__fullscreen:focus-visible {
+	outline: 3px solid #fff;
+	outline-offset: 2px;
+	box-shadow: 0 0 0 7px #000;
+}
+
+/* while the video plays, the button steps back until the pointer moves or the button gets focus */
+.shv-video--playing .shv-video__screen:not(.shv-video__screen--active) .shv-video__fullscreen:not(:focus-visible) {
+	opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.shv-video__fullscreen {
+		transition: opacity 0.2s;
+	}
+}
+
+.shv-video__fullscreen[data-state="on"] .shv-video__icon--enter,
+.shv-video__fullscreen[data-state="off"] .shv-video__icon--leave {
+	display: none;
+}
+
+/* the browser's own full screen button would show the video without its overlays */
+.shv-video--fullscreen-button video::-webkit-media-controls-fullscreen-button {
+	display: none;
+}
+
+/* Links of the module that are not links in a text ************************************************/
+
+/* A website may mark the links of its texts with a line that is not an underline: a border, a
+   shadow or a background (the "Default" site profile of ProcessWire has a { border-bottom: 1px
+   solid }). The link of a chapter fills its row and an overlay is a box, where such a line
+   becomes a rule across the list of chapters or an edge of the box. Like the rules for a figure
+   above, this weighs more than rules for all links and less than any rule with a class name. */
+html body a:where(.shv-video__chapter),
+html body a:where(.shv-video__overlay) {
+	border: 0;
+	box-shadow: none;
+	background-image: none;
+}
+
+/* Chapters ***************************************************************************************/
+
+:where(.shv-video__chapters:not(.shv-video-plain)) {
+	margin-top: 1em;
+}
+
+/* a website that centres what is in a figure (Bulma 0.9 does, in its "content") means the caption */
+:where(.shv-video__chapters) {
+	text-align: start;
+}
+
+:where(.shv-video__chapters-label:not(.shv-video-plain)) {
+	margin: 0 0 0.25em;
+	font-weight: bold;
+}
+
+/* the label is a heading of the list more than a paragraph of a text: what a stylesheet says
+   about all paragraphs (Pico CSS sets their weight and a margin) is not meant for it */
+html body p:where(.shv-video__chapters-label:not(.shv-video-plain)) {
+	margin: 0 0 0.25em;
+	font-weight: bold;
+}
+
+:where(.shv-video__chapter-list:not(.shv-video-plain)) {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* The text of a page often sits in an element whose stylesheet gives every list of the text
+   numbers and an indent (.content ol in Bulma, and the like in many themes). A video placed
+   in such a text has its chapters there too. They are links with a time in front, not a
+   numbered list of the text, whatever gives the list its look. */
+.shv-video .shv-video__chapters > .shv-video__chapter-list {
+	margin-inline: 0;
+	padding-inline: 0;
+	list-style: none;
+}
+
+/* time and title side by side */
+.shv-video__chapter {
+	display: flex;
+	gap: 0.75em;
+	align-items: baseline;
+	min-height: 1.5rem;
+}
+
+:where(.shv-video__chapter:not(.shv-video-plain)) {
+	padding: 0.3em 0.5em;
+	text-decoration: none;
+	border-radius: 0.25em;
+}
+
+:where(.shv-video__chapter-time) {
+	flex: none;
+	min-width: 3.5ch;
+	font-variant-numeric: tabular-nums;
+}
+
+:where(.shv-video__chapter:not(.shv-video-plain):hover .shv-video__chapter-title),
+:where(.shv-video__chapter:not(.shv-video-plain):focus-visible .shv-video__chapter-title) {
+	text-decoration: underline;
+}
+
+/* the chapter being played */
+:where(.shv-video__chapter:not(.shv-video-plain)[aria-current]) {
+	font-weight: bold;
+	background: rgba(127, 127, 127, 0.16);
+}
+
+/* More about a video: what its custom fields say, in a box that opens **************************/
+
+/* A details element with its summary, which the browser opens and closes. The marker of the
+   browser stays: it is how the line says that it opens something. */
+.shv-video__info-summary {
+	cursor: pointer;
+}
+
+/* a light box, as the description on a video platform: the shade of the text colour suits light and dark pages */
+:where(.shv-video__info:not(.shv-video-plain)) {
+	margin-top: 1em;
+	padding: 0.6em 0.9em;
+	border-radius: 0.6em;
+	background: rgba(127, 127, 127, 0.12);
+}
+
+:where(.shv-video__info-summary:not(.shv-video-plain)) {
+	font-weight: bold;
+}
+
+/* names on the left, values on the right. A name takes the room it needs, up to a part of the line. */
+:where(.shv-video__info-list:not(.shv-video-plain)) {
+	display: grid;
+	grid-template-columns: fit-content(40%) minmax(0, 1fr);
+	gap: 0.35em 1.25em;
+	margin: 0.6em 0 0 0;
+	padding: 0;
+}
+
+:where(.shv-video__info-term:not(.shv-video-plain)) {
+	margin: 0;
+	font-weight: 600;
+}
+
+:where(.shv-video__info-value:not(.shv-video-plain)) {
+	margin: 0;
+	min-width: 0;
+	overflow-wrap: anywhere;
+}
+
+/* a value can be rich text: its first and last paragraph add no room */
+:where(.shv-video__info-value > :first-child) {
+	margin-top: 0;
+}
+
+:where(.shv-video__info-value > :last-child) {
+	margin-bottom: 0;
+}
+
+/* on a narrow screen each value is below its name */
+@media (max-width: 30em) {
+	:where(.shv-video__info-list:not(.shv-video-plain)) {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 0;
+	}
+	:where(.shv-video__info-value:not(.shv-video-plain)) {
+		margin-bottom: 0.5em;
+	}
+}
+
+/* The transcript: the text of the captions, in a box that opens ********************************/
+
+/* the same panel as the box with more about the video */
+.shv-video__transcript-summary {
+	cursor: pointer;
+}
+
+:where(.shv-video__transcript:not(.shv-video-plain)) {
+	margin-top: 1em;
+	padding: 0.6em 0.9em;
+	border-radius: 0.6em;
+	background: rgba(127, 127, 127, 0.12);
+}
+
+:where(.shv-video__transcript-summary:not(.shv-video-plain)) {
+	font-weight: bold;
+}
+
+:where(.shv-video__transcript-body:not(.shv-video-plain)) {
+	margin-top: 0.6em;
+}
+
+:where(.shv-video__transcript-item:not(.shv-video-plain)) {
+	margin: 0 -0.35em 0.5em;
+	padding: 0.15em 0.35em;
+	border-radius: 0.3em;
+}
+
+:where(.shv-video__transcript-item:last-child) {
+	margin-bottom: 0;
+}
+
+/* the time in front: a link that plays the video from there */
+:where(.shv-video__transcript-time:not(.shv-video-plain)) {
+	display: inline-block;
+	min-width: 3.5ch;
+	margin-right: 0.35em;
+	font-variant-numeric: tabular-nums;
+}
+
+:where(.shv-video__transcript-voice:not(.shv-video-plain)) {
+	font-weight: 600;
+}
+
+/* the paragraph being spoken while the video plays */
+:where(.shv-video__transcript-item[data-shv-current]:not(.shv-video-plain)) {
+	background: rgba(127, 127, 127, 0.2);
+}
+
+/* Overlays: text and links on the picture ******************************************************/
+
+/* the area of the picture. Overlays are placed in percent of it, and their text grows with it. */
+.shv-video__frame {
+	position: relative;
+	container-type: inline-size;
+}
+
+.shv-video__overlays {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.shv-video__overlay {
+	position: absolute;
+	box-sizing: border-box;
+	/* as wide as its text, wherever it is placed, up to a part of the picture */
+	width: max-content;
+	max-width: 60%;
+	margin: 0;
+	padding: 0.45em 0.8em;
+	font-size: 1rem;
+	font-size: max(0.75rem, 2.6cqw);
+	line-height: 1.3;
+	text-decoration: none;
+	white-space: pre-line;
+	overflow-wrap: break-word;
+	pointer-events: auto;
+	transform: translate(var(--shv-tx, -50%), var(--shv-ty, -50%));
+}
+
+.shv-video__overlay:where(:not(.shv-video-plain)) {
+	font-weight: normal;
+	border-radius: 0.35em;
+}
+
+.shv-video__overlay[hidden] {
+	display: none;
+}
+
+/* For screen readers the layer of overlays is a group (role="group") with a name. Pico CSS
+   takes every such group for a row of joined buttons: a flex row at full width, its
+   children side by side in it, with square corners where they meet. To the eye the layer is
+   no group, so these rules weigh more than Pico's, wherever its stylesheet is loaded. */
+.shv-video__frame > .shv-video__overlays {
+	display: block;
+	position: absolute;
+	width: auto;
+	margin: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.shv-video__overlays > .shv-video__overlay {
+	position: absolute;
+	flex: none;
+	margin: 0;
+}
+
+.shv-video__overlays[role] > .shv-video__overlay:where(:not(.shv-video-plain)) {
+	border-radius: 0.35em;
+}
+
+/* which part of an overlay sits at its position */
+.shv-video__overlay--left { --shv-tx: 0%; text-align: left; }
+.shv-video__overlay--center { --shv-tx: -50%; text-align: center; }
+.shv-video__overlay--right { --shv-tx: -100%; text-align: right; }
+.shv-video__overlay--top { --shv-ty: 0%; }
+.shv-video__overlay--middle { --shv-ty: -50%; }
+.shv-video__overlay--bottom { --shv-ty: -100%; }
+
+.shv-video__overlay--s { font-size: 0.875rem; font-size: max(0.7rem, 1.9cqw); }
+.shv-video__overlay--l { font-size: 1.25rem; font-size: max(0.9rem, 3.8cqw); }
+
+.shv-video__overlay--dark:where(:not(.shv-video-plain)) {
+	color: #fff;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.shv-video__overlay--light:where(:not(.shv-video-plain)) {
+	color: #111;
+	background: rgba(255, 255, 255, 0.95);
+}
+
+/* a link is told apart from a note by more than its colour, whatever gives it its look */
+a.shv-video__overlay {
+	text-decoration: underline;
+	text-underline-offset: 0.15em;
+}
+
+/* a link on a box of its own keeps the colour of that box, whatever colours links have elsewhere on the website */
+a.shv-video__overlay.shv-video__overlay--dark:where(:not(.shv-video-plain)) { color: #fff; }
+a.shv-video__overlay.shv-video__overlay--light:where(:not(.shv-video-plain)) { color: #111; }
+
+a.shv-video__overlay--dark:where(:not(.shv-video-plain)):hover { background: #000; }
+a.shv-video__overlay--light:where(:not(.shv-video-plain)):hover { background: #fff; }
+
+/* a focus ring that can be seen on any picture */
+a.shv-video__overlay:focus-visible {
+	outline: 3px solid #fff;
+	outline-offset: 1px;
+	box-shadow: 0 0 0 6px #000;
+}
+
+/* A video placed in a text *********************************************************************/
+
+/* [[video intro.mp4]] in a text, see TextformatterSelfHostedVideo. "width" and "align" of the tag
+   arrive as --shv-width and as one of the classes below. */
+.shv-video-text {
+	clear: both;
+	max-width: var(--shv-width, 100%);
+}
+
+:where(.shv-video-text:not(.shv-video-plain)) {
+	margin: 1.5em 0;
+}
+
+.shv-video-text--center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* beside the text, which flows around it */
+.shv-video-text--left,
+.shv-video-text--right {
+	width: var(--shv-width, 50%);
+	max-width: 100%;
+}
+
+.shv-video-text--left {
+	float: left;
+	clear: left;
+}
+
+.shv-video-text--right {
+	float: right;
+	clear: right;
+}
+
+:where(.shv-video-text--left:not(.shv-video-plain)) {
+	margin: 0.3em 1.5em 1em 0;
+}
+
+:where(.shv-video-text--right:not(.shv-video-plain)) {
+	margin: 0.3em 0 1em 1.5em;
+}
+
+/* on a narrow screen there is no room beside a video */
+@media (max-width: 40em) {
+	.shv-video-text--left,
+	.shv-video-text--right,
+	.shv-video-text--center {
+		float: none;
+		width: auto;
+		max-width: 100%;
+	}
+	:where(.shv-video-text--left:not(.shv-video-plain)),
+	:where(.shv-video-text--right:not(.shv-video-plain)) {
+		margin: 1.5em 0;
+	}
+}
+
+/* A background video ***************************************************************************/
+
+/* the element a background video is placed in: the video fills it and lies behind its content.
+   Browsers from before 2024 need the class on that element, newer ones find it themselves. */
+:where(.shv-video-host) {
+	position: relative;
+	isolation: isolate;
+}
+
+:where(:has(> .shv-video--background)) {
+	position: relative;
+	isolation: isolate;
+}
+
+.shv-video--background {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	max-width: none;
+	margin: 0;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.shv-video--background .shv-video__video {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: auto;
+	object-fit: cover;
+	background: none;
+}
+
+.shv-video--background::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	opacity: var(--shv-shade, 0);
+}
+
+/* the button that pauses and plays a background video */
+.shv-video__toggle {
+	position: absolute;
+	z-index: 2;
+	inset-block-end: 1rem;
+	inset-inline-end: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	min-width: 1.5rem;
+	min-height: 1.5rem;
+	margin: 0;
+	cursor: pointer;
+}
+
+button.shv-video__toggle:where(:not(.shv-video-plain)) {
+	width: 2.75rem;
+	height: 2.75rem;
+	padding: 0;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.7);
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+
+.shv-video__toggle[hidden] {
+	display: none;
+}
+
+.shv-video__toggle:where(:not(.shv-video-plain)):hover {
+	background: #000;
+}
+
+.shv-video__toggle:focus-visible {
+	outline: 3px solid #fff;
+	outline-offset: 2px;
+	box-shadow: 0 0 0 7px #000;
+}
+
+.shv-video__icon {
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	fill: currentColor;
+}
+
+.shv-video__toggle[data-state="playing"] .shv-video__icon--play,
+.shv-video__toggle[data-state="paused"] .shv-video__icon--pause {
+	display: none;
+}
+
+@media print {
+	.shv-video__toggle,
+	.shv-video__fullscreen {
+		display: none;
+	}
+}
+
+/* going on where the visitor stopped: a note at the top of the picture (0.52.0) */
+.shv-video__resume {
+	position: absolute;
+	z-index: 2;
+	inset-block-start: 0.5rem;
+	inset-inline-start: 0.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.25em 0.6em;
+	max-width: calc(100% - 4rem);
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0.35em 0.45em 0.35em 0.75em;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 0.35em;
+}
+
+.shv-video__resume[hidden] {
+	display: none;
+}
+
+.shv-video__restart,
+.shv-video__replay,
+.shv-video__end-next,
+.shv-video__end-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4em;
+	box-sizing: border-box;
+	min-height: 2.25rem;
+	margin: 0;
+	padding: 0.35em 0.9em;
+	font: inherit;
+	line-height: 1.2;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 0.35em;
+}
+
+.shv-video__restart:where(:not(.shv-video-plain)) {
+	min-height: 1.75rem;
+	padding: 0.2em 0.6em;
+	color: #111;
+	background: #fff;
+	border: 0;
+}
+
+/* what is offered when the video has ended: above the picture, the controls stay usable */
+.shv-video__end {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 3.5rem;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.75rem;
+	pointer-events: none;
+	background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
+}
+
+.shv-video__end[hidden],
+.shv-video__end-next[hidden] {
+	display: none;
+}
+
+.shv-video__end-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 0.6rem;
+	max-width: 100%;
+	pointer-events: auto;
+	font-size: 1rem;
+	font-size: max(0.875rem, 2.4cqw);
+}
+
+.shv-video__end-link:where(:not(.shv-video-plain)),
+.shv-video__end-next:where(:not(.shv-video-plain)) {
+	color: #111;
+	background: #fff;
+	border: 2px solid #fff;
+	font-weight: 600;
+}
+
+.shv-video__replay:where(:not(.shv-video-plain)) {
+	color: #fff;
+	background: rgba(0, 0, 0, 0.6);
+	border: 2px solid #fff;
+}
+
+.shv-video__replay .shv-video__icon {
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+.shv-video__restart:focus-visible,
+.shv-video__replay:focus-visible,
+.shv-video__end-next:focus-visible,
+.shv-video__end-link:focus-visible {
+	outline: 3px solid #fff;
+	outline-offset: 2px;
+	box-shadow: 0 0 0 5px #111;
+}
+
+@media (forced-colors: active) {
+	.shv-video__resume,
+	.shv-video__restart,
+	.shv-video__replay,
+	.shv-video__end-next,
+	.shv-video__end-link {
+		border: 1px solid CanvasText;
+	}
+}
+
+/* the button to a page of another website: a sign that it opens in a new window (0.55.1) */
+.shv-video__end-external {
+	flex: none;
+	width: 0.85em;
+	height: 0.85em;
+}

@@ -1,0 +1,18 @@
+{
+    "file": "site\/modules\/FieldtypeSelfHostedVideo\/SelfHostedVideoMigration.php",
+    "textdomain": "site--modules--fieldtypeselfhostedvideo--selfhostedvideomigration-php",
+    "translations": {
+        "8a0bd1b0c9260e1fe3efe198007ecccc": {
+            "text": "Von FieldtypeVideoFile \u00fcbernommen: %1$d Videofelder, %2$d Einstellungen anderer Felder, %3$d .htaccess-Dateien, %4$d \u00dcbersetzungsdateien."
+        },
+        "e2cf050df237a7d96553ebcab59c6329": {
+            "text": "Das Videofeld \u201e%s\u201c akzeptiert jetzt auch MOV-Dateien, wie sie iPhones aufnehmen."
+        },
+        "f0c790546f825e670894f90b92435325": {
+            "text": "Ihre Framework-Profile wurden nach %s verschoben."
+        },
+        "b5465c3635965ef977d0e249f4e646f8": {
+            "text": "Verschieben Sie den Ordner %1$s nach %2$s: Eigene Framework-Profile werden jetzt dort gesucht."
+        }
+    }
+}

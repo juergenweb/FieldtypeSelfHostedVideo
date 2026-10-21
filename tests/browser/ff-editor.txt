@@ -1,0 +1,30 @@
+
+######## ckeditor (firefox)
+browser: firefox 157.0
+
+== the editor
+  ok   the toolbar has the button of the module
+  ok   its icon is the picture of the module
+  ok   and the file of the icon was found
+
+== inserting a video
+  ok   the dialog offers the video of the page by its title
+  ok   the text has the tag with the choices
+  ok   and keeps the text that was there
+
+== changing a tag
+  ok   the dialog shows what the tag says
+  ok   full width takes out the place and keeps the rest
+  ok   one tag, not two
+
+== saving and the website
+  ok   the page shows the video once
+  ok   and no tag is left in the text
+  ok   every file the page asked for was found
+
+== the admin page
+  ok   no error of the script, no alert
+
+13 passed, 0 failed
+
+all test files passed

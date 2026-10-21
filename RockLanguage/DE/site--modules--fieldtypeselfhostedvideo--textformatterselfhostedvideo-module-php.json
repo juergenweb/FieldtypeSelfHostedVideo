@@ -1,0 +1,12 @@
+{
+    "file": "site\/modules\/FieldtypeSelfHostedVideo\/TextformatterSelfHostedVideo.module.php",
+    "textdomain": "site--modules--fieldtypeselfhostedvideo--textformatterselfhostedvideo-module-php",
+    "translations": {
+        "b1698f543643dd472c843fafcb449f03": {
+            "text": "Videos im Text"
+        },
+        "82bc17f4daa778c1e63558dc2ed35436": {
+            "text": "Zeigt ein Video der Seite an der Stelle, an der ihr Text ein Tag wie [[video intro.mp4]] enth\u00e4lt, und f\u00fcgt dem Rich-Text-Editor einen Knopf daf\u00fcr hinzu."
+        }
+    }
+}

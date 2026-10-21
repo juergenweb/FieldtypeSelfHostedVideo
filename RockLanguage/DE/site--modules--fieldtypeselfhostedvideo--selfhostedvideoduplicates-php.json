@@ -1,0 +1,33 @@
+{
+    "file": "site\/modules\/FieldtypeSelfHostedVideo\/SelfHostedVideoDuplicates.php",
+    "textdomain": "site--modules--fieldtypeselfhostedvideo--selfhostedvideoduplicates-php",
+    "translations": {
+        "6f357c3f76bc729ec2de7db44f8762de": {
+            "text": "ein wiederverwendetes Video"
+        },
+        "f0ce6ce2836587c6d1c344764be0f912": {
+            "text": "dasselbe Video"
+        },
+        "255f6480f8265872e2c74412601670ce": {
+            "text": "auf einer Seite im Papierkorb"
+        },
+        "83545de1da9e314a6a1cb2ed178b8f8d": {
+            "text": "das zu behaltende Video ist auf einer unver\u00f6ffentlichten Seite"
+        },
+        "f0914ce0b18da86e29dcecfa5fb889c7": {
+            "text": "nicht dieselbe Datei"
+        },
+        "588f27c838f7fc87fe01a1f8665debfc": {
+            "text": "Sie d\u00fcrfen seine Seite nicht bearbeiten"
+        },
+        "7dbf75016d1a2d9e3200cec337838734": {
+            "text": "auf einer Seite wiederverwendet, die Sie nicht bearbeiten d\u00fcrfen"
+        },
+        "cd41e52670bdfa1cc2d7361902a615de": {
+            "text": "\u201e%1$s\u201c kann nicht zusammengelegt werden: %2$s."
+        },
+        "10a95334420f7e4b264e2a0347cea0e3": {
+            "text": "\u201e%s\u201c wurde auf seiner Seite nicht gefunden."
+        }
+    }
+}

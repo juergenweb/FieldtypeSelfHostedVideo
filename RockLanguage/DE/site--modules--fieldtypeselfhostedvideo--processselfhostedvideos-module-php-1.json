@@ -1,0 +1,261 @@
+{
+    "file": "site/modules/FieldtypeSelfHostedVideo/ProcessSelfHostedVideos.module.php",
+    "textdomain": "site--modules--fieldtypeselfhostedvideo--processselfhostedvideos-module-php",
+    "translations": {
+        "a0803ea90bf80585db8742125e2d0885": {
+            "text": "Video-Manager"
+        },
+        "d9dcb8f350197363fb93d6d88b89c1a5": {
+            "text": "Es gibt noch kein Videofeld. Fügen Sie einem Template ein Feld vom Typ „Videodateien“ hinzu, um zu beginnen."
+        },
+        "22b79e4afa28e9c7950108e6f6bf8354": {
+            "text": "Alle Videos"
+        },
+        "a7f349b89d3ee35c03fae88125bccf4d": {
+            "text": "Auf anderen Seiten wiederverwendet"
+        },
+        "56f0605c9795b173abd2e34fab7fc164": {
+            "text": "Geschützt"
+        },
+        "ec966d9a4571c495efa4f174ce3da8d6": {
+            "text": "Nicht für Streaming vorbereitet"
+        },
+        "0912b5fc95b858da6b78ad237aa2342c": {
+            "text": "Auf keiner veröffentlichten Seite"
+        },
+        "b1c94ca2fbc3e78fc30069c8d0f01680": {
+            "text": "Alle"
+        },
+        "b766f62ecf3d45d4c495584ede24a35d": {
+            "text": "Offene Punkte"
+        },
+        "ae94f80b3ce82062a5dd7815daa04f9d": {
+            "text": "Vollständig"
+        },
+        "88241ddd8e6f8ea848409c02dcd7549d": {
+            "text": "Neueste zuerst"
+        },
+        "799c95af138a2db03bfd6a597bb9fbe7": {
+            "text": "Älteste zuerst"
+        },
+        "34082694d21dbdcfc31e6e32d9fb2b9f": {
+            "text": "Dateiname"
+        },
+        "c2dd43d01fab48e6c0ba539f7a7722af": {
+            "text": "Längste zuerst"
+        },
+        "e75dc05d37c7331eecf33ee8cd35e474": {
+            "text": "Größte Datei zuerst"
+        },
+        "13348442cc6a27032d2b4aa28b75a5d3": {
+            "text": "Suchen"
+        },
+        "68bf378789686a8d50830dd7a180cf1d": {
+            "text": "Titel, Dateiname, Seite …"
+        },
+        "c101058e7ea21bbbf2a5ac893088e90b": {
+            "text": "Tag"
+        },
+        "d1cdbbc98aee25edf1ba397e7748b48a": {
+            "text": "Beliebiges Tag"
+        },
+        "6f16a5f8ff5d75ab84c018adacdfcbb7": {
+            "text": "Feld"
+        },
+        "b539be92f7dea86a89f4d0861c2d3718": {
+            "text": "Beliebiges Feld"
+        },
+        "498f79c4c5bbde77f1bceb6c86fd0f6d": {
+            "text": "Anzeigen"
+        },
+        "a5d727df2ce2d168bae39c78df4b9054": {
+            "text": "Checkliste"
+        },
+        "a240fa27925a635b08dc28c9e4f9216d": {
+            "text": "Reihenfolge"
+        },
+        "e6b06dea9ac5e0330e37ee581f323e90": {
+            "text": "Videos anzeigen"
+        },
+        "abf4a2d61329d1c4206d621d38d0f4c1": {
+            "text": "Es wurden noch keine Videos hochgeladen."
+        },
+        "23f9cf2554918aca49679decc33fd4b7": {
+            "text": "Für diese Auswahl wurden keine Videos gefunden."
+        },
+        "23e3c35b62ab029c909b4a8483e40020": {
+            "text": "%s Spieldauer"
+        },
+        "01212ef72ecbda008dc994ccfe368b09": {
+            "text": "Alle Videos anzeigen"
+        },
+        "ebfcac7f4f3d7f50babdf865b093e085": {
+            "text": "hinzugefügt am %s"
+        },
+        "587a867cdf4c733715093ffa3d6b7061": {
+            "text": "Auf der Seite %1$s, Feld „%2$s“"
+        },
+        "0774e163cd7df482edd2abd498189f8b": {
+            "text": "Unveröffentlicht"
+        },
+        "b11f5d920dac5ee79cacb6ad6b4f2782": {
+            "text": "„%s“ auswählen"
+        },
+        "32b502f33a535f75dcbf63f6753c631e": {
+            "text": "Tags:"
+        },
+        "d644359608b8136484df0f918b60746a": {
+            "text": "Für Streaming vorbereiten"
+        },
+        "20d7fdffd0ab437882612cfe743adeea": {
+            "text": "Tag hinzufügen"
+        },
+        "e12acd377c227108f91c64e02cb14b88": {
+            "text": "Tag entfernen"
+        },
+        "f2a6c498fb90ee345d997f888fce3b18": {
+            "text": "Löschen"
+        },
+        "ba7ef329fc947a324c8666d97ae61dd2": {
+            "text": "Aktion wählen …"
+        },
+        "3c1d1519f94ebf8190194f8ab9fd164e": {
+            "text": "Mehrere Videos auf einmal"
+        },
+        "03fd61e7496357215cbca5e70f44d3a0": {
+            "text": "Alle auf dieser Seite auswählen"
+        },
+        "3238640544ee2a2a688817c87e8cc7ea": {
+            "text": "Mit den ausgewählten Videos"
+        },
+        "9639e32cab248434a17ab32237cb3b71": {
+            "text": "Ausführen"
+        },
+        "66bdb21f673242bf5984370ce1479eca": {
+            "text": "Das Formular ist abgelaufen. Bitte noch einmal versuchen."
+        },
+        "b124a389831f5031407eed804d57554f": {
+            "text": "Bitte eine Aktion wählen."
+        },
+        "863813b47f91c3db39afa44da382bb5d": {
+            "text": "Es wurden keine Videos ausgewählt."
+        },
+        "3dc43df705c9a18eebd008db3aa7bc8f": {
+            "text": "Bitte einen Tag eingeben."
+        },
+        "38519a58d290c193114c36cce26692a7": {
+            "text": "%s (sein Feld hat keine Tags)"
+        },
+        "f1501b476a65556f699c0ab5ee934faa": {
+            "text": "%s (sein Feld nimmt nur die dafür festgelegten Tags)"
+        },
+        "ffbe7580e4e948535f2cbc099c2cef07": {
+            "text": "%s (auf anderen Seiten wiederverwendet)"
+        },
+        "5767d8f6e89e7b939da7ede7e9cb7fa4": {
+            "text": "wiederverwendet: bleibt erhalten"
+        },
+        "6eb8f879ca6c52f6d3fcd4d885154873": {
+            "text": "Die Dateien werden von ihren Seiten entfernt und lassen sich nicht wiederherstellen. Videos, die auf anderen Seiten wiederverwendet werden, bleiben erhalten."
+        },
+        "ea4788705e6873b424c65e91c2846b19": {
+            "text": "Abbrechen"
+        },
+        "34026a8184e7decae2c01b11daa8a882": {
+            "text": "Gut zu wissen:"
+        },
+        "e456cfd72475d12c1892c474931be6c5": {
+            "text": "Zu erledigen:"
+        },
+        "712f41adf8e4bfce92e0a4729434cec1": {
+            "text": "Checkliste vollständig"
+        },
+        "dd1f775e443ff3b9a89270713580a51b": {
+            "text": "Zurück"
+        },
+        "3a1ed905045e5cf29efec452131f9403": {
+            "text": "Seite %1$d von %2$d"
+        },
+        "10ac3d04253ef7e1ddc73e6091c0cd55": {
+            "text": "Weiter"
+        },
+        "69bdc06fd1c1699967f5f544faa7eab6": {
+            "text": "Seiten der Liste"
+        },
+        "af8f820cb2c34c8f6dfa528b2add7043": {
+            "text": "Übersicht aller Videos der Website: Suche, Tags, Checklisten und wo jedes Video verwendet wird."
+        },
+        "ad327b2d7379310939d94d4ae252754a": {
+            "text": "%d Video"
+        },
+        "57951d078f48d4a11600de3c643420b7": {
+            "text": "%d Videos"
+        },
+        "a1f2b7ad9f6ce6f6b4ea9d76eaca98de": {
+            "text": "Auf %d anderen Seite wiederverwendet:"
+        },
+        "8e06c3ecb06d924ddf324ecd58b8465d": {
+            "text": "Auf %d anderen Seiten wiederverwendet:"
+        },
+        "40552734dab98464e7048ea230b32b23": {
+            "text": "Das %d Video dieser Auswahl"
+        },
+        "171c385582feaf36f7ae250d35343912": {
+            "text": "Alle %d Videos dieser Auswahl, auch die auf den anderen Seiten der Liste"
+        },
+        "4de23d396c934f09c2735c608d469433": {
+            "text": "%d Video wurde ausgelassen: Sie dürfen seine Seite nicht bearbeiten."
+        },
+        "1c8c32e4075df8d218ecae2dffc61a79": {
+            "text": "%d Videos wurden ausgelassen: Sie dürfen ihre Seiten nicht bearbeiten."
+        },
+        "83c5b3a3b74ed1fe64ff08aba3b3824d": {
+            "text": "%d Video für Streaming vorbereitet."
+        },
+        "e2edd7837e6969bb9bfc5486a239849d": {
+            "text": "%d Videos für Streaming vorbereitet."
+        },
+        "4b7c77b975cd103cea1ed561eb01fbe1": {
+            "text": "Tag „%2$s“ zu %1$d Video hinzugefügt."
+        },
+        "193b2f141d28578baf818589306faa42": {
+            "text": "Tag „%2$s“ zu %1$d Videos hinzugefügt."
+        },
+        "a52d222ea4decbf1be9d1b62ffad7dac": {
+            "text": "Tag „%2$s“ von %1$d Video entfernt."
+        },
+        "ed705eb6d42dd75631ebeecc1c0088d9": {
+            "text": "Tag „%2$s“ von %1$d Videos entfernt."
+        },
+        "3f34a273f2e7c9dbdebad5757e0763b4": {
+            "text": "%d Video gelöscht."
+        },
+        "f88d5641071107cce12f5e2508a84b8c": {
+            "text": "%d Videos gelöscht."
+        },
+        "5d68358ed6471bad439a1751850c00b4": {
+            "text": "Unverändert geblieben: %s"
+        },
+        "9b1feb593c518479faa0329d17f15ef7": {
+            "text": "Unverändert geblieben: %s"
+        },
+        "fc4134fd9056d5d54636ea50c4ea6acf": {
+            "text": "%d Video löschen?"
+        },
+        "3527e423716fa4668aa7539b7013ae36": {
+            "text": "%d Videos löschen?"
+        },
+        "468acaf194006c888ffad4916f56307f": {
+            "text": "%d Video löschen"
+        },
+        "9a79b49777531378a90f0d0e926695de": {
+            "text": "%d Videos löschen"
+        },
+        "97a1f999523f28fca06aefb8aea3ed4c": {
+            "text": "%d Punkt zu prüfen"
+        },
+        "faada54072053bab0f872e796a691e6c": {
+            "text": "%d Punkte zu prüfen"
+        }
+    }
+}

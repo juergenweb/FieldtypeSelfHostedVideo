@@ -1,0 +1,51 @@
+{
+    "file": "site/modules/FieldtypeSelfHostedVideo/SelfHostedVideoMarkup.php",
+    "textdomain": "site--modules--fieldtypeselfhostedvideo--selfhostedvideomarkup-php",
+    "translations": {
+        "764ff8d94d40c2ecfca7141e7451aa23": {
+            "text": "Vollbild"
+        },
+        "e81319cf3d7d9a40e83aecdd5e579a72": {
+            "text": "Vollbild verlassen"
+        },
+        "40d72fa538429cf82537d7049fad6e2e": {
+            "text": "Video herunterladen"
+        },
+        "c067cb51555b3fdc9587786e25117a30": {
+            "text": "Video „%s“ herunterladen"
+        },
+        "dfe87e53da8ee369a18b26749a53d9d5": {
+            "text": "Ihr Browser kann dieses Video nicht abspielen."
+        },
+        "93cba07454f06a4a960172bbd6e2a435": {
+            "text": "Ja"
+        },
+        "bafd7322c6e97d25b6299b5d6fe8920b": {
+            "text": "Nein"
+        },
+        "944c431958e5afd512900e310573d6a9": {
+            "text": "Mehr zu diesem Video"
+        },
+        "6d7e271f6b81c7763dc5ad4ee5ce7cf8": {
+            "text": "Abspielen ab"
+        },
+        "f24f9b19509f19811927c2c5108eb69f": {
+            "text": "Transkript"
+        },
+        "5b646f2c273e0b69ac92a771fca44e6c": {
+            "text": "Hinweise zum Video"
+        },
+        "dbb77931db994dbdc62c0d5ff37ac71b": {
+            "text": "Kapitel"
+        },
+        "13bd835d1dd3ce08edd4760f48fcfb65": {
+            "text": "Hintergrundvideo anhalten"
+        },
+        "5c3022f60707cdd65c036bba8c990c42": {
+            "text": "Hintergrundvideo abspielen"
+        },
+        "68311558072ad45d1424e7c58cefd695": {
+            "text": "Dauer:"
+        }
+    }
+}

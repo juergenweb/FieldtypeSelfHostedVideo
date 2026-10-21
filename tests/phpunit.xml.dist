@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- vendor/bin/phpunit -c tests/phpunit.xml.dist   (PHPUnit 10 or 11; PW_ROOT: see bootstrap.php) -->
+<phpunit bootstrap="bootstrap.php" colors="true" cacheDirectory=".phpunit.cache" failOnWarning="true">
+	<testsuites>
+		<testsuite name="FieldtypeSelfHostedVideo">
+			<directory suffix="Test.php">unit</directory>
+		</testsuite>
+	</testsuites>
+</phpunit>

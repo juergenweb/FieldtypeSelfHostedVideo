@@ -1,0 +1,32 @@
+
+######## admin-upload (webkit)
+browser: webkit 27.2
+
+== signing in
+  ok   the test user is in the admin
+
+== the page with the field
+  ok   the video field is in the form
+  ok   its stylesheet and script from assets/ are loaded
+  ok   one field to choose a file
+
+== uploading
+  ok   this browser cannot play the test video: the module warns before the upload and offers to go on
+  ok   the video arrives in the page
+  ok   its thumbnail is made or asked for
+
+== saving
+  ok   after saving the video is still there when the page is opened again
+
+== on the website
+  ok   the page shows the video
+  ok   it is the file that was uploaded
+  ok   every file the page asked for was found
+
+== the admin page
+  ok   no error of the script or in the console
+  ok   every file of the module was found
+
+13 passed, 0 failed
+
+all test files passed

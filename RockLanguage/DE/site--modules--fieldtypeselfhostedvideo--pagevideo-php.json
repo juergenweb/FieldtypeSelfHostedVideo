@@ -1,0 +1,24 @@
+{
+    "file": "site\/modules\/FieldtypeSelfHostedVideo\/Pagevideo.php",
+    "textdomain": "site--modules--fieldtypeselfhostedvideo--pagevideo-php",
+    "translations": {
+        "11b5993c92ee798fee20dd07b8df7e9c": {
+            "text": "Untertitel eines wiederverwendeten Videos werden auf der Seite bearbeitet, von der es stammt."
+        },
+        "ab0cfa8978705521fb629bbaf8fef8c4": {
+            "text": "Bitte w\u00e4hlen Sie die Sprache der Untertitel."
+        },
+        "1080be1b5c89c4f27fa9139c0f5f5097": {
+            "text": "Die Untertiteldatei konnte nicht gelesen werden."
+        },
+        "d00936921fc704819cc47905669ca0fd": {
+            "text": "Die Untertiteldatei ist zu gro\u00df."
+        },
+        "68c14e0d05ce23d16872daf2ae4a1444": {
+            "text": "Dies ist keine Untertiteldatei. Untertitel gibt es als WebVTT-Datei (.vtt) oder SubRip-Datei (.srt) mit mindestens einem Untertitel."
+        },
+        "dc7232a5cd7fbd1378e2549af6c7764a": {
+            "text": "Die Untertiteldatei konnte nicht gespeichert werden."
+        }
+    }
+}

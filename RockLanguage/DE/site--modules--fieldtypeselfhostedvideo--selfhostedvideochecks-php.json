@@ -1,0 +1,198 @@
+{
+    "file": "site\/modules\/FieldtypeSelfHostedVideo\/SelfHostedVideoChecks.php",
+    "textdomain": "site--modules--fieldtypeselfhostedvideo--selfhostedvideochecks-php",
+    "translations": {
+        "b78a3223503896721cca1303f776159b": {
+            "text": "Titel"
+        },
+        "214ffef45f94bfd29761f36322514445": {
+            "text": "Titel fehlt"
+        },
+        "b8108c35c49774224daefa4c7d79bf9b": {
+            "text": "Der Titel sagt Menschen, die einen Screenreader verwenden, worum es im Video geht."
+        },
+        "4a30f33501fadedf1e40b2d9a9abe7c4": {
+            "text": "Untertitel: %s"
+        },
+        "a1b9f69b12812a9b96d23d215a2e99eb": {
+            "text": "Kein Ton, daher keine Untertitel n\u00f6tig"
+        },
+        "aba13f130ef28a3235a70086850f7694": {
+            "text": "Als \u201eohne Sprache\u201c markiert, daher keine Untertitel n\u00f6tig"
+        },
+        "51899b6b25db13e530aee0c5611583bf": {
+            "text": "Untertitel fehlen"
+        },
+        "f62992ad097d48ec28513c21f5ddce53": {
+            "text": "Menschen, die das Video nicht h\u00f6ren k\u00f6nnen, brauchen Untertitel. F\u00fcgen Sie eine Untertiteldatei hinzu oder markieren Sie das Video als ohne Sprache."
+        },
+        "ceb80e75c0e9840d34f9e76fc647d6eb": {
+            "text": "Untertitel (%s) laufen l\u00e4nger als das Video"
+        },
+        "f7cc399cd3f0303d827459bd919d910f": {
+            "text": "Geh\u00f6ren sie zu dieser Datei? Untertitel, die nicht zum Bild passen, verwirren mehr, als sie helfen."
+        },
+        "7c714d09966e21e83bf47f14b170655c": {
+            "text": "Kein Bild in der Datei gefunden"
+        },
+        "7f62300d184b06df688aeffb5d63774c": {
+            "text": "Das sieht nach einer Tondatei aus. Player zeigen daf\u00fcr eine leere Fl\u00e4che."
+        },
+        "ce5dc4eed1d7d6ed6c15877ef50f4783": {
+            "text": "Format: %s"
+        },
+        "3dea8095f526f6ae9865c44f54ebfb78": {
+            "text": "Der Browser, mit dem dieses Video zuletzt im Editor ge\u00f6ffnet wurde, konnte es nicht abspielen. Besucher mit diesem Browser sehen einen Player, der nichts tut."
+        },
+        "76b5caa5458d81b38d277b0540429d25": {
+            "text": "H.264 in einer MP4-Datei l\u00e4uft \u00fcberall."
+        },
+        "19a3805c1696a15f8259a2e70893d8b9": {
+            "text": "Wurde in %s nicht abgespielt"
+        },
+        "ec966d9a4571c495efa4f174ce3da8d6": {
+            "text": "Nicht f\u00fcr Streaming vorbereitet"
+        },
+        "b8a30bf05a23bed6b0a2f9e44ce56432": {
+            "text": "Die Datei muss vollst\u00e4ndig laden, bevor sie abspielt. \u201eF\u00fcr Streaming vorbereiten\u201c im Seiteneditor oder im Video-Manager behebt das, ohne Bild oder Ton zu ver\u00e4ndern."
+        },
+        "7fca54046bb1e43b3c87abcae5fc5f0a": {
+            "text": "Die Datei muss vollst\u00e4ndig geladen sein, bevor sie abspielt. \u201eF\u00fcr Streaming vorbereiten\u201c im Seiten-Editor behebt das, ohne Bild oder Ton zu ver\u00e4ndern."
+        },
+        "47e8f693ad55dc338cdaa2990d981f8e": {
+            "text": "Hohe Datenrate: %s Mbit\/s"
+        },
+        "7f04ee4d8f075c09bfdacc9bcecd4a41": {
+            "text": "\u00dcber %s Mbit\/s startet ein Video langsam und stockt auf Handys und bei langsamen Verbindungen."
+        },
+        "e35935ecaffbc97b70ea06f2a437a7ea": {
+            "text": "Gro\u00dfe Datei: %s"
+        },
+        "d674bbe8ee9b280fcfe6bbf6ee5f174a": {
+            "text": "Dieses Feld ist f\u00fcr Videos bis %s MB gedacht."
+        },
+        "6819b2fdadd04b7e79a19aa68a9df931": {
+            "text": "Dauer oder Bildgr\u00f6\u00dfe unbekannt"
+        },
+        "58d7a9ee2cf6a042eebfd20a6707cac9": {
+            "text": "Die Datei gibt nicht an, wie lang oder wie gro\u00df das Video ist. Player k\u00f6nnen seinen Platz nicht freihalten, w\u00e4hrend die Seite l\u00e4dt."
+        },
+        "fd4c59e4b97de5810c877607b5181448": {
+            "text": "Datei: nichts gefunden"
+        },
+        "b6dbc7b146c31ad93066e92435eae28d": {
+            "text": "Datei: %s, nichts gefunden"
+        },
+        "8863b1a79fda6ac2ff5580f7a08cde4b": {
+            "text": "H.265 l\u00e4uft in Safari und auf neueren Ger\u00e4ten, aber nicht in jedem Browser. Exportieren Sie das Video als H.264, damit es alle ansehen k\u00f6nnen."
+        },
+        "7cde1c345339da2de9500141b39a5cfd": {
+            "text": "ProRes ist ein Format f\u00fcr den Schnitt, nicht f\u00fcr das Web: Browser spielen es nicht ab, und die Dateien sind sehr gro\u00df. Exportieren Sie das Video als H.264."
+        },
+        "7ccad798ecb07f9fefb05f42ef8e72db": {
+            "text": "Dieses \u00e4ltere Format l\u00e4uft in den meisten Browsern nicht. Exportieren Sie das Video als H.264."
+        },
+        "7a554572f2f157124bf7c48709aa0748": {
+            "text": "Browser spielen dieses Format m\u00f6glicherweise nicht ab. H.264 in einer MP4-Datei l\u00e4uft \u00fcberall."
+        },
+        "9c454fe4b963febc852451bef1bf4cb6": {
+            "text": "%s-Dateien laufen nicht in jedem Browser. Exportieren Sie das Video als MP4-Datei."
+        },
+        "145d0a9ce75fca49ebe9de8bdf39806c": {
+            "text": "%1$s in %2$s"
+        },
+        "0aaed300abdec826cda95786d49f92aa": {
+            "text": "Suchmaschinen: Vorschaubild fehlt"
+        },
+        "df41fbb8557054d78951cc0e4adce7bf": {
+            "text": "Ohne Vorschaubild zeigen Suchmaschinen das Video nicht als Video an. W\u00e4hlen Sie eines unter \u201eVideo und Vorschaubild\u201c."
+        },
+        "3a5cda6dd3f71b44acbe2e486aecf9bc": {
+            "text": "Suchmaschinen: Vorschaubild zu klein (%1$d \u00d7 %2$d Pixel)"
+        },
+        "35c4272cd00ddd132032a6e01971aae2": {
+            "text": "Suchmaschinen brauchen ein Vorschaubild von mindestens 60 \u00d7 30 Pixeln und bevorzugen ein gro\u00dfes. W\u00e4hlen Sie ein anderes unter \u201eVideo und Vorschaubild\u201c."
+        },
+        "9cf4ded817aef00e0b1504cea5891916": {
+            "text": "Suchmaschinen: keine Beschreibung"
+        },
+        "cc672b642846b72612b1dac5f1b1d485": {
+            "text": "Ein, zwei S\u00e4tze dazu, was das Video zeigt, zeigen Suchmaschinen mit dem Video an. Ohne Beschreibung zeigen sie nur den Titel."
+        },
+        "15c12c46dcacd7e56d98e56a6287584f": {
+            "text": "Suchmaschinen: gleicher Titel wie ein anderes Video"
+        },
+        "de3574aca855fb87579d79e13bf2495b": {
+            "text": "Das Video \u201e%1$s\u201c auf der Seite \u201e%2$s\u201c hat denselben Titel. Suchmaschinen wollen f\u00fcr jedes Video einen eigenen Titel, um die Videos zu unterscheiden."
+        },
+        "fdf2104bbfc891ce2f8f7f33fafbed13": {
+            "text": "Gesch\u00fctzt: Nur wer diese Seite ansehen darf, kann das Video laden"
+        },
+        "96ccd4ab5253c332bfec10809941a90d": {
+            "text": "Nicht gesch\u00fctzt: Diese Seite ist nicht \u00f6ffentlich, ihre Dateien aber schon"
+        },
+        "bb7f1936f7bdaf6a06583feba4ad587e": {
+            "text": "Jeder, der die Adresse der Videodatei kennt, kann sie ohne Anmeldung laden. Um die Dateien solcher Seiten zu sch\u00fctzen, beantworten Sie im Tab \u201eZugriff\u201c des Templates \u201e%s\u201c die Frage \u201ePrevent direct access to file assets owned by pages using this template?\u201c mit Ja, oder setzen Sie $config->pagefileSecure = true in \/site\/config.php."
+        },
+        "a650ac591cfdae07c2e4d8d3cbf5fac9": {
+            "text": "Einbetten auf anderen Websites: blockiert"
+        },
+        "2bcd6f430eb9438bc3209223f3b02275": {
+            "text": "Gesch\u00fctzte Videos liefert das Modul selbst aus und wendet die Regel selbst an."
+        },
+        "28193acac0ccff1b328a00cf447f21bd": {
+            "text": "Das Modul hat die Regeln in die Datei .htaccess im Ordner dieser Seite geschrieben, aber der Webserver wendet sie nicht an. Daf\u00fcr muss er .htaccess-Dateien erlauben (AllowOverride All oder zumindest AuthConfig)."
+        },
+        "e8238cc416b57f1fcae2093f0f5bf954": {
+            "text": "Das Modul konnte die Regeln nicht in den Ordner dieser Seite schreiben. Der Ordner muss f\u00fcr den Webserver beschreibbar sein."
+        },
+        "ee0806082428777157d91e2ec4c5f6d8": {
+            "text": "Dieser Webserver liest die Regeln nicht, die das Modul schreibt (.htaccess). Tragen Sie die Regel aus \u201eEmbedding on other websites\u201c im README in seine Konfiguration ein."
+        },
+        "6cde693dfb1ae2238591ca0c2b5bd19b": {
+            "text": "Gepr\u00fcft: Der Webserver verweigert die Datei f\u00fcr Seiten anderer Websites."
+        },
+        "f2c6fa121bc6768040a0139237be0228": {
+            "text": "Einbetten ist blockiert, aber der Webserver liefert die Datei trotzdem an andere Websites aus"
+        },
+        "a4885ac98f4ab40ecdc9486e33a30682": {
+            "text": "Ob der Webserver das anwendet, lie\u00df sich von hier aus nicht pr\u00fcfen."
+        },
+        "783562f8aaa01c5c3b9d218cfc2d410f": {
+            "text": "Die Regeln stehen in der Datei .htaccess im Ordner dieser Seite."
+        },
+        "939b23adb730edcb8e4b5ae662b5238e": {
+            "text": "Es wird gepr\u00fcft, ob der Webserver das anwendet \u2026"
+        },
+        "6b998326ee17e1719113e01050fc657c": {
+            "text": "Verkleinern Sie es (MP4 mit H.264, h\u00f6chstens 1080p, etwa 5 Mbit\/s) und laden Sie es dann mit \u201eVideodatei ersetzen\u201c hoch: Titel, Beschreibung und alle anderen Angaben bleiben erhalten."
+        },
+        "6830c76da82dbf7bf503ab9aa708b2d7": {
+            "text": "arbeitet im Browser, das Video wird nicht hochgeladen"
+        },
+        "6b1fb60de22b49fcb3b2a342820e220c": {
+            "text": "das Video wird zum Dienst hochgeladen"
+        },
+        "8094d354d32c362b564d52d026911a95": {
+            "text": "ein Programm f\u00fcr Ihren Computer"
+        },
+        "f7aa306191524d75b49432b791fc2888": {
+            "text": "\u00f6ffnet in einem neuen Fenster"
+        },
+        "b8bac1c0c4964ebedb31fdde54b54b6c": {
+            "text": "Kostenlose Werkzeuge zum Verkleinern:"
+        },
+        "3f7f1e635eaad16d1f449a2f12fcc991": {
+            "text": "Dieses Video ist gesch\u00fctzt, deshalb werden keine Dienste angeboten, zu denen es hochgeladen werden m\u00fcsste."
+        },
+        "1d8fdc1bc68dab4ba1a591c69d4638cd": {
+            "text": ","
+        },
+        "a333bde1dc296d6f8fe3a49c3ff75ef4": {
+            "text": "Es wird auf %d anderen Seite wiederverwendet: Wer diese Seite ansehen darf, kann es ebenfalls laden."
+        },
+        "fa6de99e93b0b4069e93626b25a5cf85": {
+            "text": "Es wird auf %d anderen Seiten wiederverwendet: Wer eine davon ansehen darf, kann es ebenfalls laden."
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "file": "site\/modules\/FieldtypeSelfHostedVideo\/SelfHostedVideoStats.php",
+    "textdomain": "site--modules--fieldtypeselfhostedvideo--selfhostedvideostats-php",
+    "translations": {
+        "d762c1bf24ae6cc0cf8383fcca6abcf2": {
+            "text": "noch nicht abgespielt"
+        },
+        "380229dc3c753e76a6f7f94a08ab1822": {
+            "text": "%d %% bis zur H\u00e4lfte angesehen"
+        },
+        "d0cadc024c0c8588acd47c3e5da9554d": {
+            "text": "%d %% bis zum Ende"
+        },
+        "e1767494481f81f5d1f3fd9788fb9bd6": {
+            "text": "Anonym gez\u00e4hlt: wenn das Video startet, und wenn ein Viertel, die H\u00e4lfte, drei Viertel und alles abgespielt wurden. Wiedergaben von Personen, die die Seite bearbeiten d\u00fcrfen, werden nicht gez\u00e4hlt."
+        },
+        "9c3ceb18abdae02b36c7fc5daacb9a99": {
+            "text": "Letzter %d Tag:"
+        },
+        "10ea5ddef12d790c0e2aa7e06c27f93d": {
+            "text": "Letzte %d Tage:"
+        },
+        "b847e5b1022f4b3f680fa9c46b288c91": {
+            "text": "%d Wiedergabe"
+        },
+        "4e7671bfcb807f3544397b3e81d41f0f": {
+            "text": "%d Wiedergaben"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- vendor/bin/phpunit   (PHPUnit 10 or 11; ProcessWire is found by tests/bootstrap.php, see there for PW_ROOT) -->
+<phpunit bootstrap="tests/bootstrap.php" colors="true" cacheDirectory="tests/.phpunit.cache" failOnWarning="true">
+	<testsuites>
+		<testsuite name="FieldtypeSelfHostedVideo">
+			<directory suffix="Test.php">tests/unit</directory>
+			<directory suffix="Test.php">tests/integration</directory>
+		</testsuite>
+	</testsuites>
+</phpunit>

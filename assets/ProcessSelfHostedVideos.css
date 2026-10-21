@@ -1,0 +1,845 @@
+/**
+ * Video Files: styles of the overview of all videos in the admin
+ *
+ * Colours come from the admin theme where it offers them, so that the list follows
+ * its styles and the dark mode.
+ *
+ * This file is part of the FieldtypeSelfHostedVideo module for ProcessWire 3.x
+ */
+
+/* "Show" and "Order" always have a choice: no blank one, and nothing to mark as required */
+#ProcessSelfHostedVideosFilters .InputfieldStateRequired > .InputfieldHeader::after {
+	content: none;
+}
+
+.ProcessSelfHostedVideosSummary {
+	margin: 1.25rem 0 1rem;
+	font-weight: bold;
+	color: var(--pw-text-color, #354b60);
+}
+
+.ProcessSelfHostedVideosReset {
+	margin-inline-start: 0.75em;
+	font-weight: normal;
+}
+
+.ProcessSelfHostedVideosList {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* one video: picture, what it is, what is open */
+.ProcessSelfHostedVideosItem {
+	display: grid;
+	grid-template-columns: minmax(8rem, 15rem) minmax(0, 3fr) minmax(0, 2fr);
+	gap: 1rem 1.5rem;
+	align-items: start;
+	margin: 0 0 1rem;
+	padding: 1rem;
+	color: var(--pw-text-color, #354b60);
+	background: var(--pw-blocks-background, #fff);
+	border: 1px solid var(--pw-border-color, rgba(128, 128, 128, 0.3));
+}
+
+.ProcessSelfHostedVideosVideo {
+	display: block;
+	width: 100%;
+	height: auto;
+	background: #000;
+}
+
+/* an upright video does not take more room than a wide one */
+.ProcessSelfHostedVideosVideoPortrait {
+	width: auto;
+	max-width: 100%;
+	max-height: 15rem;
+	margin: 0 auto;
+}
+
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosTitle {
+	margin: 0 0 0.25rem;
+	font-size: 1.15rem;
+	font-weight: bold;
+	line-height: 1.3;
+	overflow-wrap: anywhere;
+}
+
+.ProcessSelfHostedVideosItem p {
+	margin: 0 0 0.4rem;
+	overflow-wrap: anywhere;
+}
+
+.ProcessSelfHostedVideosFacts,
+.ProcessSelfHostedVideosPath {
+	color: var(--pw-muted-color, #636b77);
+}
+
+.ProcessSelfHostedVideosPath {
+	font-weight: normal;
+}
+
+.ProcessSelfHostedVideosBadge {
+	display: inline-block;
+	margin-inline-start: 0.4em;
+	padding: 0 0.55em;
+	font-size: 0.8125rem;
+	font-weight: normal;
+	line-height: 1.6;
+	white-space: nowrap;
+	vertical-align: middle;
+	color: var(--pw-text-color, #354b60);
+	border: 1px solid currentColor;
+	border-radius: 1em;
+}
+
+/* Links in the colour of the text, underlined: the link colour of the admin theme is too
+   pale on these backgrounds for people who do not see well */
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosSummary a,
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosItem a,
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPager a,
+.ProcessSelfHostedVideos.ProcessSelfHostedVideosTags a,
+.ProcessSelfHostedVideos.ProcessSelfHostedVideosPlays > p a,
+.ProcessSelfHostedVideos.ProcessSelfHostedVideosMerge a:not(.ui-button),
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosTagsLink a {
+	color: var(--pw-text-color, #354b60);
+	text-decoration: underline;
+	text-underline-offset: 0.15em;
+}
+
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosItem a:hover,
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosSummary a:hover,
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPager a:hover {
+	text-decoration-thickness: 2px;
+}
+
+/* tags: each leads to all videos that have it */
+.ProcessSelfHostedVideos a.ProcessSelfHostedVideosTag {
+	display: inline-block;
+	margin: 0 0.25em 0.25em 0;
+	padding: 0.1em 0.6em;
+	line-height: 1.5;
+	text-decoration: none;
+	color: var(--pw-text-color, #354b60);
+	background: var(--pw-inputs-background, rgba(128, 128, 128, 0.12));
+	border: 1px solid var(--pw-border-color, rgba(128, 128, 128, 0.3));
+	border-radius: 1em;
+}
+
+.ProcessSelfHostedVideos a.ProcessSelfHostedVideosTag:hover,
+.ProcessSelfHostedVideos a.ProcessSelfHostedVideosTag:focus-visible {
+	text-decoration: underline;
+}
+
+.ProcessSelfHostedVideos a.ProcessSelfHostedVideosTag[aria-current] {
+	color: var(--pw-blocks-background, #fff);
+	background: var(--pw-text-color, #354b60);
+	border-color: var(--pw-text-color, #354b60);
+}
+
+/* checklist */
+.ProcessSelfHostedVideosChecksLegend {
+	font-weight: bold;
+}
+
+.ProcessSelfHostedVideosChecksList {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ProcessSelfHostedVideosCheck {
+	display: flex;
+	gap: 0.4em;
+	align-items: baseline;
+	margin: 0 0 0.35rem;
+}
+
+.ProcessSelfHostedVideosCheck .fa {
+	flex: none;
+}
+
+.ProcessSelfHostedVideosCheck_todo .fa {
+	color: #c62828;
+}
+
+.ProcessSelfHostedVideosCheck_warning .fa {
+	color: #b45309;
+}
+
+.ProcessSelfHostedVideosChecksDone .fa {
+	color: #2e7d4f;
+}
+
+.ProcessSelfHostedVideosCheckNote {
+	display: block;
+	font-size: 0.875rem;
+	color: var(--pw-muted-color, #636b77);
+}
+
+/* free tools for making a video smaller, below the note of a check about its size */
+.ProcessSelfHostedVideosCheckTools {
+	display: block;
+	margin-top: 0.4em;
+	font-size: 0.875rem;
+}
+
+.ProcessSelfHostedVideosCheckToolsList {
+	margin: 0.15em 0 0;
+	padding-left: 1.25em;
+	list-style: disc;
+}
+
+.ProcessSelfHostedVideosCheckToolsList li {
+	margin: 0.1em 0;
+}
+
+/* the text colour of the checklist, underlined: the link colour of some theme styles is too light on white */
+.pw-content .ProcessSelfHostedVideosCheckToolsList a,
+.ProcessSelfHostedVideosCheckToolsList a {
+	color: var(--pw-text-color, #354b60);
+	text-decoration: underline;
+}
+
+.ProcessSelfHostedVideosCheckToolsList a:hover,
+.ProcessSelfHostedVideosCheckToolsList a:focus {
+	text-decoration-thickness: 2px;
+}
+
+.ProcessSelfHostedVideosCheckToolKind {
+	color: var(--pw-muted-color, #636b77);
+}
+
+/* pages of the list: which videos are shown, and links to the other pages */
+.ProcessSelfHostedVideosPager {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem 1.5rem;
+	margin: 1.5rem 0;
+	color: var(--pw-text-color, #354b60);
+}
+
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPagerRange {
+	margin: 0;
+	font-size: 0.875rem;
+	color: var(--pw-muted-color, #636b77);
+}
+
+.ProcessSelfHostedVideosPagerLinks {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPagerNumbers {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.3rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPagerNumbers li {
+	margin: 0;
+	padding: 0;
+}
+
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPager .ProcessSelfHostedVideosPagerNumber,
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPager .ProcessSelfHostedVideosPagerStep {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.35em;
+	min-width: 2.4rem;
+	height: 2.4rem;
+	padding: 0 0.7rem;
+	font-weight: bold;
+	line-height: 1;
+	color: var(--pw-text-color, #354b60);
+	text-decoration: none;
+	background: var(--pw-blocks-background, #fff);
+	border: 1px solid var(--pw-border-color, rgba(128, 128, 128, 0.3));
+	border-radius: 999px;
+	transition: background-color 0.15s, border-color 0.15s;
+}
+
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPager a.ProcessSelfHostedVideosPagerNumber:hover,
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPager a.ProcessSelfHostedVideosPagerStep:hover {
+	background: #eef2f8;
+	background: color-mix(in srgb, var(--pw-main-color, #345fa3) 9%, var(--pw-blocks-background, #fff));
+	border-color: currentColor;
+	text-decoration: none;
+}
+
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPager a:focus-visible {
+	outline: 2px solid var(--pw-text-color, #354b60);
+	outline-offset: 2px;
+}
+
+/* the page shown: filled, a little darker than the main colour for the contrast of its number */
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPager .ProcessSelfHostedVideosPage {
+	color: #fff;
+	background: var(--pw-main-color, #345fa3);
+	background: color-mix(in srgb, var(--pw-main-color, #345fa3) 80%, #000);
+	border-color: transparent;
+}
+
+/* "Previous" on the first page and "Next" on the last: not shown, but keeping their place,
+   so that the numbers stay where they are from page to page */
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPager .ProcessSelfHostedVideosPagerOff {
+	visibility: hidden;
+}
+
+.ProcessSelfHostedVideosPagerGap {
+	padding: 0 0.2rem;
+	color: var(--pw-muted-color, #636b77);
+}
+
+/* phones: the numbers alone carry the pages, "Previous" and "Next" keep only their arrows */
+@media (max-width: 640px) {
+	.ProcessSelfHostedVideos .ProcessSelfHostedVideosPager .ProcessSelfHostedVideosPagerStep {
+		padding: 0;
+	}
+	.ProcessSelfHostedVideosPagerStep span {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.ProcessSelfHostedVideos .ProcessSelfHostedVideosPager a {
+		transition: none;
+	}
+}
+
+.ProcessSelfHostedVideosSr {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* tablets: the checklist moves below the description */
+@media (max-width: 959px) {
+	.ProcessSelfHostedVideosItem {
+		grid-template-columns: minmax(7rem, 12rem) minmax(0, 1fr);
+	}
+	.ProcessSelfHostedVideosChecks {
+		grid-column: 2;
+	}
+}
+
+/* phones: everything in one column */
+@media (max-width: 599px) {
+	.ProcessSelfHostedVideosItem {
+		grid-template-columns: minmax(0, 1fr);
+	}
+	.ProcessSelfHostedVideosChecks {
+		grid-column: 1;
+	}
+	.ProcessSelfHostedVideosMedia {
+		max-width: 20rem;
+	}
+}
+
+/* The bar above the list: what it holds, and actions on several videos at once ***************/
+
+.ProcessSelfHostedVideosBar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.6rem 1.25rem;
+	margin: 1.25rem 0 1rem;
+	padding: 0.65rem 1rem;
+	color: var(--pw-text-color, #354b60);
+	background: var(--pw-blocks-background, #fff);
+	border: 1px solid var(--pw-border-color, rgba(128, 128, 128, 0.3));
+	transition: background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+
+/* videos are selected: the bar stands out and goes along at the top while the list scrolls */
+.ProcessSelfHostedVideosBarSelecting {
+	position: sticky;
+	top: 0;
+	z-index: 30;
+	background: #eef2f8;
+	background: color-mix(in srgb, var(--pw-main-color, #345fa3) 9%, var(--pw-blocks-background, #fff));
+	border-color: var(--pw-main-color, #345fa3);
+	box-shadow: inset 4px 0 0 var(--pw-main-color, #345fa3), 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.ProcessSelfHostedVideosBarMain {
+	display: flex;
+	flex: 1 1 18rem;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4rem 0.9rem;
+	min-width: 0;
+}
+
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosBar .ProcessSelfHostedVideosSummary,
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosSelected {
+	margin: 0;
+	font-weight: bold;
+}
+
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosBarHint {
+	margin: 0 0 0 auto;
+	font-size: 0.875rem;
+	color: var(--pw-muted-color, #636b77);
+}
+
+.ProcessSelfHostedVideosBarMain [hidden],
+.ProcessSelfHostedVideosBar [hidden] {
+	display: none !important;
+}
+
+/* "Clear selection": a quiet link */
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosClear {
+	padding: 0;
+	font: inherit;
+	font-size: 0.875rem;
+	color: inherit;
+	background: none;
+	border: 0;
+	text-decoration: underline;
+	text-underline-offset: 0.15em;
+	cursor: pointer;
+}
+
+/* without the script there is nothing to select all with */
+.ProcessSelfHostedVideosSelectAll {
+	display: none;
+	align-items: center;
+}
+
+.ProcessSelfHostedVideosSelectAll.ProcessSelfHostedVideosSelectAllReady {
+	display: inline-flex;
+}
+
+.ProcessSelfHostedVideosSelectAll .uk-checkbox,
+.ProcessSelfHostedVideosSelect .uk-checkbox {
+	width: 1.25rem;
+	height: 1.25rem;
+	margin: 0;
+	cursor: pointer;
+}
+
+/* the actions: shown once videos are selected (always, without the script) */
+.ProcessSelfHostedVideosBulk {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.ProcessSelfHostedVideosBarReady:not(.ProcessSelfHostedVideosBarSelecting) .ProcessSelfHostedVideosBulk {
+	display: none;
+}
+
+.ProcessSelfHostedVideosBulkField {
+	display: flex;
+	margin: 0;
+}
+
+.ProcessSelfHostedVideosBulk .uk-select,
+.ProcessSelfHostedVideosBulk .uk-input {
+	width: auto;
+	min-width: 11rem;
+	height: 2.4rem;
+}
+
+.ProcessSelfHostedVideosBulk .uk-input {
+	width: 12rem;
+}
+
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosBulkApply {
+	display: inline-flex;
+	align-items: center;
+	height: 2.4rem;
+	padding: 0 1.1rem;
+	font: inherit;
+	font-weight: bold;
+	white-space: nowrap;
+	color: var(--pw-text-color, #354b60);
+	background: var(--pw-blocks-background, #fff);
+	border: 1px solid currentColor;
+	border-radius: 999px;
+	cursor: pointer;
+	transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosBulkApply.ProcessSelfHostedVideosBulkApplyReady {
+	color: #fff;
+	/* a little darker than the main colour: white small text needs the contrast with light main colours */
+	background: var(--pw-main-color, #345fa3);
+	background: color-mix(in srgb, var(--pw-main-color, #345fa3) 80%, #000);
+	border-color: transparent;
+}
+
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosBulkApply.ProcessSelfHostedVideosBulkApplyDanger {
+	color: #fff;
+	background: #b3261e;
+	border-color: #b3261e;
+}
+
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosBulkApply:focus-visible {
+	outline: 2px solid var(--pw-text-color, #354b60);
+	outline-offset: 2px;
+}
+
+/* "all of this choice": its own line below the actions */
+.ProcessSelfHostedVideosBulkAll {
+	display: inline-flex;
+	flex-basis: 100%;
+	align-items: center;
+	gap: 0.4em;
+	font-size: 0.875rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.ProcessSelfHostedVideosBar,
+	.ProcessSelfHostedVideos .ProcessSelfHostedVideosBulkApply {
+		transition: none;
+	}
+}
+
+/* the box of each video, in front of its title */
+.ProcessSelfHostedVideosHead {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.6em;
+}
+
+.ProcessSelfHostedVideosSelect {
+	flex: none;
+	padding-top: 0.2em;
+}
+
+.ProcessSelfHostedVideosSelect .uk-checkbox {
+	width: 1.25rem;
+	height: 1.25rem;
+	cursor: pointer;
+}
+
+/* the question before deleting */
+.ProcessSelfHostedVideosConfirmList {
+	margin: 1rem 0;
+	padding-inline-start: 1.25rem;
+}
+
+.ProcessSelfHostedVideosConfirmList li {
+	margin: 0.25em 0;
+}
+
+/* deleting videos that texts place with a tag (0.51.0) */
+.ProcessSelfHostedVideosConfirmWarning {
+	padding: .55em .9em;
+	border-left: 4px solid #b3261e;
+	background: #fdecea;
+	color: #5f1410;
+}
+.ProcessSelfHostedVideosBadge.ProcessSelfHostedVideosBadgeWarn {
+	background: #fdecea;
+	color: #5f1410;
+	border-color: #b3261e;
+}
+.ProcessSelfHostedVideosBadgeWarn {
+	white-space: normal;
+}
+
+/* video tags in texts that show nothing (0.54.0) */
+.ProcessSelfHostedVideosBroken {
+	padding: .55em .9em;
+	border-left: 4px solid #b3261e;
+	background: #fdecea;
+	color: #5f1410;
+}
+.ProcessSelfHostedVideosBroken a {
+	color: inherit;
+	font-weight: 600;
+}
+.ProcessSelfHostedVideosTagsLink {
+	margin: 0 0 .5em;
+	text-align: right;
+	font-size: .875rem;
+}
+.ProcessSelfHostedVideosTagsTable {
+	width: 100%;
+	margin: 1em 0;
+	border-collapse: collapse;
+}
+.ProcessSelfHostedVideosTagsTable th,
+.ProcessSelfHostedVideosTagsTable td {
+	padding: .55em .75em .55em 0;
+	text-align: left;
+	vertical-align: top;
+	color: var(--pw-text-color, #354b60);
+	border-bottom: 1px solid rgba(0, 0, 0, .14);
+}
+.ProcessSelfHostedVideosTagsTable th {
+	font-weight: 600;
+	border-bottom-width: 2px;
+}
+.ProcessSelfHostedVideosTagsTable code {
+	white-space: nowrap;
+	color: inherit;
+	background: rgba(0, 0, 0, .05);
+	padding: .1em .3em;
+	border-radius: .25em;
+}
+.ProcessSelfHostedVideosRecheckNote {
+	display: block;
+	margin-top: .5em;
+	font-size: .875rem;
+	color: var(--pw-text-color, #354b60);
+}
+.ProcessSelfHostedVideosRecheck {
+	margin: 1.5em 0 1em;
+}
+
+/* videos uploaded more than once (0.55.0) */
+.ProcessSelfHostedVideosDuplicates {
+	padding: .55em .9em;
+	border-left: 4px solid #1a66b8;
+	background: #eaf2fb;
+	color: #0f3a66;
+}
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosDuplicates a {
+	color: inherit;
+	font-weight: 600;
+	text-decoration: underline;
+}
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosItem a.ProcessSelfHostedVideosKeep {
+	display: inline-block;
+	margin-inline-start: .35em;
+	font-weight: 600;
+	white-space: nowrap;
+}
+.ProcessSelfHostedVideosMergeNotes {
+	margin: .25em 0 .5em;
+	padding-inline-start: 1.25rem;
+	font-size: .9375rem;
+	color: var(--pw-text-color, #354b60);
+}
+
+/* what can be done with one video: replace its file, see its plays (0.55.0) */
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosItem .ProcessSelfHostedVideosActions a {
+	display: inline-flex;
+	align-items: center;
+	gap: .3em;
+	margin-inline-end: 1.1em;
+	white-space: nowrap;
+}
+.ProcessSelfHostedVideosSpark {
+	flex: none;
+	fill: #2a78d6;
+	margin-inline-end: .15em;
+}
+.ProcessSelfHostedVideosSparkBase {
+	stroke: currentColor;
+	stroke-opacity: .25;
+	stroke-width: 1;
+}
+
+/* the plays of one video (0.55.0) */
+.ProcessSelfHostedVideosPlays {
+	max-width: 60rem;
+}
+.ProcessSelfHostedVideosPeriods ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .4em;
+	margin: 0 0 1.25em;
+	padding: 0;
+	list-style: none;
+}
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPeriods a {
+	display: inline-block;
+	padding: .3em .9em;
+	line-height: 1.4;
+	text-decoration: none;
+	color: var(--pw-text-color, #354b60);
+	border: 1px solid var(--pw-border-color, rgba(128, 128, 128, .45));
+	border-radius: 1em;
+}
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPeriods a:hover,
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPeriods a:focus-visible {
+	text-decoration: underline;
+}
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosPeriods a[aria-current] {
+	color: var(--pw-blocks-background, #fff);
+	background: var(--pw-text-color, #354b60);
+	border-color: var(--pw-text-color, #354b60);
+}
+.ProcessSelfHostedVideosTiles {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+	gap: .75rem;
+	margin: 0 0 1.5rem;
+}
+.ProcessSelfHostedVideosTile {
+	padding: .75rem 1rem;
+	border: 1px solid var(--pw-border-color, rgba(128, 128, 128, .3));
+	border-radius: .5rem;
+}
+.ProcessSelfHostedVideosTile p {
+	margin: 0;
+}
+.ProcessSelfHostedVideosTileLabel,
+.ProcessSelfHostedVideosTileNote {
+	font-size: .875rem;
+	color: var(--pw-muted-color, #636b77);
+}
+.ProcessSelfHostedVideosTileValue {
+	font-size: 1.75rem;
+	font-weight: 600;
+	line-height: 1.3;
+	color: var(--pw-text-color, #354b60);
+}
+.ProcessSelfHostedVideosChart {
+	margin: 0 0 1.75rem;
+}
+.ProcessSelfHostedVideos .ProcessSelfHostedVideosChartTitle {
+	margin: 0 0 .5rem;
+	font-size: 1rem;
+	font-weight: 600;
+	color: var(--pw-text-color, #354b60);
+}
+.ProcessSelfHostedVideosChartArea {
+	position: relative;
+}
+.ProcessSelfHostedVideosChartArea svg {
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow: visible;
+}
+.ProcessSelfHostedVideosChartBar {
+	fill: #2a78d6;
+}
+.ProcessSelfHostedVideosChartGrid {
+	stroke: currentColor;
+	stroke-opacity: .12;
+	stroke-width: 1;
+}
+.ProcessSelfHostedVideosChartAxis {
+	stroke: currentColor;
+	stroke-opacity: .35;
+	stroke-width: 1;
+}
+.ProcessSelfHostedVideosChartTick {
+	fill: var(--pw-muted-color, #636b77);
+	font-size: 12px;
+}
+.ProcessSelfHostedVideosChartHit {
+	fill: transparent;
+}
+.ProcessSelfHostedVideosChartHit:hover,
+.ProcessSelfHostedVideosChartHit.is-active {
+	fill: rgba(42, 120, 214, .1);
+}
+.ProcessSelfHostedVideosChartTip {
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	padding: .3em .6em;
+	font-size: .875rem;
+	font-weight: 600;
+	white-space: nowrap;
+	pointer-events: none;
+	color: var(--pw-text-color, #354b60);
+	background: var(--pw-blocks-background, #fff);
+	border: 1px solid var(--pw-border-color, rgba(128, 128, 128, .35));
+	border-radius: .35em;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .12);
+	transform: translateX(-50%);
+}
+.ProcessSelfHostedVideosReach {
+	margin: 0 0 1.5rem;
+}
+.ProcessSelfHostedVideosReachList {
+	margin: .75rem 0 0;
+	padding: 0;
+	list-style: none;
+}
+.ProcessSelfHostedVideosReachRow {
+	display: grid;
+	grid-template-columns: minmax(7rem, 10rem) 1fr minmax(8.5rem, auto);
+	align-items: center;
+	gap: .75rem;
+	margin: 0 0 .5rem;
+}
+.ProcessSelfHostedVideosReachLabel,
+.ProcessSelfHostedVideosReachValue {
+	color: var(--pw-text-color, #354b60);
+}
+.ProcessSelfHostedVideosReachCount {
+	color: var(--pw-muted-color, #636b77);
+}
+.ProcessSelfHostedVideosReachTrack {
+	display: block;
+	height: 14px;
+	background: rgba(42, 120, 214, .14);
+	border-radius: 0 4px 4px 0;
+}
+.ProcessSelfHostedVideosReachBar {
+	display: block;
+	height: 100%;
+	min-width: 2px;
+	background: #2a78d6;
+	border-radius: 0 4px 4px 0;
+}
+.ProcessSelfHostedVideosPlaysTable {
+	margin: 0 0 1.5rem;
+}
+.ProcessSelfHostedVideosPlaysTable summary {
+	cursor: pointer;
+	font-weight: 600;
+	color: var(--pw-text-color, #354b60);
+}
+.ProcessSelfHostedVideosPlaysTable td {
+	font-variant-numeric: tabular-nums;
+}
+.ProcessSelfHostedVideosNote {
+	font-size: .9375rem;
+	color: var(--pw-muted-color, #636b77);
+}
+@media (max-width: 600px) {
+	.ProcessSelfHostedVideosReachRow {
+		grid-template-columns: 1fr auto;
+	}
+	.ProcessSelfHostedVideosReachTrack {
+		grid-column: 1 / -1;
+		order: 3;
+	}
+}
+.ProcessSelfHostedVideosPlaysTable tbody th {
+	font-weight: normal;
+	border-bottom-width: 1px;
+}
+@media (max-width: 640px) {
+	/* the chart keeps a size its labels can be read at, and scrolls sideways by itself */
+	.ProcessSelfHostedVideosChartArea {
+		overflow-x: auto;
+		padding-top: 2.4em;
+		margin-top: -2.4em;
+	}
+	.ProcessSelfHostedVideosChartArea svg {
+		min-width: 560px;
+	}
+}

@@ -1,0 +1,33 @@
+{
+    "file": "site\/modules\/FieldtypeSelfHostedVideo\/SelfHostedVideoUsage.php",
+    "textdomain": "site--modules--fieldtypeselfhostedvideo--selfhostedvideousage-php",
+    "translations": {
+        "2c365f845a27e61d167ef2021e23083c": {
+            "text": "im Text \u201e%s\u201c"
+        },
+        "aea19cf77dd86e24a18d273f47a9e27d": {
+            "text": "wiederverwendet in \u201e%s\u201c"
+        },
+        "b8c84d283e84704a70a1dc2c3d84f256": {
+            "text": "Videofeld \u201e%s\u201c"
+        },
+        "de0e70c3be290ab936d39cdaf5b20f44": {
+            "text": "%1$s (Text \u201e%2$s\u201c)"
+        },
+        "8a5b441aacf80d04c4035b830b9a6314": {
+            "text": "Der Tag zeigt dort jetzt nichts mehr: entfernen Sie ihn, oder setzen Sie ein anderes Video ein."
+        },
+        "c339f543fd98a7b2f2203fc6ccb92905": {
+            "text": "Eingebunden auf %d Seite:"
+        },
+        "5ebe9db56dca6801b4f9096acee0edcd": {
+            "text": "Eingebunden auf %d Seiten:"
+        },
+        "3d421a5d038686adc9e2292189bcaff4": {
+            "text": "Das Video %1$s war mit einem Tag in einem Text eingebunden: %2$s."
+        },
+        "c51f326eecce1b13865e2201c67db808": {
+            "text": "Die Videos %1$s waren mit Tags in Texten eingebunden: %2$s."
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "file": "site\/modules\/FieldtypeSelfHostedVideo\/SelfHostedVideoFaststart.php",
+    "textdomain": "site--modules--fieldtypeselfhostedvideo--selfhostedvideofaststart-php",
+    "translations": {
+        "ca4f25ccafe352abb89fa5430e33e87a": {
+            "text": "keine lesbare MP4-Datei"
+        },
+        "5fe84cd3d9e72c7bfd401fdd61f2888c": {
+            "text": "das Inhaltsverzeichnis der Datei ist zu gro\u00df"
+        },
+        "ae8d4af72e69f2f7d7506a11acfeb901": {
+            "text": "nicht genug Speicherplatz"
+        },
+        "cfee7c569ae07155217a519d2d69aedf": {
+            "text": "die Datei kann nicht gelesen werden"
+        },
+        "ea69dc648c545bb37edf419ff97241a2": {
+            "text": "das Inhaltsverzeichnis der Datei kann nicht gelesen werden"
+        },
+        "20b09764ea4921e16e221c5caf4570a9": {
+            "text": "das Inhaltsverzeichnis der Datei ist komprimiert"
+        },
+        "bbb2394e151ed34ea52989d7315dc8e1": {
+            "text": "das Inhaltsverzeichnis konnte nicht neu geschrieben werden"
+        },
+        "b81fe8d60dbee57efca74f8694cbb3db": {
+            "text": "neben dem Video kann keine Datei geschrieben werden"
+        },
+        "5c79d4687b3fd1718e56ac044e09439d": {
+            "text": "die Datei konnte nicht geschrieben werden"
+        },
+        "abaf5a8d6ce9a853f14fd271fe7355ae": {
+            "text": "die neue Datei ist nicht wie erwartet geworden"
+        },
+        "c54941644931ede9d7e3309a77c717e2": {
+            "text": "die Datei konnte nicht ersetzt werden"
+        },
+        "66560103953008abab49b9c2d258b688": {
+            "text": "die Datei ist unvollst\u00e4ndig"
+        },
+        "391643629dd7644d26e8bc8a4e732c54": {
+            "text": "die Datei ist fragmentiert"
+        },
+        "84217b7943acff415495d6125b8a2a45": {
+            "text": "die Datei hat mehr als ein Inhaltsverzeichnis"
+        },
+        "2106f048660239f25c5ee4f835edf0f5": {
+            "text": "die Datei hat kein Inhaltsverzeichnis oder keine Mediendaten"
+        }
+    }
+}

@@ -1,0 +1,996 @@
+{
+    "file": "site\/modules\/FieldtypeSelfHostedVideo\/InputfieldSelfHostedVideo.module.php",
+    "textdomain": "site--modules--fieldtypeselfhostedvideo--inputfieldselfhostedvideo-module-php",
+    "translations": {
+        "cbe18bc3cdf4dba823a85578f261ae14": {
+            "text": "Video ausw\u00e4hlen"
+        },
+        "303db84aaecc6e29e70bb43b45e45d8d": {
+            "text": "Videos hierher ziehen und ablegen"
+        },
+        "69bdc06fd1c1699967f5f544faa7eab6": {
+            "text": "Seiten der Liste"
+        },
+        "be80256370788ee6d94e2597c3fd7a75": {
+            "text": "Seite %d"
+        },
+        "3a1ed905045e5cf29efec452131f9403": {
+            "text": "Seite %1$d von %2$d"
+        },
+        "0777a6881d251a2c26fa48528f390c65": {
+            "text": "Video %1$d von %2$d"
+        },
+        "4ab91ed5dc4eabae7b3212f7d138c21a": {
+            "text": "Videos %1$d\u2013%2$d von %3$d"
+        },
+        "dd1f775e443ff3b9a89270713580a51b": {
+            "text": "Zur\u00fcck"
+        },
+        "10ac3d04253ef7e1ddc73e6091c0cd55": {
+            "text": "Weiter"
+        },
+        "4dc23b29ac04ff8a10ee727ebf8f9560": {
+            "text": "Pro Seite"
+        },
+        "d1ec1c1272bb4909195e66f41465eb92": {
+            "text": "\u201e%s\u201c verschieben"
+        },
+        "9d01b1dc2e40bd8af397904ff1ff68f5": {
+            "text": "Video verschieben"
+        },
+        "f51153936a996a5392f6d7f164b060e3": {
+            "text": "Eine Stelle nach oben"
+        },
+        "51e5b2aa456d3433772345498446aad0": {
+            "text": "Eine Stelle nach unten"
+        },
+        "b06aa155debef7f13f0a5ac8fcaea355": {
+            "text": "An den Anfang"
+        },
+        "b881fcbc6c92e77ef9e9084e7d7126fe": {
+            "text": "Ans Ende"
+        },
+        "816d0cc28a6cf26f74b7b94066252a62": {
+            "text": "An Position"
+        },
+        "aa55eeb3bfe951eb9d56e8a919d80781": {
+            "text": "von %d"
+        },
+        "6bc362dbf494c61ea117fe3c71ca48a5": {
+            "text": "Verschieben"
+        },
+        "3a6ee9d1f900f7eb1412293c8214152d": {
+            "text": "Ziehen oder mit den Pfeiltasten verschieben"
+        },
+        "797064dfb30b3bdf043df959a9128b85": {
+            "text": "\u201e%1$s\u201c steht jetzt an Position %2$d von %3$d."
+        },
+        "2d32c90b6c34b9b832e333f4549863dc": {
+            "text": "Speichern Sie die Seite, damit die neue Reihenfolge erhalten bleibt."
+        },
+        "eb92025cb8c66f1850c13a9b602a1856": {
+            "text": "Alle anzeigen"
+        },
+        "5ffc78e638792490519eca3d127d80d5": {
+            "text": "\u201e%s\u201c wird hochgeladen"
+        },
+        "a18e089aa76cfb34de574b442ce433ef": {
+            "text": "%1$s von %2$s"
+        },
+        "1ba79a093cc977eb03ab84e98844c41b": {
+            "text": "Wird abgeschlossen \u2026"
+        },
+        "ea4788705e6873b424c65e91c2846b19": {
+            "text": "Abbrechen"
+        },
+        "8a02db443ab9cb6fc3d98e0eacdf069e": {
+            "text": "Upload von \u201e%s\u201c abbrechen"
+        },
+        "f915a95e609bbd517a8a1e7bdcceef37": {
+            "text": "Erneut versuchen"
+        },
+        "894c406f6f8603150001343e4de91a53": {
+            "text": "Verbindung unterbrochen. Neuer Versuch \u2026"
+        },
+        "ecac555ab1f59a4e2eaa1070184c07f5": {
+            "text": "Keine Internetverbindung. Das Hochladen geht von selbst weiter, sobald die Verbindung wieder da ist."
+        },
+        "d86b8ba3da6f46dc60bb6124a8ffe536": {
+            "text": "Die Verbindung ist wieder da. Das Hochladen geht weiter."
+        },
+        "b44a1698dc77a9ed50d84d913f4f670b": {
+            "text": "%s\/s"
+        },
+        "d2c9aae3aacb54be8edb80bab5dc11a0": {
+            "text": "noch etwa %s"
+        },
+        "6e1ced397b288de8e88fffd4f511009b": {
+            "text": "%d Sek."
+        },
+        "ff4f2cb8c009e84bc11e515e7da46448": {
+            "text": "%d Min."
+        },
+        "57d2fbcab2bdff3f209a43122211c905": {
+            "text": "%1$d Std. %2$d Min."
+        },
+        "46f254cf64406cdb97451c5bdee763f8": {
+            "text": "Datei wird gepr\u00fcft \u2026"
+        },
+        "678bf56c280f0c4e8ad6c0f7ae745b31": {
+            "text": "Ihr Browser kann dieses Video nicht abspielen, daher k\u00f6nnten es auch viele Besucher nicht ansehen. Am besten exportieren Sie es noch einmal als MP4 (H.264)."
+        },
+        "3c5da1efbb8434d192ae56f027c25f54": {
+            "text": "Trotzdem hochladen"
+        },
+        "425854001e9d9cbf19a7e42a86d44c58": {
+            "text": "\u201e%s\u201c trotzdem hochladen"
+        },
+        "3f8bd1faa474e71ee9d2fc178e8e9f9f": {
+            "text": "Nicht hochladen"
+        },
+        "6e2ae4232d325f0f4aab9a7f59de244e": {
+            "text": "Das Hochladen von \u201e%1$s\u201c (%2$s) wurde bei %3$s unterbrochen. W\u00e4hlen Sie dieselbe Datei noch einmal, um dort weiterzumachen, wo es aufgeh\u00f6rt hat."
+        },
+        "0f801fb548b542bb24d66d9d9fed2f22": {
+            "text": "Datei erneut w\u00e4hlen"
+        },
+        "a429a1ad5d481ba11380cecdcce3962a": {
+            "text": "\u201e%s\u201c erneut w\u00e4hlen, um das Hochladen fortzusetzen"
+        },
+        "d94b42030b9785fd754d5c1754961269": {
+            "text": "Verwerfen"
+        },
+        "b55d1480087db2ac1d44639c02c18d00": {
+            "text": "Unterbrochenes Hochladen von \u201e%s\u201c verwerfen"
+        },
+        "c60e797305adff3c27cdeebe22266c3f": {
+            "text": "Das unterbrochene Hochladen wurde verworfen."
+        },
+        "06210c9a3851f235653fd3c02994c4ed": {
+            "text": "\u201e%1$s\u201c ist nicht die Datei, die hochgeladen wurde (\u201e%2$s\u201c, %3$s). W\u00e4hlen Sie diese Datei, um fortzusetzen."
+        },
+        "17872a442370dcf76aa1346d507e7573": {
+            "text": "Es geht dort weiter, wo es aufgeh\u00f6rt hat: %s waren schon auf dem Server."
+        },
+        "0e707ce08ed92ff293ad8702dc764407": {
+            "text": "Was schon angekommen war, ist nicht mehr auf dem Server. Das Hochladen beginnt von vorne."
+        },
+        "74398b7db4bd1b140bacd5287356b4fd": {
+            "text": "Video %1$d von %2$d \u00b7 insgesamt %3$s von %4$s"
+        },
+        "6b5ce66d349a3c4ff6cb4efcb67b52de": {
+            "text": "Video %1$d von %2$d"
+        },
+        "5c3f0154c20d85c801ce2d0373faa5a4": {
+            "text": "Alle Uploads dieses Feldes"
+        },
+        "d13c3f7baed576768b11a714ef4d90e2": {
+            "text": "angehalten"
+        },
+        "105b296a83f9c105355403f3332af50f": {
+            "text": "Pause"
+        },
+        "a0bfb8e59e6c13fc8d990781f77694fe": {
+            "text": "Fortsetzen"
+        },
+        "f2153739828a3cca28c354e96443fc0f": {
+            "text": "Hochladen von \u201e%s\u201c anhalten"
+        },
+        "2c6ea5e86fc6545ca3402f313751c372": {
+            "text": "Hochladen von \u201e%s\u201c fortsetzen"
+        },
+        "8b47b882549c6be104c8b8492deedf6c": {
+            "text": "Angehalten bei %1$s \u00b7 %2$s von %3$s. Was schon angekommen ist, bleibt auf dem Server."
+        },
+        "ed2b2c9769256c8aab1d5868582693f4": {
+            "text": "Das Hochladen von \u201e%s\u201c ist angehalten."
+        },
+        "de8e4b1ba20011a16e488a6234ff884c": {
+            "text": "Das Hochladen von \u201e%s\u201c geht weiter."
+        },
+        "cf0d1d7a91b9b8512b9f08a51df62cf1": {
+            "text": "Der Upload wurde unterbrochen. Es ist nichts verloren: \u201eErneut versuchen\u201c setzt dort fort, wo er stehen geblieben ist."
+        },
+        "c1f3165f5433ee2cb9c6c03b79792034": {
+            "text": "Der Upload ist fehlgeschlagen:"
+        },
+        "902904645846e741c31e9d9ab9d8f7ee": {
+            "text": "\u201e%s\u201c wurde hochgeladen."
+        },
+        "277515b2bd8e25466ac8af77e11ed23e": {
+            "text": "Upload von \u201e%s\u201c abgebrochen."
+        },
+        "9558941412b19f00cfd21e6d7859c797": {
+            "text": "Diese Datei ist gr\u00f6\u00dfer als die f\u00fcr dieses Feld erlaubten %s."
+        },
+        "464f83999edca9b5507afe2d124093c7": {
+            "text": "Diesem Feld k\u00f6nnen keine weiteren Videos hinzugef\u00fcgt werden."
+        },
+        "631027d33f0001ab2fb0a4bb9ad5910f": {
+            "text": "Ein Video wird noch hochgeladen. Wenn Sie die Seite jetzt verlassen, wird es nicht zur Seite hinzugef\u00fcgt."
+        },
+        "7a0eb86301038ce9ede06bc5f2c38b03": {
+            "text": "Wartet, bis es an der Reihe ist \u2026"
+        },
+        "f59d2fb99b11071525509d0dfded9c49": {
+            "text": "Bitte w\u00e4hlen Sie zuerst die Sprache der Untertitel."
+        },
+        "cba7b0b3485aff82c21a00ab87bfe90b": {
+            "text": "Bitte geben Sie einen Sprachcode wie \u201erm\u201c und den Namen der Sprache ein."
+        },
+        "3a2c3448e087ba813d9665755d766786": {
+            "text": "Untertitel werden gespeichert \u2026"
+        },
+        "5c1f0ceb0ea95f21fd384adc6ce46d85": {
+            "text": "Untertitel werden entfernt \u2026"
+        },
+        "dca9548bee2ededb689a7f14c7c1d843": {
+            "text": "Die Untertitel konnten nicht gespeichert werden:"
+        },
+        "0ed3dc8b15369f111a9c81e85c304220": {
+            "text": "Untertitel bearbeiten: %s"
+        },
+        "df3711c387dad876ed668b7fe92ee953": {
+            "text": "WebVTT: eine Zeile mit den Zeiten, etwa 00:00:01.000 --> 00:00:04.000, darunter der Text. Eine Leerzeile zwischen zwei Untertiteln. Die Untertitel werden sofort gespeichert, die Seite muss nicht gespeichert werden."
+        },
+        "4fd3f614dba73c6e24aa60e2f5a9a354": {
+            "text": "Untertitel speichern"
+        },
+        "735a26ee520a81d96daa6b1d3c4c0a93": {
+            "text": "Die Untertitel werden geladen \u2026"
+        },
+        "e8dbc5909c1169ea235aacea295d474f": {
+            "text": "Die Untertitel haben ungespeicherte \u00c4nderungen. Trotzdem schlie\u00dfen?"
+        },
+        "bdb511a5da24ff7798a30bd688ba5c05": {
+            "text": "Die Untertitel in %s entfernen? Das wird sofort wirksam."
+        },
+        "8303304ee8868bd38af7c21e1838444d": {
+            "text": "Diese Datei ist zu gro\u00df f\u00fcr eine Untertiteldatei."
+        },
+        "834aa39471bd998f0ad7ff9958666ec0": {
+            "text": "Diese Datei ist leer."
+        },
+        "ab57fd0432e25d5b3013133a1c910d56": {
+            "text": "KB"
+        },
+        "8d8fcc1abd550c5f25dbfaa57d59cb67": {
+            "text": "MB"
+        },
+        "79cba1185463850dedba31f172f1dc5b": {
+            "text": "GB"
+        },
+        "6da2beb465570bc19b80140166579a59": {
+            "text": "Vorschaubild wird erstellt \u2026"
+        },
+        "33a79fe53c64530b7a06cf00e002cde9": {
+            "text": "Vorschaubild wird gespeichert \u2026"
+        },
+        "993ca8fad9b57cba54bc651e5b38b22a": {
+            "text": "Vorschaubild gespeichert."
+        },
+        "8092f831841531f6e1245b811ac3798b": {
+            "text": "Aus diesem Video konnte in Ihrem Browser kein Vorschaubild erstellt werden. Sie k\u00f6nnen stattdessen ein Bild hochladen."
+        },
+        "ae551065cefc7467d272bfe175125fa9": {
+            "text": "Das Vorschaubild konnte nicht gespeichert werden:"
+        },
+        "2d08ae23eca97ede84a4855b1f00962c": {
+            "text": "Bild bei %s"
+        },
+        "ba11b8feb4e43d227dcabe6565836d24": {
+            "text": "in Verwendung"
+        },
+        "d35db5cf7e720675b60f7c30e9382726": {
+            "text": "Ihr Browser kann aus diesem Video keine Bilder erstellen. Die anderen beiden Wege funktionieren trotzdem."
+        },
+        "7203c6aea6022079667a381e6cd6ea7c": {
+            "text": "Bitte w\u00e4hlen Sie ein JPEG- oder PNG-Bild."
+        },
+        "d42fcf98a076fe102b9e8f2e664fe1b1": {
+            "text": "Diese Datei ist zu gro\u00df zum Hochladen."
+        },
+        "8c12f27d38373369a731409437364ddf": {
+            "text": "Dieser Dateityp ist hier nicht erlaubt. Erlaubt:"
+        },
+        "50c9120a17b6f7113d72530b3aaf1ee0": {
+            "text": "Ersatzdatei wird hochgeladen \u2026"
+        },
+        "acb91c17deb622b65d5db85d8347f766": {
+            "text": "Videodatei ersetzt."
+        },
+        "a133ce267b7ea318f46d247371d308ca": {
+            "text": "Die Videodatei konnte nicht ersetzt werden:"
+        },
+        "b248637f8d652b6b20b5215ea3107ad1": {
+            "text": "Die Videodatei durch \u201e%s\u201c ersetzen? Titel, Beschreibung, Tags und alle anderen Angaben bleiben erhalten. Das wird sofort wirksam."
+        },
+        "71cf54e071aba4cacaab6956bb555ebb": {
+            "text": "Der Server hat nicht wie erwartet geantwortet."
+        },
+        "098badc1ed5851d8ffe3f8902fbe0fdb": {
+            "text": "Die Datei wird vorbereitet \u2026"
+        },
+        "39bbd56c1fd2e5832d6219c16ad8ecba": {
+            "text": "Die Datei ist f\u00fcr Streaming vorbereitet."
+        },
+        "d2a59934693d777794bad31f7c9c35ff": {
+            "text": "Die Datei konnte nicht vorbereitet werden:"
+        },
+        "13348442cc6a27032d2b4aa28b75a5d3": {
+            "text": "Suchen"
+        },
+        "ae57ad59a30edd7a69097bab406bd662": {
+            "text": "Titel, Beschreibung, Dateiname oder Seite"
+        },
+        "c101058e7ea21bbbf2a5ac893088e90b": {
+            "text": "Tag"
+        },
+        "d1cdbbc98aee25edf1ba397e7748b48a": {
+            "text": "Beliebiges Tag"
+        },
+        "1f682bf76b60e5ababda381d4fe0685b": {
+            "text": "Suche l\u00e4uft \u2026"
+        },
+        "9e3b959c3a0c7aea6627bd64d5ca0b44": {
+            "text": "Keine Videos gefunden."
+        },
+        "aeee128831f5f3257ed5a10f1f123fdf": {
+            "text": "%d Videos gefunden."
+        },
+        "7509eccd88a0d5e4648179acb46983ad": {
+            "text": "1 Video gefunden."
+        },
+        "a9255d2b62de3e968b827a40c61c1200": {
+            "text": "%1$d von %2$d Videos angezeigt."
+        },
+        "146ffe2fd9fa5bec3b63b52543793ec7": {
+            "text": "Mehr anzeigen"
+        },
+        "fe0c4c5373023a53f2aba7178d3367a5": {
+            "text": "Dieses Video verwenden"
+        },
+        "30e6e4737e0dd5871550042e76aa2fe9": {
+            "text": "Dieses Video verwenden: %s"
+        },
+        "2563b3ace1347bfa5d0ce7ca1c5dd82f": {
+            "text": "Bereits hier"
+        },
+        "984b002eaf51750e5e86aba55844ec9d": {
+            "text": "Video wird hinzugef\u00fcgt \u2026"
+        },
+        "381b1a4d97aa68439171a3e73f1b9114": {
+            "text": "\u201e%s\u201c wurde hinzugef\u00fcgt. Es ist bereits gespeichert."
+        },
+        "b56b13f253f7af1dc6edcd33e4cb13e1": {
+            "text": "Das Video konnte nicht hinzugef\u00fcgt werden:"
+        },
+        "a92d10120a66ca19843d396b94b1a86d": {
+            "text": "Gefundene Videos"
+        },
+        "56f0605c9795b173abd2e34fab7fc164": {
+            "text": "Gesch\u00fctzt"
+        },
+        "36d71041a16c748778c079fb294d94bf": {
+            "text": "Fehlendes Video"
+        },
+        "8f07c2942f3b6a8b311628bb9689addd": {
+            "text": "Von dieser Seite entfernen"
+        },
+        "3975fbf3cf6c5514eccb6388fe86fd1e": {
+            "text": "Kann nicht gel\u00f6scht werden: wird auf anderen Seiten wiederverwendet"
+        },
+        "ff8284221ba2415272f448ac406fb311": {
+            "text": "Das Original dieses wiederverwendeten Videos existiert nicht mehr. Bitte entfernen Sie es von dieser Seite."
+        },
+        "7c491b68fcdc8169f7aadfffbafaf47d": {
+            "text": "Nach oben"
+        },
+        "07c3e6195b406fdac60370f67542938e": {
+            "text": "Sonstige Felder"
+        },
+        "34e2d1989a1dbf75cd631596133ee5ee": {
+            "text": "Video"
+        },
+        "7d9e36362a5710647ef5cedf0f2dd1ae": {
+            "text": "F\u00fcgen Sie dieses Tag in einen Text dieser Seite ein, dann zeigt die Website das Video an dieser Stelle. In einem Rich-Text-Editor schreibt die Schaltfl\u00e4che \u201eVideo einf\u00fcgen\u201c das Tag f\u00fcr Sie."
+        },
+        "06e172dd7d66b54572fc8134e6c8d6a2": {
+            "text": "Zum Platzieren in einem Text"
+        },
+        "461815e06bd8f790104c0206b2ee3ce2": {
+            "text": "Nach dem Speichern zeigt der Tag dort nichts mehr: entfernen Sie ihn, oder setzen Sie ein anderes Video ein."
+        },
+        "45555dba1f9dfa8eced0cbf117d4d022": {
+            "text": "Was Sie hier \u00e4ndern, ist auch dort zu sehen. Um dieses Video zu l\u00f6schen, entfernen Sie es zuerst von diesen Seiten."
+        },
+        "b683340af967aab44bd9e9cb1b2cc6d0": {
+            "text": "Ein Video von einer anderen Seite wiederverwenden"
+        },
+        "535a27cf163588e78dd8618e53b9eaba": {
+            "text": "Das Video wird hier ohne eine zweite Kopie seiner Datei angezeigt. Titel, Vorschaubild, Untertitel und alles andere bleiben bei der Seite, von der es stammt, und werden dort bearbeitet."
+        },
+        "83e51e82fa5c33e87016f9ede923f980": {
+            "text": "Wiederverwendet"
+        },
+        "24c7ab1cb5c4e037d2b43ad228804060": {
+            "text": "Das Original dieses Videos gibt es nicht mehr"
+        },
+        "07a20e73c636f97f83ad3fdda06af41c": {
+            "text": "Nichts zu pr\u00fcfen"
+        },
+        "4ad0f5218c7aa7febbd12f34600d27f3": {
+            "text": "In Ordnung:"
+        },
+        "e456cfd72475d12c1892c474931be6c5": {
+            "text": "Zu erledigen:"
+        },
+        "34026a8184e7decae2c01b11daa8a882": {
+            "text": "Gut zu wissen:"
+        },
+        "fc9d3df613063ee57906c461320744e2": {
+            "text": "Hinweis:"
+        },
+        "d644359608b8136484df0f918b60746a": {
+            "text": "F\u00fcr Streaming vorbereiten"
+        },
+        "e5e0acdf50ee7de01eb13282c621ab78": {
+            "text": "Videodatei ersetzen"
+        },
+        "a5d727df2ce2d168bae39c78df4b9054": {
+            "text": "Checkliste"
+        },
+        "a7c16ea923cf2ea6fa56e2f504d22036": {
+            "text": "Kapitel und Overlays werden mit der Seite gespeichert. Auf der Website erscheinen die Overlays auf dem Video und die Kapitel als Liste darunter."
+        },
+        "255e04a50d2bd26503548243f742788c": {
+            "text": "Texte in"
+        },
+        "8c195c2d9d25c32b2c0045776afa66dd": {
+            "text": "Vorschau mit Overlays"
+        },
+        "9004e34d110bf397142d1eeb8d850913": {
+            "text": "Ziehen Sie ein Overlay an seinen Platz oder verschieben Sie es mit den Pfeiltasten (mit der Umschalttaste in gr\u00f6\u00dferen Schritten). Halten Sie Abstand zum unteren Rand, wo der Player seine Bedienelemente hat. Solange die Vorschau pausiert ist, sind Overlays, die in diesem Moment nicht angezeigt werden, blass."
+        },
+        "3d1f92a565d3b1a61880236e33c49bf3": {
+            "text": "Zeitleiste"
+        },
+        "8c15462f0bf314d89d1c7943abddf2ad": {
+            "text": "Die Zeitleiste erscheint, sobald die L\u00e4nge des Videos bekannt ist."
+        },
+        "dbb77931db994dbdc62c0d5ff37ac71b": {
+            "text": "Kapitel"
+        },
+        "573a22b14baa7c6f6de5b40a0e320024": {
+            "text": "Kapitel teilen das Video in Abschnitte mit je einem Titel. Auf der Website stehen sie als Liste unter dem Video, und ein Klick auf ein Kapitel springt zu diesem Abschnitt."
+        },
+        "2b607f7f96df895be4c806b4874580c3": {
+            "text": "Overlays"
+        },
+        "717e7e08b375c860e636564d597e68a0": {
+            "text": "Noch keine Kapitel. Bewegen Sie die Vorschau an die Stelle, an der ein Kapitel beginnt, und f\u00fcgen Sie es dann hinzu. Kapitel ohne Titel werden nicht gespeichert."
+        },
+        "bb0b427840e310a3f756d94bc35ecd7f": {
+            "text": "Noch keine Overlays. Ein Overlay ist ein kurzer Text auf dem Bild, der auch ein Link sein kann. Overlays ohne Text werden nicht gespeichert."
+        },
+        "e9e35a5cd7f815a2ded3c050e2e4f7f3": {
+            "text": "Kapitel bei %s hinzuf\u00fcgen"
+        },
+        "f4712482a5dce7262e940337d4786b51": {
+            "text": "Overlay hinzuf\u00fcgen"
+        },
+        "b78a3223503896721cca1303f776159b": {
+            "text": "Titel"
+        },
+        "ff18d083f7f7d4b3c53eefd66e17ca9c": {
+            "text": "Zeit von Kapitel %d"
+        },
+        "d37fb3e4d57d8685f4a2a6a751003de3": {
+            "text": "Titel von Kapitel %d"
+        },
+        "e43ec38a93023bde02ff70f28b925702": {
+            "text": "Gehe zu"
+        },
+        "9f7d3b7c42d00f3eb06496eab3758509": {
+            "text": "In der Vorschau zu %s gehen"
+        },
+        "1063e38cb53d94d386f21227fcd84717": {
+            "text": "Entfernen"
+        },
+        "0323173a3f5e3ce32abc703e1b37ec96": {
+            "text": "Kapitel %d entfernen"
+        },
+        "737f15e3a2e52a568ac03ae4ca567f0e": {
+            "text": "Overlay %d entfernen"
+        },
+        "64f98373a242f3e0c5fe9fa4b9ec3bf0": {
+            "text": "Overlay %d"
+        },
+        "d7b590ed4e67fe8653acf056343a6bf1": {
+            "text": "(noch kein Text)"
+        },
+        "9dffbf69ffba8bc38bc4e01abf4b1675": {
+            "text": "Text"
+        },
+        "5ad5886dafcf99bca0c03aab7f6968ad": {
+            "text": "Link (optional)"
+        },
+        "9acec2d96c625a08a3f9a8b71a5a2610": {
+            "text": "Eine Adresse wie \/kontakt\/ oder https:\/\/example.com\/"
+        },
+        "edced45035a3357c2fc8bf2d77cbf761": {
+            "text": "Wann es angezeigt wird"
+        },
+        "68f987e0a112e1d12c881fcec76c3317": {
+            "text": "W\u00e4hrend des ganzen Videos"
+        },
+        "63261c1d00e538c7b482e6dfae50e0ae": {
+            "text": "W\u00e4hrend eines Teils des Videos (von \u2026 bis \u2026)"
+        },
+        "76bc47f72cb8dd154ff03883d889133d": {
+            "text": "Wenn das Video zu Ende ist"
+        },
+        "5da618e8e4b89c66fe86e32cdafde142": {
+            "text": "Von"
+        },
+        "e12167aa0a7698e6ebc92b4ce3909b53": {
+            "text": "Bis"
+        },
+        "142e25cb4ebb085ed4f9119be3cbe632": {
+            "text": "Leer: bis zum Ende"
+        },
+        "1e1cc9bdeb2f29f5480106aec7e9bc48": {
+            "text": "Jetzt"
+        },
+        "132c10361ccd4d9395b952e452924ec2": {
+            "text": "Jetzt: die aktuelle Position der Vorschau \u00fcbernehmen"
+        },
+        "1efb955e158ff769ed98f4ab8bb22c43": {
+            "text": "Von links (%)"
+        },
+        "7a1d2e3fe7ce00a72cdce6a16914845f": {
+            "text": "Von oben (%)"
+        },
+        "6a3f28afb7b16ff5066adea6630290b1": {
+            "text": "Breite (%)"
+        },
+        "98f2c8c0a47b63a4732533f89f609c41": {
+            "text": "Leer: so breit wie der Text"
+        },
+        "185d266213d67ce43791f4364cb845bc": {
+            "text": "Textgr\u00f6\u00dfe"
+        },
+        "2660064e68655415da2628c2ae2f7592": {
+            "text": "Klein"
+        },
+        "87f8a6ab85c9ced3702b4ea641ad4bb5": {
+            "text": "Mittel"
+        },
+        "3a69b34ce86dacb205936a8094f6c743": {
+            "text": "Gro\u00df"
+        },
+        "4f2fac7b928aa8e7d8bc73d99afda243": {
+            "text": "Aussehen"
+        },
+        "8ccab9b845205d0eebd7ee79fd2ef2c6": {
+            "text": "Dunkler Kasten"
+        },
+        "941f4b48a7706d1489d387cc63b98f8d": {
+            "text": "Heller Kasten"
+        },
+        "db44185153eea6defae8ff17c017e01d": {
+            "text": "Overlay %1$d: %2$s. %3$d Prozent von links, %4$d Prozent von oben."
+        },
+        "9ceecb109fb0353c06b145c584de6f00": {
+            "text": "Kapitel %1$s bei %2$s"
+        },
+        "1653a1ef5228bcece07b8646a18fd9d2": {
+            "text": "Overlay %1$d: %2$s"
+        },
+        "11c56dc5ad62d477cc6ed33dae2a4da6": {
+            "text": "Verschoben auf %1$d Prozent von links, %2$d Prozent von oben."
+        },
+        "2f803bc56333f275ac03e01ee4d06452": {
+            "text": "Ziehen Sie auf der Zeitleiste eine Kapitelmarke oder den Balken eines Overlays an eine andere Stelle, oder ziehen Sie ein Ende eines Balkens, um zu \u00e4ndern, wann das Overlay beginnt oder endet. Mit der Tastatur: Pfeiltasten nach links und rechts, mit der Umschalttaste in Sekundenschritten."
+        },
+        "1b2f98953bc52604013c9adef9734ab7": {
+            "text": "Overlay %d: Anfang"
+        },
+        "aea7536e55b6aa16aa633386059e17bf": {
+            "text": "Overlay %d: Ende"
+        },
+        "c6a452a79ae378d8cbe936d2cc2b2fe2": {
+            "text": "Kapitel nach %s verschoben."
+        },
+        "ba22e147d0c2e71a0332e18415862ecc": {
+            "text": "Overlay %1$d wird von %2$s bis %3$s angezeigt."
+        },
+        "1cf8c7e4c53ae003af3837ae978180ba": {
+            "text": "Bitte geben Sie eine Zeit wie 1:23 ein."
+        },
+        "92358e7164cb3c05e9ecc1c9b8e4984b": {
+            "text": "Kapitel bei %s hinzugef\u00fcgt. Geben Sie seinen Titel ein."
+        },
+        "2f6941ba086ae9493d934baa09bd1af0": {
+            "text": "Kapitel entfernt."
+        },
+        "6a5f7795b27fcaa6a429f2f2ee9e4aca": {
+            "text": "Overlay in der Mitte des Bildes hinzugef\u00fcgt. Geben Sie seinen Text ein."
+        },
+        "e142d6ea83f716198bbde7410ae52d73": {
+            "text": "Overlay entfernt."
+        },
+        "d09d7e6cd4f9ec1c3e4dcbd19bf0312a": {
+            "text": "1 Kapitel"
+        },
+        "b5505f200cb360d9d1b91e541f77e0aa": {
+            "text": "%d Kapitel"
+        },
+        "1d955881d7704c80cca1ae69ce0129da": {
+            "text": "1 Overlay"
+        },
+        "b1619ecf7cb43d05622a6de749ca6b69": {
+            "text": "%d Overlays"
+        },
+        "e18e7a18d2f13332b1969ca8913c45ae": {
+            "text": "Kapitel und Overlays"
+        },
+        "81226961da098b665f0270df5ace9f0a": {
+            "text": "Kapitel und Overlays wurden nicht gespeichert, weil es zu viele waren."
+        },
+        "72f7d70df6de103db11795c49ec1aa05": {
+            "text": "Untertitel"
+        },
+        "dd5e8b8536f665da8f26a7a3f50a8344": {
+            "text": "Sprache \u2026"
+        },
+        "43c7099c8cc9ffc9a3223014cdbe037a": {
+            "text": "Andere Sprache \u2026"
+        },
+        "c785a698aae22fb54a059b6fd23076ce": {
+            "text": "Sprache der Untertitel"
+        },
+        "1c781e7688e879c3b1852a47266391f3": {
+            "text": "Sprachcode, z. B. rm"
+        },
+        "85495c4fcfeb8b86c05a8ff1def89c43": {
+            "text": "Name der Sprache, z. B. Rumantsch"
+        },
+        "0152def5cfef2b162c90adcf3db18a2c": {
+            "text": "Untertiteldatei hinzuf\u00fcgen"
+        },
+        "0e106764db5b6a3813e1ee2d96a94516": {
+            "text": "WebVTT-Datei (.vtt) oder SubRip-Datei (.srt). Untertitel werden sofort gespeichert. Eine Datei f\u00fcr eine Sprache, die schon Untertitel hat, ersetzt diese."
+        },
+        "e85b2baebdd6befc3b41f27364f5bcd4": {
+            "text": "Dieses Video enth\u00e4lt keine Sprache und keine anderen wichtigen T\u00f6ne"
+        },
+        "00a4cc7f8ee970011b996492f2a27964": {
+            "text": "Datei anzeigen"
+        },
+        "f0057e73ba3cd413eb6314e0390b9a2e": {
+            "text": "Datei der Untertitel in %s anzeigen"
+        },
+        "1f21cd62bda5a95ed5fcdebbc13c6fbe": {
+            "text": "Untertitel entfernen: %s"
+        },
+        "7dce122004969d56ae2e0245cb754d35": {
+            "text": "Bearbeiten"
+        },
+        "939857c54d1816400bb684c6efa97303": {
+            "text": "Untertitel bearbeiten: %s"
+        },
+        "91cc00b649c35c8f939206fea4964eff": {
+            "text": "Noch keine Untertitel."
+        },
+        "3ca3f8fffc81cd3668bfe5891c56af5f": {
+            "text": "Vorschau von %s"
+        },
+        "15e6fd83ab5d0200c3364130909a5bc2": {
+            "text": "Aktuelles Bild verwenden"
+        },
+        "0ff5840c17a19a6416cb6532fa1cd3c9": {
+            "text": "Bild hochladen"
+        },
+        "c4ccc5767ba791f51c24549b3c83b896": {
+            "text": "Zur\u00fcck zum Bild aus dem Video"
+        },
+        "a1a4d347ccd49e86c21a8a1ff9fd3016": {
+            "text": "W\u00e4hlen Sie das Vorschaubild auf eine von drei Arten: ein Bild, das Sie im Video aussuchen (1), eines der vorgeschlagenen Bilder (2) oder ein eigenes Bild (3). \u00c4nderungen werden sofort gespeichert."
+        },
+        "bb93a7bb303285a4456817a0f9053088": {
+            "text": "Spielen Sie das Video ab oder ziehen Sie es zum gew\u00fcnschten Bild und w\u00e4hlen Sie dann \u201eAktuelles Bild verwenden\u201c."
+        },
+        "cf1071989f11e44c72fff25ed87a09fb": {
+            "text": "Bild aus dem Video"
+        },
+        "108dd879f6ba5c9444900a771ea0e9f3": {
+            "text": "Vorgeschlagene Bilder"
+        },
+        "b9231c1b6de1d861dd044bc13a30f5b6": {
+            "text": "Klicken Sie auf ein Bild, um es zu verwenden."
+        },
+        "218e7c30bd9f9d18d5d73a503917a2d6": {
+            "text": "Bilder werden erstellt \u2026"
+        },
+        "092c7384b94808ee767e1bbc3fdaa09d": {
+            "text": "Eigenes Bild"
+        },
+        "621443f21089d18829ba634d5c4db9dc": {
+            "text": "Ein JPEG- oder PNG-Bild, zum Beispiel ein Bild mit dem Titel des Videos."
+        },
+        "7c91d472de88889136591d37530ef572": {
+            "text": "Video und Vorschaubild"
+        },
+        "5d3938182abca6496d3b975d9a599aa8": {
+            "text": "Videodatei"
+        },
+        "9fb15c14c964aa3cd8034f98782018e5": {
+            "text": "Text zum Vorschaubild"
+        },
+        "42580f05878a95692fa84a442e2afb42": {
+            "text": "Beschreibt das Vorschaubild f\u00fcr Menschen, die es nicht sehen k\u00f6nnen. Leer lassen, um den Titel zu verwenden."
+        },
+        "6a8a294ed7ae69c18806c287290bd8f5": {
+            "text": "Am Ende des Videos"
+        },
+        "52cf857c8afb0c2503dcac951a146bcf": {
+            "text": "Nichts: das letzte Bild bleibt stehen"
+        },
+        "bde58369b447d7ed9675866e345d1361": {
+            "text": "Nochmal ansehen anbieten"
+        },
+        "8c6bb82a8e92687584c4ee43a2676c73": {
+            "text": "Das n\u00e4chste Video dieses Feldes anbieten"
+        },
+        "ed8d3eba6e75cd1c844e6d4c6d424623": {
+            "text": "Einen Button mit Link zeigen"
+        },
+        "12e79b5e1710ac1e7e65fdf7a7e08e15": {
+            "text": "Erscheint auf dem Bild, wenn das Video zu Ende ist, zusammen mit einem Button zum nochmal Ansehen. Das n\u00e4chste Video ist das folgende in diesem Feld, sofern die Seite es zeigt."
+        },
+        "908e23a889a7c21fbaee8369d7c184cf": {
+            "text": "Adresse des Buttons"
+        },
+        "d7737772f191b7d3a2f50b44964d3e8e": {
+            "text": "\/kontakt\/ oder https:\/\/\u2026"
+        },
+        "84df1ecaa01509058dd4e3a57afc5e83": {
+            "text": "Eine Seite dieser Website \u00f6ffnet im selben Fenster, eine Seite einer anderen Website in einem neuen."
+        },
+        "eadc031153af0957b1791db7bd5fbebe": {
+            "text": "Text des Buttons"
+        },
+        "fd3bc9ca4ec6a06cac60df907ca6cda6": {
+            "text": "Leer lassen f\u00fcr \u201eMehr\u201c."
+        },
+        "d2c262396d1351214b3383c134067948": {
+            "text": "Einbetten auf anderen Websites"
+        },
+        "bb5fe5cd9c8c778e81b05ef53c166612": {
+            "text": "Erlaubt"
+        },
+        "4ecc0d90eec1cea3e9db96583a1bb9c2": {
+            "text": "Blockiert"
+        },
+        "22ee71e9dcc9ca12fc313c6e1ce3f806": {
+            "text": "erlaubt"
+        },
+        "61326117ed4a9ddf3f754e71e119e5b3": {
+            "text": "blockiert"
+        },
+        "c225e5458dd6b315a9fe200a99f14666": {
+            "text": "Wie f\u00fcr die Website eingestellt (%s)"
+        },
+        "96dfbc3402b7a8a67c65534331eac9f8": {
+            "text": "Blockiert: Andere Websites k\u00f6nnen das Video, sein Vorschaubild und seine Untertitel nicht in ihre Seiten einbinden. Diese Website, ihre Subdomains und die in den Moduleinstellungen erlaubten Websites k\u00f6nnen es weiterhin."
+        },
+        "06cd73f6467e1f295b8d59764cfb4740": {
+            "text": "Dieses Video wird von %1$s (%2$s) wiederverwendet. Titel, Beschreibung, Tags, Vorschaubild und Untertitel werden dort bearbeitet."
+        },
+        "301325172c89c7747dcb9fde9d2d10bf": {
+            "text": "\u201e%s\u201c wird auf anderen Seiten verwendet, daher kann hier kein anderes Video an seine Stelle treten. Um ihm eine neue Datei zu geben, verwenden Sie \u201eVideodatei ersetzen\u201c."
+        },
+        "b9a38a9fbcbb634eeb409b43e18ffc7e": {
+            "text": "\u201e%s\u201c wurde nicht hinzugef\u00fcgt, weil das Video, das es ersetzen w\u00fcrde, auf anderen Seiten verwendet wird."
+        },
+        "10573c27d6549620cc27dad16bbe2be1": {
+            "text": "%1$s: Die Adresse \u201e%2$s\u201c wurde nicht \u00fcbernommen. Verwenden Sie eine Adresse dieser Website (beginnend mit \/) oder eine, die mit https:\/\/, mailto: oder tel: beginnt."
+        },
+        "4595632c4b80e0e3b95286df398292d6": {
+            "text": "%s: Der Button am Ende des Videos braucht eine Adresse. Ohne Adresse wird er nicht angezeigt."
+        },
+        "3277675d271aadea84c7d1949f66ec77": {
+            "text": "\u00c4nderungen sind f\u00fcr dieses Feld nicht erlaubt."
+        },
+        "ffb64d5a7a4f2f096bae767ae595b2f8": {
+            "text": "Dieses Video ist dort nicht mehr vorhanden. Bitte suchen Sie erneut."
+        },
+        "c28d2947c3de497079c854b748a8afad": {
+            "text": "Dieses Video ist bereits hier."
+        },
+        "4d37931d097d5f56ca8271068b81590d": {
+            "text": "\u201e%s\u201c wird auf anderen Seiten verwendet, daher kann hier kein anderes Video an seine Stelle treten."
+        },
+        "db3afbc10da9863140001843f6cd990a": {
+            "text": "Dieses Video ist hier nicht mehr vorhanden. Bitte laden Sie die Seite neu."
+        },
+        "a29bf3f0e5e1cf3e82749d9c9c649ab2": {
+            "text": "Ein wiederverwendetes Video wird auf der Seite bearbeitet, von der es stammt."
+        },
+        "9d9cb62ded6b2959aebe3b6e07af30a9": {
+            "text": "Die Datei ist kein JPEG- oder PNG-Bild."
+        },
+        "da0b7c36a7eb4907fa26ac795bbfd11e": {
+            "text": "Das Bild konnte nicht gespeichert werden."
+        },
+        "ab0cfa8978705521fb629bbaf8fef8c4": {
+            "text": "Bitte w\u00e4hlen Sie die Sprache der Untertitel."
+        },
+        "20bbfcf3d9e8bc21ae14ad8768b73033": {
+            "text": "Untertitel entfernt: %s."
+        },
+        "66fb81a5d8311ef6d5f9a178f5042f92": {
+            "text": "Untertitel gespeichert: %1$s (%2$s)."
+        },
+        "f9a0e178071b7001a4482171095fa1eb": {
+            "text": "Die SubRip-Datei wurde in WebVTT umgewandelt."
+        },
+        "41e78af17f8bdf803eff45a4c5604ea0": {
+            "text": "Diese Untertitel gibt es nicht mehr. Bitte die Seite neu laden."
+        },
+        "37af4a51d2545e3260c3f604d52bba82": {
+            "text": "dem Browser"
+        },
+        "56b9ec1b1ac2bc8400e1f8e0999eb0c4": {
+            "text": "Dieses Video wird auf der Seite bearbeitet, von der es stammt."
+        },
+        "d7f9e3fb2d4274615e3bf2bd35734729": {
+            "text": "Die Datei konnte nicht vorbereitet werden: %s"
+        },
+        "5658ba2e6d9ae7319adec2fe8b8ac013": {
+            "text": "Dieser Dateityp ist hier nicht erlaubt. Erlaubt: %s"
+        },
+        "04a67445a75aa536381f9d3521c97d48": {
+            "text": "Der Upload ist nicht vollst\u00e4ndig angekommen. Bitte laden Sie die Datei erneut hoch."
+        },
+        "8ae0e301332e02f827f0b25083036227": {
+            "text": "Der Upload konnte nicht empfangen werden."
+        },
+        "e8b3e55c0f4d6cce7d8ee14772ec33e2": {
+            "text": "Die Datei hat die Pr\u00fcfung nicht bestanden"
+        },
+        "ed8d52a31715166f236320c44a08bfde": {
+            "text": "Die Datei konnte nicht an ihren Platz gebracht werden."
+        },
+        "32dc787d8063d6d8334558e787e9ef68": {
+            "text": "Die Datei wurde ersetzt, konnte aber ihre neue Dateiendung nicht erhalten."
+        },
+        "cd1cad94fc8527b0ff63bed7479db9c4": {
+            "text": "Das Dateiverzeichnis dieser Seite ist nicht beschreibbar."
+        },
+        "f19c321baaa7f6e954cac902d91fde54": {
+            "text": "Es wurde keine Datei empfangen."
+        },
+        "40f9f62de5a8ccf912bc1cd19d515dd2": {
+            "text": "Die Datei ist zu gro\u00df."
+        },
+        "5f4811428d292f09248ab41f729686f8": {
+            "text": "Das Verzeichnis f\u00fcr Uploads auf dem Server ist nicht beschreibbar."
+        },
+        "74f1029d74461588c04c714fe61a61f0": {
+            "text": "Auf dem Server ist nicht genug Platz f\u00fcr diese Datei."
+        },
+        "77f606230c23d586d9d413068ee3705c": {
+            "text": "Der Server ist noch mit diesem Upload besch\u00e4ftigt."
+        },
+        "023c1dd6665b5021d74a00372c7011a4": {
+            "text": "Ein Teil des Uploads fehlt auf dem Server."
+        },
+        "d2a0fb685c00fa4c449e3358483122f4": {
+            "text": "Es sind mehr Daten angekommen, als die Datei hat."
+        },
+        "bd2ece727c6a1f3821e9a2d6f4133cb2": {
+            "text": "Der Server konnte den Upload nicht speichern. M\u00f6glicherweise ist sein Speicher voll."
+        },
+        "eea4b1245f2e8d65b28d3b5a265545ec": {
+            "text": "Der Server hat keine Daten erhalten."
+        },
+        "41f20429d908dbe267ecf5abae61b464": {
+            "text": "Ein Teil des Uploads ist unvollst\u00e4ndig angekommen."
+        },
+        "56f71df4fcac768e962047dd12ee3cec": {
+            "text": "Position des Vorschaubilds"
+        },
+        "90e74e47a02fee1607c3a80060d294f1": {
+            "text": "Nach wie vielen Sekunden das automatische Vorschaubild aus einem Video genommen wird. Das allererste Bild eines Videos ist oft schwarz, etwas sp\u00e4ter sieht es meist besser aus."
+        },
+        "36a3f6774f182088342b5d30dd0049a2": {
+            "text": "Bei Videos, die k\u00fcrzer als das Doppelte dieses Werts sind, wird das Bild in der Mitte des Videos verwendet."
+        },
+        "982e2e8ee6da599ffe31b810b5487dc7": {
+            "text": "Gr\u00f6\u00dfte Videodatei"
+        },
+        "0c91db8457868d70e616d12e9da60308": {
+            "text": "Gr\u00f6\u00dfe in Megabyte, ab der ein Video abgelehnt wird. Leer lassen f\u00fcr keine Begrenzung."
+        },
+        "9334a871d5d2365d78952926163245ee": {
+            "text": "Videos werden in Teilen an den Server gesendet, daher gelten die Upload-Grenzen des Servers f\u00fcr sie nicht."
+        },
+        "71f1f58ae797e67ebc4d1b3cfac3634e": {
+            "text": "Auf Videos \u00fcber dieser Datenrate hinweisen"
+        },
+        "944cfe4a03edf65dd2ea8e505374ea2a": {
+            "text": "Megabit pro Sekunde. Videos dar\u00fcber laden auf Handys und bei langsamen Verbindungen langsam, und die Checkliste des Videos weist darauf hin."
+        },
+        "cae8ba9067947db36e04cfea5747f64d": {
+            "text": "8 passt zu Full-HD-Videos. Geben Sie 0 ein, um diese Pr\u00fcfung abzuschalten."
+        },
+        "d8e9623e07a628ea5466da4a50fcba07": {
+            "text": "Auf Videos \u00fcber dieser Dateigr\u00f6\u00dfe hinweisen"
+        },
+        "34f9efae429e9dc4a82cfa678dbcbfd6": {
+            "text": "Megabyte. Gr\u00f6\u00dfere Videos werden trotzdem angenommen, und die Checkliste des Videos weist darauf hin. Leer lassen, um diese Pr\u00fcfung abzuschalten."
+        },
+        "7195631f079620c34b24ce3d9b5d33a5": {
+            "text": "Nur Uploads"
+        },
+        "0187e4f69cda70f9fa52471bc14390a3": {
+            "text": "In diesem Feld nicht anbieten, Videos anderer Seiten wiederzuverwenden"
+        },
+        "599d602aaa8a03be7a129cb6fcc7d95d": {
+            "text": "Standardm\u00e4\u00dfig k\u00f6nnen Redakteure hier ein Video einer anderen Seite anzeigen, ohne es erneut hochzuladen. Sie k\u00f6nnen aus den Videos aller Seiten w\u00e4hlen, die sie ansehen d\u00fcrfen."
+        },
+        "79cf7e18843ca8d9fdca67eb7a4bca88": {
+            "text": "Nie in einem Tab"
+        },
+        "2ab8c1684c248f6de6c48ea74226f80d": {
+            "text": "Dieses Feld bei den anderen Feldern der Seite lassen"
+        },
+        "b35e9472268ed0cef50e7c9b89d227b9": {
+            "text": "Die Einstellungen des Moduls (Module > Video Files) k\u00f6nnen Video-Felder in eigenen Tabs zeigen oder alle gemeinsam in einem Tab \u201eVideos\u201c. Ist dies angekreuzt, bleibt dieses Feld davon ausgenommen und steht dort, wo das Template es vorsieht."
+        },
+        "34565428b7750b6f19cacb1123b5f052": {
+            "text": "Videodateien"
+        },
+        "c6ea9c3398e710cb4eae9a0dfb6182e8": {
+            "text": "Eingabe f\u00fcr Videofelder: Upload gro\u00dfer Dateien, Vorschau, Titel, Vorschaubild, Untertitel, Kapitel, Overlays, Checkliste, Tags und Ersetzen der Datei."
+        },
+        "4594f4cca6dd76cdff049dd44694b5a3": {
+            "text": "Dieses Video ist mit einem Tag im Text %s dieser Seite eingebunden."
+        },
+        "c6df1c342960a542d144ff81564d7c37": {
+            "text": "Dieses Video ist mit Tags in den Texten %s dieser Seite eingebunden."
+        },
+        "a1f2b7ad9f6ce6f6b4ea9d76eaca98de": {
+            "text": "Auf %d anderen Seite wiederverwendet:"
+        },
+        "8e06c3ecb06d924ddf324ecd58b8465d": {
+            "text": "Auf %d anderen Seiten wiederverwendet:"
+        },
+        "97a1f999523f28fca06aefb8aea3ed4c": {
+            "text": "%d Punkt zu pr\u00fcfen"
+        },
+        "faada54072053bab0f872e796a691e6c": {
+            "text": "%d Punkte zu pr\u00fcfen"
+        },
+        "ed65a784fcb64246d0f4047e30e0b6c0": {
+            "text": "%d Kapitel"
+        },
+        "a3a00bc6818e87e4a61449dccefbcfa0": {
+            "text": "%d Overlay"
+        },
+        "273ce58b7576cc0a7113e94553e9fee0": {
+            "text": "%d Untertitel"
+        },
+        "4501abf538b03098dd76f0537b26eab8": {
+            "text": "%d Untertitel"
+        },
+        "fd386f54b8716cbf5889f97f821549b3": {
+            "text": "%d Untertitel hat Zeiten, die nicht gelesen werden k\u00f6nnen, und wird nicht angezeigt."
+        },
+        "b6fe595aa569756a397fb60273af425a": {
+            "text": "%d Untertitel haben Zeiten, die nicht gelesen werden k\u00f6nnen, und werden nicht angezeigt."
+        }
+    }
+}

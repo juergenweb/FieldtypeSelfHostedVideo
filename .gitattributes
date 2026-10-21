@@ -1,0 +1,16 @@
+# Left out of the archives that GitHub and "git archive" make (the download of the module).
+
+# Tests and the tools to run them
+/tests export-ignore
+/phpunit.xml.dist export-ignore
+/.phpunit.cache export-ignore
+/vendor export-ignore
+/composer.json export-ignore
+/composer.lock export-ignore
+
+# The pictures are only for the README on GitHub
+/images export-ignore
+
+# Git itself
+/.gitattributes export-ignore
+/.gitignore export-ignore

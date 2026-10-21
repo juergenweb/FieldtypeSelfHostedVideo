@@ -1,0 +1,534 @@
+{
+    "file": "site\/modules\/FieldtypeSelfHostedVideo\/ProcessSelfHostedVideos.module.php",
+    "textdomain": "site--modules--fieldtypeselfhostedvideo--processselfhostedvideos-module-php",
+    "translations": {
+        "a0803ea90bf80585db8742125e2d0885": {
+            "text": "Video-Manager"
+        },
+        "d9dcb8f350197363fb93d6d88b89c1a5": {
+            "text": "Es gibt noch kein Videofeld. F\u00fcgen Sie einem Template ein Feld vom Typ \u201eVideodateien\u201c hinzu, um zu beginnen."
+        },
+        "3351776b363b406ba81c84f3c0de364f": {
+            "text": "Video-Tags in Texten"
+        },
+        "8877ca46e628bc6626aaf103cdaaafc7": {
+            "text": "Anzeigen"
+        },
+        "a0bf03ad8551f5a1a0d9eff6be0e9522": {
+            "text": "W\u00e4hlen Sie \u201eDieses behalten\u201c bei dem Video, das bleiben soll: Die anderen werden durch Wiederverwendungen davon ersetzt."
+        },
+        "9f31a2bee510de58842177c93b30d5b5": {
+            "text": "Ein Tag wie [[video intro.mp4]] in einem Text zeigt das gleichnamige Video derselben Seite. Diese Tags nennen ein Video, das die Seite nicht (mehr) hat: Auf der Website zeigen sie nichts. \u00c4ndern oder entfernen Sie den Tag, oder f\u00fcgen Sie das Video der Seite wieder hinzu."
+        },
+        "afdb4ec37b4db4bca11353694bedbf00": {
+            "text": "Jeder Video-Tag in den Texten der Website zeigt sein Video."
+        },
+        "622b9b2d4c530c8e5751e361059ad42f": {
+            "text": "Video-Tags, die nichts zeigen"
+        },
+        "193cfc9be3b995831c6af2fea6650e60": {
+            "text": "Seite"
+        },
+        "9dffbf69ffba8bc38bc4e01abf4b1675": {
+            "text": "Text"
+        },
+        "c101058e7ea21bbbf2a5ac893088e90b": {
+            "text": "Tag"
+        },
+        "08a3fd1eab8784447042d8e2c336df8d": {
+            "text": "Alle Texte neu einlesen"
+        },
+        "3ae23be0254d3e1f5275b93891121596": {
+            "text": "Die Liste wird beim Speichern von Seiten aktuell gehalten. Alle Texte neu einzulesen ist nur n\u00f6tig, wenn Texte au\u00dferhalb des Seiteneditors ge\u00e4ndert wurden."
+        },
+        "65d1c33954512278f51ccba15bd6c84a": {
+            "text": "Zur\u00fcck zum Video-Manager"
+        },
+        "947d8520f04473da621f2718138f3bc6": {
+            "text": "30 Tage"
+        },
+        "ed0c9b5fb2f44a77915d0ce45d0c501c": {
+            "text": "90 Tage"
+        },
+        "e3b2a6d5fe4c268d7f994b6a3bda9811": {
+            "text": "12 Monate"
+        },
+        "da7e60c600159e2ccabbfea4d6a2c242": {
+            "text": "2 Jahre"
+        },
+        "14489a1a38270333e2ca49293ad37271": {
+            "text": "Das Video wurde nicht gefunden."
+        },
+        "76bab917c3c75f9a9e8980777f420074": {
+            "text": "Wiedergaben: %s"
+        },
+        "1901606ea069a83dc7beea17881ef95a": {
+            "text": "Zeitraum"
+        },
+        "c4f681c174f7ae5f5d3cccb2c5e9d9af": {
+            "text": "Wiedergaben werden derzeit nicht gez\u00e4hlt (Moduleinstellung \u201eWiedergaben nicht z\u00e4hlen\u201c). Gezeigt wird, was vorher gez\u00e4hlt wurde."
+        },
+        "eb4335b6c795585b1ba04ebcdb231d2f": {
+            "text": "Wiedergaben"
+        },
+        "895b0ae3501dec7929dfc703286ad0db": {
+            "text": "Bis zur H\u00e4lfte angesehen"
+        },
+        "0730d99de868ae8859d94f315bcd6772": {
+            "text": "Bis zum Ende angesehen"
+        },
+        "6d736071132a63211c45177792b77e37": {
+            "text": "In diesem Zeitraum hat niemand das Video angesehen. W\u00e4hlen Sie einen l\u00e4ngeren, um fr\u00fchere Wiedergaben zu sehen."
+        },
+        "5f50e155f7fed61f5566b914452e324b": {
+            "text": "Das Video wurde noch nicht angesehen. Wiedergaben werden auf der Website anonym gez\u00e4hlt; Wiedergaben von Personen, die die Seite bearbeiten d\u00fcrfen, z\u00e4hlen nicht."
+        },
+        "14ac43c70b82a094b5cc8f41879ccdce": {
+            "text": "Anonym gez\u00e4hlt: wenn das Video startet und wenn ein Viertel, die H\u00e4lfte, drei Viertel und das ganze Video abgespielt wurden. Wiedergaben von Personen, die die Seite bearbeiten d\u00fcrfen, z\u00e4hlen nicht. Die Zahlen werden zwei Jahre aufbewahrt."
+        },
+        "fe074f78f464017bb0caded8a048aa05": {
+            "text": "Wiedergaben pro Tag"
+        },
+        "4a811f83f79972ca5ac27d9a55a81138": {
+            "text": "Wiedergaben pro Woche"
+        },
+        "24993489a6ee21120b1f02ae2a1546df": {
+            "text": "%1$s, vom %2$s bis %3$s. H\u00f6chstwert: %4$d. Die Zahlen stehen in der Tabelle darunter."
+        },
+        "8428552d86c0d262a542a528af490afa": {
+            "text": "Gestartet"
+        },
+        "b2f0043cadeecf72dc9ebfba38170cda": {
+            "text": "Ein Viertel"
+        },
+        "c9c155ff42712c4a46e8120a23683ac0": {
+            "text": "Die H\u00e4lfte"
+        },
+        "934ecf56f7e5e05038f998f4fb6346e5": {
+            "text": "Drei Viertel"
+        },
+        "b881fcbc6c92e77ef9e9084e7d7126fe": {
+            "text": "Ans Ende"
+        },
+        "d111715ba509947f590b151589b2ea46": {
+            "text": "Wie weit Zuschauer schauen"
+        },
+        "b26ba27663ae6d5b592d074a02667fd8": {
+            "text": "Von allen Wiedergaben in diesem Zeitraum der Anteil, der so weit kam. Kommen wenige bis zur H\u00e4lfte, ist der Einstieg vielleicht zu langsam oder das Video zu lang."
+        },
+        "03727ac48595a24daed975559c944a44": {
+            "text": "Tag"
+        },
+        "b55a5b17ec4a2035b51e35a871d5ec09": {
+            "text": "Die Zahlen pro Tag als Tabelle"
+        },
+        "073851c2ae712d9da9ea5037999ba97c": {
+            "text": "Neueste zuerst. Tage ohne Wiedergaben sind ausgelassen."
+        },
+        "b75b82fee62976323db6be96f159c4fd": {
+            "text": "Eine Datei f\u00fcr alle verwenden"
+        },
+        "66bdb21f673242bf5984370ce1479eca": {
+            "text": "Das Formular ist abgelaufen. Bitte noch einmal versuchen."
+        },
+        "0b721a406c90856bde2fca2fbf521966": {
+            "text": "Titel \u201e%s\u201c"
+        },
+        "67daf92c833c41c95db874e18fcb2786": {
+            "text": "Beschreibung"
+        },
+        "951d4dff3c22e9fcc4a2707009f45ea8": {
+            "text": "Vorschaubild"
+        },
+        "6b4aeece714abf706fa5b974cc5a9a41": {
+            "text": "Untertitel"
+        },
+        "17c088d389c052be7d19118dc5895ad2": {
+            "text": "Kapitel und Einblendungen"
+        },
+        "65db2f3f40fdba3849da1436273d929d": {
+            "text": "Eigene Angaben (%s) entfallen, stattdessen werden die des behaltenen Videos gezeigt."
+        },
+        "a1c24937aa3b643a657af88b8dfd48b1": {
+            "text": "Tags in Texten, die es einbinden, bekommen den Dateinamen des behaltenen Videos: %s"
+        },
+        "fc70e61410afb74efa9b49395a547c4a": {
+            "text": "bleibt unver\u00e4ndert: %s"
+        },
+        "4a1d958de6f3a0957bf09179c7a715bf": {
+            "text": "Dieses Video bleibt: %s"
+        },
+        "9f59e93ddb10d47002a27ca8e4b31cb8": {
+            "text": "Es gibt nichts zusammenzulegen."
+        },
+        "ea4788705e6873b424c65e91c2846b19": {
+            "text": "Abbrechen"
+        },
+        "22b79e4afa28e9c7950108e6f6bf8354": {
+            "text": "Alle Videos"
+        },
+        "a7f349b89d3ee35c03fae88125bccf4d": {
+            "text": "Auf anderen Seiten wiederverwendet"
+        },
+        "8645f38460916f41d5943e0068f38adb": {
+            "text": "In einem Text eingebunden"
+        },
+        "56f0605c9795b173abd2e34fab7fc164": {
+            "text": "Gesch\u00fctzt"
+        },
+        "ec966d9a4571c495efa4f174ce3da8d6": {
+            "text": "Nicht f\u00fcr Streaming vorbereitet"
+        },
+        "0912b5fc95b858da6b78ad237aa2342c": {
+            "text": "Auf keiner ver\u00f6ffentlichten Seite"
+        },
+        "2f9ada4cbe6bfc8a962bda0875f78dd0": {
+            "text": "Mehrfach hochgeladen"
+        },
+        "72de50bf8da663caeab8a66fc1363e60": {
+            "text": "In den letzten 30 Tagen nicht angesehen"
+        },
+        "13b8859895143dbe8fa16485cf2863c5": {
+            "text": "Wird fr\u00fch abgebrochen"
+        },
+        "b1c94ca2fbc3e78fc30069c8d0f01680": {
+            "text": "Alle"
+        },
+        "b766f62ecf3d45d4c495584ede24a35d": {
+            "text": "Offene Punkte"
+        },
+        "ae94f80b3ce82062a5dd7815daa04f9d": {
+            "text": "Vollst\u00e4ndig"
+        },
+        "88241ddd8e6f8ea848409c02dcd7549d": {
+            "text": "Neueste zuerst"
+        },
+        "799c95af138a2db03bfd6a597bb9fbe7": {
+            "text": "\u00c4lteste zuerst"
+        },
+        "34082694d21dbdcfc31e6e32d9fb2b9f": {
+            "text": "Dateiname"
+        },
+        "c2dd43d01fab48e6c0ba539f7a7722af": {
+            "text": "L\u00e4ngste zuerst"
+        },
+        "e75dc05d37c7331eecf33ee8cd35e474": {
+            "text": "Gr\u00f6\u00dfte Datei zuerst"
+        },
+        "c829fe403836cdd5bf618a126530fabd": {
+            "text": "Meistgesehen (30 Tage)"
+        },
+        "d50d1c883489d9c6f88322a6e792147f": {
+            "text": "Am wenigsten gesehen (30 Tage)"
+        },
+        "13348442cc6a27032d2b4aa28b75a5d3": {
+            "text": "Suchen"
+        },
+        "68bf378789686a8d50830dd7a180cf1d": {
+            "text": "Titel, Dateiname, Seite \u2026"
+        },
+        "d1cdbbc98aee25edf1ba397e7748b48a": {
+            "text": "Beliebiges Tag"
+        },
+        "6f16a5f8ff5d75ab84c018adacdfcbb7": {
+            "text": "Feld"
+        },
+        "b539be92f7dea86a89f4d0861c2d3718": {
+            "text": "Beliebiges Feld"
+        },
+        "498f79c4c5bbde77f1bceb6c86fd0f6d": {
+            "text": "Anzeigen"
+        },
+        "a5d727df2ce2d168bae39c78df4b9054": {
+            "text": "Checkliste"
+        },
+        "a240fa27925a635b08dc28c9e4f9216d": {
+            "text": "Reihenfolge"
+        },
+        "e6b06dea9ac5e0330e37ee581f323e90": {
+            "text": "Videos anzeigen"
+        },
+        "abf4a2d61329d1c4206d621d38d0f4c1": {
+            "text": "Es wurden noch keine Videos hochgeladen."
+        },
+        "23f9cf2554918aca49679decc33fd4b7": {
+            "text": "F\u00fcr diese Auswahl wurden keine Videos gefunden."
+        },
+        "23e3c35b62ab029c909b4a8483e40020": {
+            "text": "%s Spieldauer"
+        },
+        "01212ef72ecbda008dc994ccfe368b09": {
+            "text": "Alle Videos anzeigen"
+        },
+        "ebfcac7f4f3d7f50babdf865b093e085": {
+            "text": "hinzugef\u00fcgt am %s"
+        },
+        "587a867cdf4c733715093ffa3d6b7061": {
+            "text": "Auf der Seite %1$s, Feld \u201e%2$s\u201c"
+        },
+        "0774e163cd7df482edd2abd498189f8b": {
+            "text": "Unver\u00f6ffentlicht"
+        },
+        "b11f5d920dac5ee79cacb6ad6b4f2782": {
+            "text": "\u201e%s\u201c ausw\u00e4hlen"
+        },
+        "32b502f33a535f75dcbf63f6753c631e": {
+            "text": "Tags:"
+        },
+        "2c42646282c124e6dc4a3fdefade3b70": {
+            "text": "Dieses behalten, f\u00fcr die anderen wiederverwenden"
+        },
+        "e5e0acdf50ee7de01eb13282c621ab78": {
+            "text": "Videodatei ersetzen"
+        },
+        "179590a6229842947a4e3bb788a40c3e": {
+            "text": "Wiedergaben im Detail"
+        },
+        "d644359608b8136484df0f918b60746a": {
+            "text": "F\u00fcr Streaming vorbereiten"
+        },
+        "20d7fdffd0ab437882612cfe743adeea": {
+            "text": "Tag hinzuf\u00fcgen"
+        },
+        "e12acd377c227108f91c64e02cb14b88": {
+            "text": "Tag entfernen"
+        },
+        "f2a6c498fb90ee345d997f888fce3b18": {
+            "text": "L\u00f6schen"
+        },
+        "ba7ef329fc947a324c8666d97ae61dd2": {
+            "text": "Aktion w\u00e4hlen \u2026"
+        },
+        "3c1d1519f94ebf8190194f8ab9fd164e": {
+            "text": "Mehrere Videos auf einmal"
+        },
+        "e6b3bb18328c86040ac622496082a33a": {
+            "text": "%1$d von %2$d ausgew\u00e4hlt"
+        },
+        "9639e32cab248434a17ab32237cb3b71": {
+            "text": "Ausf\u00fchren"
+        },
+        "03fd61e7496357215cbca5e70f44d3a0": {
+            "text": "Alle auf dieser Seite ausw\u00e4hlen"
+        },
+        "80ffff123555bd5173345bc8f144edeb": {
+            "text": "Auswahl aufheben"
+        },
+        "099c5cbf382502316cb7d4f1e02c68d6": {
+            "text": "W\u00e4hlen Sie Videos aus, um mehrere auf einmal zu bearbeiten."
+        },
+        "3238640544ee2a2a688817c87e8cc7ea": {
+            "text": "Mit den ausgew\u00e4hlten Videos"
+        },
+        "b124a389831f5031407eed804d57554f": {
+            "text": "Bitte eine Aktion w\u00e4hlen."
+        },
+        "863813b47f91c3db39afa44da382bb5d": {
+            "text": "Es wurden keine Videos ausgew\u00e4hlt."
+        },
+        "3dc43df705c9a18eebd008db3aa7bc8f": {
+            "text": "Bitte einen Tag eingeben."
+        },
+        "38519a58d290c193114c36cce26692a7": {
+            "text": "%s (sein Feld hat keine Tags)"
+        },
+        "f1501b476a65556f699c0ab5ee934faa": {
+            "text": "%s (sein Feld nimmt nur die daf\u00fcr festgelegten Tags)"
+        },
+        "ffbe7580e4e948535f2cbc099c2cef07": {
+            "text": "%s (auf anderen Seiten wiederverwendet)"
+        },
+        "5767d8f6e89e7b939da7ede7e9cb7fa4": {
+            "text": "wiederverwendet: bleibt erhalten"
+        },
+        "b168a708c591bc321d48d94654b3750c": {
+            "text": "im Text %s: hinterl\u00e4sst eine L\u00fccke"
+        },
+        "6eb8f879ca6c52f6d3fcd4d885154873": {
+            "text": "Die Dateien werden von ihren Seiten entfernt und lassen sich nicht wiederherstellen. Videos, die auf anderen Seiten wiederverwendet werden, bleiben erhalten."
+        },
+        "34026a8184e7decae2c01b11daa8a882": {
+            "text": "Gut zu wissen:"
+        },
+        "e456cfd72475d12c1892c474931be6c5": {
+            "text": "Zu erledigen:"
+        },
+        "712f41adf8e4bfce92e0a4729434cec1": {
+            "text": "Checkliste vollst\u00e4ndig"
+        },
+        "be80256370788ee6d94e2597c3fd7a75": {
+            "text": "Seite %d"
+        },
+        "3a1ed905045e5cf29efec452131f9403": {
+            "text": "Seite %1$d von %2$d"
+        },
+        "dd1f775e443ff3b9a89270713580a51b": {
+            "text": "Zur\u00fcck"
+        },
+        "10ac3d04253ef7e1ddc73e6091c0cd55": {
+            "text": "Weiter"
+        },
+        "0777a6881d251a2c26fa48528f390c65": {
+            "text": "Video %1$d von %2$d"
+        },
+        "4ab91ed5dc4eabae7b3212f7d138c21a": {
+            "text": "Videos %1$d\u2013%2$d von %3$d"
+        },
+        "69bdc06fd1c1699967f5f544faa7eab6": {
+            "text": "Seiten der Liste"
+        },
+        "af8f820cb2c34c8f6dfa528b2add7043": {
+            "text": "\u00dcbersicht aller Videos der Website: Suche, Tags, Checklisten und wo jedes Video verwendet wird."
+        },
+        "3690229fbff465b24b13d929a0d575ed": {
+            "text": "."
+        },
+        "17685b0e8045b335ac64dd45f4a8f8ca": {
+            "text": "j.n."
+        },
+        "1811fe7638c2c483c4a25187eeff2103": {
+            "text": "%d Video-Tag in einem Text zeigt nichts: Das genannte Video ist nicht auf seiner Seite."
+        },
+        "531bd5b5289b8b4ee1df9afbdc9a27dc": {
+            "text": "%d Video-Tags in Texten zeigen nichts: Die genannten Videos sind nicht auf ihren Seiten."
+        },
+        "7bac5607f0f37efff718bebe8ff2189f": {
+            "text": "%1$d Video hat dieselbe Datei wie ein anderes. Eine Datei f\u00fcr alle zu verwenden, gibt %2$s frei."
+        },
+        "948495cc257aaebccb8161d11b085d08": {
+            "text": "%1$d Videos haben dieselbe Datei wie ein anderes. Eine Datei f\u00fcr alle zu verwenden, gibt %2$s frei."
+        },
+        "af1b2cf358f26cfe7af973e441d90ce1": {
+            "text": "Die Texte von %d Seite wurden neu eingelesen."
+        },
+        "4ee68c7fd15aa49f36add7a21af198bb": {
+            "text": "Die Texte von %d Seiten wurden neu eingelesen."
+        },
+        "b847e5b1022f4b3f680fa9c46b288c91": {
+            "text": "%d Wiedergabe"
+        },
+        "4e7671bfcb807f3544397b3e81d41f0f": {
+            "text": "%d Wiedergaben"
+        },
+        "78b395fb98b534dd578c22d7aa689fd1": {
+            "text": "Woche ab %1$s: %2$d Wiedergabe"
+        },
+        "d931ab52a0353910ff593f91706111a5": {
+            "text": "Woche ab %1$s: %2$d Wiedergaben"
+        },
+        "54eccf4cf95546906663e563eb26d32b": {
+            "text": "%1$s: %2$d Wiedergabe"
+        },
+        "dd809f3cb57e22cfd6a45ba66c50949d": {
+            "text": "%1$s: %2$d Wiedergaben"
+        },
+        "ffa4296450508d9fbe0d15da8afdf032": {
+            "text": "%1$d Video verwendet jetzt die behaltene Datei. %2$s frei geworden."
+        },
+        "3d3ef42ac69b94234cb1104bac8f8a83": {
+            "text": "%1$d Videos verwenden jetzt die behaltene Datei. %2$s frei geworden."
+        },
+        "2f1114fc32a12bf8fa0d3dc047db473b": {
+            "text": "Die Seite, die es wiederverwendet, verwendet das behaltene Video."
+        },
+        "16a1580ed41b6f0083f5cae82b24e9f4": {
+            "text": "Die %d Seiten, die es wiederverwenden, verwenden das behaltene Video."
+        },
+        "d043ef5d8347d96ad6d1762c87397ebd": {
+            "text": "Das andere Video mit derselben Datei wird an derselben Stelle seiner Seite durch eine Wiederverwendung davon ersetzt, und seine Datei wird gel\u00f6scht. Seiten und Texte, die es zeigten, zeigen das behaltene Video. Seine Wiedergaben werden zu denen des behaltenen Videos gez\u00e4hlt."
+        },
+        "a03a9160cda4136cfa332e0108ac6674": {
+            "text": "Die anderen Videos mit derselben Datei werden jeweils an derselben Stelle ihrer Seite durch Wiederverwendungen davon ersetzt, und ihre Dateien werden gel\u00f6scht. Seiten und Texte, die sie zeigten, zeigen das behaltene Video. Ihre Wiedergaben werden zu denen des behaltenen Videos gez\u00e4hlt."
+        },
+        "bfaf3bb39df265a8fc1852850753d7fe": {
+            "text": "Eine Datei verwenden (gibt %s frei)"
+        },
+        "cadcf76db7415e0b1a1525f610ed7098": {
+            "text": "Eine Datei f\u00fcr alle verwenden (gibt %s frei)"
+        },
+        "ad327b2d7379310939d94d4ae252754a": {
+            "text": "%d Video"
+        },
+        "57951d078f48d4a11600de3c643420b7": {
+            "text": "%d Videos"
+        },
+        "a1f2b7ad9f6ce6f6b4ea9d76eaca98de": {
+            "text": "Auf %d anderen Seite wiederverwendet:"
+        },
+        "8e06c3ecb06d924ddf324ecd58b8465d": {
+            "text": "Auf %d anderen Seiten wiederverwendet:"
+        },
+        "112f011833bcf7b8511c4ba5cf3b1197": {
+            "text": "Dieselbe Datei wie das Video auf %d anderen Seite:"
+        },
+        "9f39f953cb84d2e44d5835ba10bf2613": {
+            "text": "Dieselbe Datei wie die Videos auf %d anderen Seiten:"
+        },
+        "40552734dab98464e7048ea230b32b23": {
+            "text": "Das %d Video dieser Auswahl"
+        },
+        "171c385582feaf36f7ae250d35343912": {
+            "text": "Alle %d Videos dieser Auswahl, auch die auf den anderen Seiten der Liste"
+        },
+        "4de23d396c934f09c2735c608d469433": {
+            "text": "%d Video wurde ausgelassen: Sie d\u00fcrfen seine Seite nicht bearbeiten."
+        },
+        "1c8c32e4075df8d218ecae2dffc61a79": {
+            "text": "%d Videos wurden ausgelassen: Sie d\u00fcrfen ihre Seiten nicht bearbeiten."
+        },
+        "83c5b3a3b74ed1fe64ff08aba3b3824d": {
+            "text": "%d Video f\u00fcr Streaming vorbereitet."
+        },
+        "e2edd7837e6969bb9bfc5486a239849d": {
+            "text": "%d Videos f\u00fcr Streaming vorbereitet."
+        },
+        "4b7c77b975cd103cea1ed561eb01fbe1": {
+            "text": "Tag \u201e%2$s\u201c zu %1$d Video hinzugef\u00fcgt."
+        },
+        "193b2f141d28578baf818589306faa42": {
+            "text": "Tag \u201e%2$s\u201c zu %1$d Videos hinzugef\u00fcgt."
+        },
+        "a52d222ea4decbf1be9d1b62ffad7dac": {
+            "text": "Tag \u201e%2$s\u201c von %1$d Video entfernt."
+        },
+        "ed705eb6d42dd75631ebeecc1c0088d9": {
+            "text": "Tag \u201e%2$s\u201c von %1$d Videos entfernt."
+        },
+        "3f34a273f2e7c9dbdebad5757e0763b4": {
+            "text": "%d Video gel\u00f6scht."
+        },
+        "f88d5641071107cce12f5e2508a84b8c": {
+            "text": "%d Videos gel\u00f6scht."
+        },
+        "5d68358ed6471bad439a1751850c00b4": {
+            "text": "Unver\u00e4ndert geblieben: %s"
+        },
+        "9b1feb593c518479faa0329d17f15ef7": {
+            "text": "Unver\u00e4ndert geblieben: %s"
+        },
+        "fc4134fd9056d5d54636ea50c4ea6acf": {
+            "text": "%d Video l\u00f6schen?"
+        },
+        "3527e423716fa4668aa7539b7013ae36": {
+            "text": "%d Videos l\u00f6schen?"
+        },
+        "468acaf194006c888ffad4916f56307f": {
+            "text": "%d Video l\u00f6schen"
+        },
+        "9a79b49777531378a90f0d0e926695de": {
+            "text": "%d Videos l\u00f6schen"
+        },
+        "36e4bf083d02868ef671065676cc9885": {
+            "text": "%d davon ist mit einem Tag in einem Text seiner Seite eingebunden. Nach dem L\u00f6schen zeigt der Tag dort nichts mehr: entfernen Sie ihn, oder setzen Sie ein anderes Video ein."
+        },
+        "ac53fc959b0df1c3eb8639f80f78405c": {
+            "text": "%d davon sind mit Tags in Texten ihrer Seiten eingebunden. Nach dem L\u00f6schen zeigen die Tags dort nichts mehr: entfernen Sie sie, oder setzen Sie andere Videos ein."
+        },
+        "97a1f999523f28fca06aefb8aea3ed4c": {
+            "text": "%d Punkt zu pr\u00fcfen"
+        },
+        "faada54072053bab0f872e796a691e6c": {
+            "text": "%d Punkte zu pr\u00fcfen"
+        }
+    }
+}

@@ -1,0 +1,2060 @@
+/**
+ * Video Files input for the ProcessWire page editor
+ *
+ * Complements the styles of the core file input, which are loaded as well.
+ * This file is part of the FieldtypeSelfHostedVideo module for ProcessWire 3.x
+ */
+
+.InputfieldSelfHostedVideoBox {
+	display: grid;
+	grid-template-columns: minmax(0, 24em) minmax(0, 1fr);
+	gap: 1.25em;
+	align-items: start;
+}
+
+/* portrait videos need less width to be seen whole */
+.InputfieldSelfHostedVideoBox.InputfieldSelfHostedVideoPortrait {
+	grid-template-columns: minmax(0, 15em) minmax(0, 1fr);
+}
+
+.InputfieldSelfHostedVideoPlayerWrap {
+	background: #000;
+	line-height: 0;
+}
+
+.InputfieldSelfHostedVideoPlayer {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-height: 26em;
+	background: #000;
+}
+
+/* until a thumbnail or the first picture is there, keep a sensible shape */
+.InputfieldSelfHostedVideoPlayer:not([width]) {
+	aspect-ratio: 16 / 9;
+}
+
+/* The areas below the preview of a video: thumbnail, video file, the tag for texts, checklist.
+   Each is a group with a line around it and its name in that line, as a fieldset has it. The
+   properties are all set here, because themes and frameworks reset fieldsets and legends in
+   their own ways. */
+.InputfieldSelfHostedVideo fieldset.InputfieldSelfHostedVideoArea {
+	display: block;
+	box-sizing: border-box;
+	min-width: 0;
+	margin: 1rem 0 0 0;
+	padding: 0.35rem 0.85rem 0.85rem 0.85rem;
+	border: 1px solid var(--pw-border-color, #c5ced8);
+	border-radius: 4px;
+	background: none;
+}
+
+.InputfieldSelfHostedVideo fieldset.InputfieldSelfHostedVideoArea > legend.InputfieldSelfHostedVideoLegend {
+	display: block;
+	float: none;
+	box-sizing: border-box;
+	width: auto;
+	max-width: 100%;
+	margin: 0 0 0 -0.4rem;
+	padding: 0 0.4rem;
+	font-size: 0.875rem;
+	font-weight: 600;
+	line-height: 1.5;
+	color: var(--pw-text-color, #354b60);
+	border: 0;
+	background: none;
+}
+
+.InputfieldSelfHostedVideoAreaBody {
+	margin-top: 0.3rem;
+}
+
+/* the first area of a video starts at the top of its column */
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoMedia > fieldset.InputfieldSelfHostedVideoArea:first-child {
+	margin-top: 0;
+}
+
+/* the video in its area: a row of its own, above the buttons of the thumbnail */
+.InputfieldSelfHostedVideoPreview > .InputfieldSelfHostedVideoAreaBody {
+	margin-top: 0.45rem;
+}
+
+.InputfieldSelfHostedVideoTools .InputfieldSelfHostedVideoAreaBody > .InputfieldSelfHostedVideoPlayerWrap {
+	flex: 0 0 100%;
+	margin-bottom: 0.35em;
+}
+
+/* what the tag for texts is for */
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoTag p.InputfieldSelfHostedVideoHint {
+	margin: 0.5em 0 0 0;
+}
+
+/* buttons side by side, wrapping where there is no room; texts take a row of their own */
+.InputfieldSelfHostedVideoTools > .InputfieldSelfHostedVideoAreaBody {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4em;
+}
+
+.InputfieldSelfHostedVideoTools .InputfieldSelfHostedVideoAreaBody > p {
+	flex: 0 0 100%;
+	margin: 0.25em 0 0 0;
+}
+
+.InputfieldSelfHostedVideoTools .InputfieldSelfHostedVideoAreaBody > p:empty {
+	display: none;
+}
+
+/* the name of the file comes first in its area */
+.InputfieldSelfHostedVideoTools .InputfieldSelfHostedVideoAreaBody > p.InputfieldSelfHostedVideoFileLink {
+	margin: 0 0 0.15em 0;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoButton {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4em;
+	margin: 0;
+	padding: 0.4em 0.85em;
+	font: inherit;
+	font-size: 0.875em;
+	font-weight: normal;
+	line-height: 1.4;
+	letter-spacing: normal;
+	text-transform: none;
+	white-space: nowrap;
+	color: var(--pw-text-color, #354b60);
+	background: transparent;
+	border: 1px solid #8a8f98;
+	border-color: color-mix(in srgb, currentColor 55%, transparent);
+	border-radius: var(--pw-button-radius, 3px);
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoButton:hover,
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoButton:focus-visible {
+	color: var(--pw-text-color, #354b60);
+	background: var(--pw-inputs-background, rgba(128, 128, 128, 0.12));
+	border-color: currentColor;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoButton:focus-visible {
+	outline: 2px solid var(--pw-main-color, currentColor);
+	outline-offset: 2px;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoButton .fa {
+	width: auto;
+	opacity: 0.75;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoButton[hidden] {
+	display: none;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoButton[disabled] {
+	opacity: 0.5;
+	cursor: progress;
+}
+
+/* checklist of a video */
+.InputfieldSelfHostedVideoChecks {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.InputfieldSelfHostedVideoCheck {
+	display: flex;
+	align-items: baseline;
+	gap: 0.4em;
+	margin: 0 0 0.35em 0;
+	padding: 0;
+	color: var(--pw-text-color, #354b60);
+}
+
+.InputfieldSelfHostedVideoCheck .fa {
+	flex: 0 0 auto;
+}
+
+.InputfieldSelfHostedVideoCheck_ok .fa {
+	color: #2e7d4f;
+}
+
+.InputfieldSelfHostedVideoCheck_todo .fa {
+	color: #c62828;
+}
+
+.InputfieldSelfHostedVideoCheck_warning .fa {
+	color: #b45309;
+}
+
+.InputfieldSelfHostedVideoCheck_todo .InputfieldSelfHostedVideoCheckLabel,
+.InputfieldSelfHostedVideoCheck_warning .InputfieldSelfHostedVideoCheckLabel {
+	font-weight: bold;
+}
+
+.InputfieldSelfHostedVideoCheckNote {
+	display: block;
+	color: var(--pw-muted-color, #636b77);
+}
+
+/* free tools for making a video smaller, below the note of a check about its size */
+.InputfieldSelfHostedVideoCheckTools {
+	display: block;
+	margin-top: 0.4em;
+}
+
+.InputfieldSelfHostedVideoCheckToolsList {
+	margin: 0.15em 0 0;
+	padding-left: 1.25em;
+	list-style: disc;
+}
+
+.InputfieldSelfHostedVideoCheckToolsList li {
+	margin: 0.1em 0;
+}
+
+/* the text colour of the checklist, underlined: the link colour of some theme styles is too light on white */
+.pw-content .InputfieldSelfHostedVideo .ui-widget-content .InputfieldSelfHostedVideoCheckToolsList a,
+.InputfieldSelfHostedVideo .InputfieldFileData .InputfieldSelfHostedVideoCheckToolsList a,
+.InputfieldSelfHostedVideoCheckToolsList a {
+	font-weight: normal;
+	color: var(--pw-text-color, #354b60);
+	text-decoration: underline;
+	text-underline-offset: 0.15em;
+}
+
+.pw-content .InputfieldSelfHostedVideo .ui-widget-content .InputfieldSelfHostedVideoCheckToolsList a:hover,
+.pw-content .InputfieldSelfHostedVideo .ui-widget-content .InputfieldSelfHostedVideoCheckToolsList a:focus,
+.InputfieldSelfHostedVideoCheckToolsList a:hover,
+.InputfieldSelfHostedVideoCheckToolsList a:focus {
+	text-decoration-thickness: 2px;
+}
+
+.InputfieldSelfHostedVideoCheckToolKind {
+	color: var(--pw-muted-color, #636b77);
+}
+
+/* a small label of its own colours, readable on the header of every theme style */
+.InputfieldSelfHostedVideo .InputfieldItemHeader .InputfieldSelfHostedVideoBadge {
+	display: inline-block;
+	padding: 0 0.55em;
+	white-space: nowrap;
+	font-weight: normal;
+	font-size: 0.875em;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.62);
+	border-radius: 1em;
+}
+
+/* Accordion: in a field for several videos, each video is an item that opens **********************/
+
+/* a closed item stays closed, also when the core slides it open after "delete" is taken back */
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoBody[hidden] {
+	display: none !important;
+}
+
+.InputfieldSelfHostedVideo .InputfieldFileInfo.InputfieldSelfHostedVideoHead {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+	line-height: 1.3;
+}
+
+/* The header tells the videos apart, so its text has to be readable. The background is the
+   theme's. The text is the theme's where the theme names its text colour; the "original" style
+   does not, and writes white on its green (2.4:1): there the text is dark. */
+.InputfieldSelfHostedVideo .InputfieldFileList > li > .InputfieldSelfHostedVideoHead {
+	color: var(--pw-text-color, #12242b);
+}
+
+/* marked for deletion: that style writes on a dark red */
+.InputfieldSelfHostedVideo .InputfieldFileList > li > .InputfieldSelfHostedVideoHead.ui-state-error {
+	color: var(--pw-text-color, #fff);
+}
+
+.InputfieldSelfHostedVideo .InputfieldFileList > li > .InputfieldSelfHostedVideoHead .InputfieldFileDelete,
+.InputfieldSelfHostedVideo .InputfieldFileList > li > .InputfieldSelfHostedVideoHead .InputfieldFileDelete .fa {
+	color: inherit;
+}
+
+/* the part of the header that opens and closes the item */
+.InputfieldSelfHostedVideoToggle {
+	display: flex;
+	flex: 1 1 auto;
+	align-items: center;
+	gap: 0.75em;
+	min-width: 0;
+	min-height: 2.75rem;
+	color: inherit;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.InputfieldSelfHostedVideoToggle:focus {
+	outline: none;
+}
+
+.InputfieldSelfHostedVideoToggle:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 3px;
+	border-radius: 2px;
+}
+
+/* focus that a click gave needs no ring */
+.InputfieldSelfHostedVideoToggle.InputfieldSelfHostedVideoToggleClicked:focus-visible {
+	outline: none;
+}
+
+/* tick or exclamation mark: white on a colour of its own, readable on the header of every theme style */
+.InputfieldSelfHostedVideoToggle .InputfieldSelfHostedVideoBadgeSlot {
+	flex: none;
+	display: flex;
+}
+
+.InputfieldSelfHostedVideoSign {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 1.5rem;
+	height: 1.5rem;
+	font-size: 0.8125rem;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+.InputfieldSelfHostedVideoSign .fa {
+	width: auto;
+	color: inherit;
+}
+
+.InputfieldSelfHostedVideoSignOk {
+	background: #1b7a34;
+}
+
+.InputfieldSelfHostedVideoSignWarn {
+	background: #b3380f;
+}
+
+.InputfieldSelfHostedVideoHeadThumb {
+	flex: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 4.5rem;
+	height: 2.53rem;
+	overflow: hidden;
+	color: #fff;
+	background: #1c1c1c;
+	border-radius: 2px;
+}
+
+.InputfieldSelfHostedVideoHeadThumb img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+}
+
+/* an upright video is shown whole */
+.InputfieldSelfHostedVideoHeadThumbPortrait img {
+	object-fit: contain;
+}
+
+.InputfieldSelfHostedVideoHeadText {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	min-width: 0;
+}
+
+/* long titles and the facts on a narrow screen take another line: nothing is cut off */
+.InputfieldSelfHostedVideoHeadTitle,
+.InputfieldSelfHostedVideoHeadFacts {
+	display: block;
+	overflow-wrap: anywhere;
+}
+
+.InputfieldSelfHostedVideoHeadTitle {
+	font-weight: bold;
+}
+
+/* the second line: facts in plain text. The core makes a file name bold and the facts pale. */
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoHeadFacts {
+	font-size: 0.875rem;
+	font-weight: normal;
+}
+
+.InputfieldSelfHostedVideo ul.InputfieldFileList li .InputfieldSelfHostedVideoHead .InputfieldFileStats,
+.InputfieldSelfHostedVideo ul.InputfieldFileList li .InputfieldSelfHostedVideoHead .InputfieldFileName,
+.InputfieldSelfHostedVideo ul.InputfieldFileList li .InputfieldSelfHostedVideoHead .InputfieldFileName:hover {
+	font-size: inherit;
+	color: inherit;
+	text-decoration: inherit;
+	opacity: 1;
+	cursor: inherit;
+}
+
+/* the theme sets the weight of a file name with "important" */
+.InputfieldSelfHostedVideo ul.InputfieldFileList li .InputfieldSelfHostedVideoHead .InputfieldFileName {
+	font-weight: inherit !important;
+}
+
+/* a video marked for deletion: its title and facts are struck through, not its icons */
+.InputfieldSelfHostedVideo .InputfieldFileList > li > .InputfieldSelfHostedVideoHead.ui-state-error {
+	text-decoration: none;
+}
+
+.InputfieldSelfHostedVideoHead.ui-state-error .InputfieldSelfHostedVideoHeadTitle,
+.InputfieldSelfHostedVideoHead.ui-state-error .InputfieldSelfHostedVideoHeadFacts {
+	text-decoration: line-through;
+}
+
+.InputfieldSelfHostedVideoChevron {
+	flex: none;
+	font-size: 1.25rem;
+}
+
+.InputfieldSelfHostedVideoToggle[aria-expanded="true"] .InputfieldSelfHostedVideoChevron {
+	transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.InputfieldSelfHostedVideoChevron {
+		transition: transform 0.15s;
+	}
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoHead .InputfieldFileDelete {
+	flex: none;
+	float: none;
+	margin: 0;
+}
+
+/* the file of a video, which the header of an open video names as a link */
+.InputfieldSelfHostedVideoFileLink {
+	margin: 0.5rem 0 0;
+	overflow-wrap: anywhere;
+}
+
+/* in the colour of the text and underlined: the theme's link colour is too pale on white in some
+   of its styles. The theme's own rule for links in a file item needs this much weight. */
+.pw-content .InputfieldSelfHostedVideo .ui-widget-content .InputfieldSelfHostedVideoFileLink a,
+.InputfieldSelfHostedVideo .InputfieldFileData .InputfieldSelfHostedVideoFileLink a {
+	font-weight: normal;
+	color: var(--pw-text-color, #354b60);
+	text-decoration: underline;
+	text-underline-offset: 0.15em;
+}
+
+/* captions of a video */
+.InputfieldSelfHostedVideoCaptions {
+	margin-bottom: 1em;
+}
+
+.InputfieldSelfHostedVideoCaptions > .InputfieldSelfHostedVideoLabel {
+	display: block;
+	margin: 0 0 0.25em 0;
+	font-weight: bold;
+}
+
+.InputfieldSelfHostedVideoTracks {
+	list-style: none;
+	margin: 0 0 0.5em 0;
+	padding: 0;
+}
+
+.InputfieldSelfHostedVideoTrack {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.3em 0.75em;
+	margin: 0;
+	padding: 0.35em 0;
+	border-bottom: 1px solid var(--pw-border-color, rgba(128, 128, 128, 0.3));
+	color: var(--pw-text-color, #354b60);
+}
+
+.InputfieldSelfHostedVideoTrackName {
+	font-weight: bold;
+}
+
+.InputfieldSelfHostedVideoTrackFacts {
+	flex: 1 1 auto;
+}
+
+/* in the colour of the text, so that it is readable whatever colour the theme gives links */
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoTrack a.InputfieldSelfHostedVideoTrackLink {
+	color: var(--pw-text-color, #354b60);
+	text-decoration: underline;
+}
+
+.InputfieldSelfHostedVideoCaptionAdd {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4em;
+}
+
+.InputfieldSelfHostedVideoCaptionAdd select,
+.InputfieldSelfHostedVideoCaptionAdd input[type=text] {
+	flex: 0 1 14em;
+	width: auto;
+	min-width: 9em;
+	max-width: 100%;
+}
+
+.InputfieldSelfHostedVideoCaptionAdd input.InputfieldSelfHostedVideoCaptionName {
+	flex: 1 1 16em;
+}
+
+.InputfieldSelfHostedVideoCaptionAdd [hidden] {
+	display: none;
+}
+
+.InputfieldSelfHostedVideoFields p.InputfieldSelfHostedVideoCaptionHint,
+.InputfieldSelfHostedVideoFields p.InputfieldSelfHostedVideoCaptionStatus,
+.InputfieldSelfHostedVideoFields p.InputfieldSelfHostedVideoNoTracks {
+	margin: 0.35em 0 0 0;
+}
+
+.InputfieldSelfHostedVideoFields p.InputfieldSelfHostedVideoCaptionStatus:empty {
+	display: none;
+}
+
+.InputfieldSelfHostedVideoCaptionsBody[hidden] {
+	display: none;
+}
+
+.InputfieldSelfHostedVideoNoSpeech {
+	display: block;
+	margin: 0.2em 0 0.35em 0;
+	font-weight: normal;
+	color: var(--pw-text-color, #354b60);
+}
+
+.InputfieldSelfHostedVideoReference .InputfieldSelfHostedVideoCaptions {
+	margin: 0.75em 0 0 0;
+}
+
+/* editor for chapters and overlays */
+.InputfieldSelfHostedVideoTimeline {
+	margin-top: 1.25em;
+	padding-top: 1em;
+	border-top: 1px solid var(--pw-border-color, rgba(128, 128, 128, 0.3));
+}
+
+.InputfieldSelfHostedVideoTimelineCount {
+	opacity: 0.8;
+}
+
+.InputfieldSelfHostedVideoTimelinePanel {
+	margin-top: 1em;
+}
+
+.InputfieldSelfHostedVideoTimelinePanel[hidden],
+.InputfieldSelfHostedVideoTimeline textarea[hidden],
+.InputfieldSelfHostedVideoOverlayTimes[hidden] {
+	display: none;
+}
+
+.InputfieldSelfHostedVideoTimelinePanel p.InputfieldSelfHostedVideoTimelineHint,
+.InputfieldSelfHostedVideoTimelinePanel p.InputfieldSelfHostedVideoNone,
+p.InputfieldSelfHostedVideoTimelineSummary {
+	margin: 0 0 0.75em 0;
+	color: var(--pw-muted-color, #636b77) !important;
+}
+
+p.InputfieldSelfHostedVideoTimelineSummary {
+	margin: 1em 0 0 0;
+}
+
+/* what chapters are for, right below their heading */
+.InputfieldSelfHostedVideoTimelinePanel p.InputfieldSelfHostedVideoChaptersNote {
+	margin: 0 0 0.6em 0;
+	max-width: 46em;
+}
+
+/* "Texts in": the name in front of the language buttons */
+.InputfieldSelfHostedVideoTimelineLangs .InputfieldSelfHostedVideoLegend {
+	display: block;
+	font-weight: bold;
+	color: var(--pw-muted-color, #636b77) !important;
+}
+
+/* chapters, overlays and each overlay are areas like those of the video: no room above the
+   first ones, which stand side by side */
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoTimelineLists > fieldset.InputfieldSelfHostedVideoArea,
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoOverlayList > fieldset.InputfieldSelfHostedVideoArea:first-child {
+	margin-top: 0;
+}
+
+.InputfieldSelfHostedVideoOverlayList {
+	margin-bottom: 0.75rem;
+}
+
+.InputfieldSelfHostedVideoChapters > .InputfieldSelfHostedVideoAreaBody,
+.InputfieldSelfHostedVideoOverlays > .InputfieldSelfHostedVideoAreaBody {
+	margin-top: 0.5rem;
+}
+
+.InputfieldSelfHostedVideoTimelineLangs {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4em;
+	margin: 0 0 0.9em 0;
+}
+
+.InputfieldSelfHostedVideoTimelineLangs .InputfieldSelfHostedVideoLegend {
+	margin: 0 0.25em 0 0;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoButton[aria-pressed="true"] {
+	color: var(--pw-blocks-background, #fff);
+	background: var(--pw-text-color, #354b60);
+	border-color: var(--pw-text-color, #354b60);
+}
+
+/* the picture with its overlays */
+.InputfieldSelfHostedVideoStage {
+	max-width: 60em;
+	margin: 0 0 0.5em 0;
+	background: #000;
+	line-height: 0;
+}
+
+.InputfieldSelfHostedVideoStage.InputfieldSelfHostedVideoStagePortrait {
+	max-width: 22em;
+}
+
+.InputfieldSelfHostedVideoStage .shv-video__overlay {
+	line-height: 1.3;
+}
+
+.InputfieldSelfHostedVideoStageVideo {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	background: #000;
+}
+
+.InputfieldSelfHostedVideoOverlay {
+	cursor: move;
+	touch-action: none;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.InputfieldSelfHostedVideoOverlay.InputfieldSelfHostedVideoOverlayOn,
+.InputfieldSelfHostedVideoOverlay:focus-visible {
+	outline: 2px solid #fff;
+	outline-offset: 2px;
+	box-shadow: 0 0 0 5px #0b57d0;
+}
+
+.InputfieldSelfHostedVideoOverlay.InputfieldSelfHostedVideoOverlayOff {
+	opacity: 0.45;
+}
+
+.InputfieldSelfHostedVideoOverlay.InputfieldSelfHostedVideoOverlayOff.InputfieldSelfHostedVideoOverlayOn,
+.InputfieldSelfHostedVideoOverlay.InputfieldSelfHostedVideoOverlayOff:focus-visible {
+	opacity: 0.8;
+}
+
+.InputfieldSelfHostedVideoOverlay.InputfieldSelfHostedVideoOverlayEmpty {
+	font-style: italic;
+}
+
+/* the timeline: when chapters begin and overlays are shown */
+.InputfieldSelfHostedVideoBar {
+	max-width: 60em;
+	margin: 0 0 0.4em 0;
+}
+
+.InputfieldSelfHostedVideoTimelinePanel p.InputfieldSelfHostedVideoBarHint {
+	margin: 0 0 1.25em 0;
+}
+
+.InputfieldSelfHostedVideoBarRows {
+	position: relative;
+	padding: 0.25em 0;
+	background: var(--pw-inputs-background, rgba(128, 128, 128, 0.12));
+	border: 1px solid var(--pw-border-color, rgba(128, 128, 128, 0.3));
+	cursor: pointer;
+}
+
+.InputfieldSelfHostedVideoBarRow {
+	position: relative;
+	height: 1.5em;
+	margin: 0.2em 0;
+}
+
+.InputfieldSelfHostedVideoBarChapter {
+	position: absolute;
+	top: 0;
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 0 0 -0.75em;
+	padding: 0;
+	background: none;
+	border: 0;
+	cursor: ew-resize;
+}
+
+.InputfieldSelfHostedVideoBarChapter::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	width: 0.25em;
+	margin-left: -0.125em;
+	background: var(--pw-text-color, #354b60);
+	border-radius: 0.125em;
+}
+
+.InputfieldSelfHostedVideoBarOverlay {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	box-sizing: border-box;
+	min-width: 1.5em;
+	padding: 0 0.7em;
+	overflow: hidden;
+	font: inherit;
+	font-size: 0.8em;
+	line-height: 1.875;
+	text-align: left;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #fff;
+	background: #4a5563;
+	border: 0;
+	border-radius: 0.2em;
+	cursor: pointer;
+}
+
+.InputfieldSelfHostedVideoBarOverlay.InputfieldSelfHostedVideoBarOn {
+	background: #0b57d0;
+}
+
+/* a bar for a part of the video can be dragged to another time */
+.InputfieldSelfHostedVideoBarOverlay.InputfieldSelfHostedVideoBarMovable {
+	cursor: grab;
+}
+
+.InputfieldSelfHostedVideoBarDragging .InputfieldSelfHostedVideoBarOverlay.InputfieldSelfHostedVideoBarMovable {
+	cursor: grabbing;
+}
+
+/* the two ends of a bar: dragged to change when the overlay begins and ends */
+.InputfieldSelfHostedVideoBarHandle {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	width: 1.5em;
+	height: 1.5em;
+	margin-left: -0.75em;
+	cursor: ew-resize;
+}
+
+.InputfieldSelfHostedVideoBarHandle[hidden] {
+	display: none;
+}
+
+.InputfieldSelfHostedVideoBarHandle::before {
+	content: "";
+	position: absolute;
+	top: 0.2em;
+	bottom: 0.2em;
+	left: 50%;
+	box-sizing: border-box;
+	width: 0.375em;
+	margin-left: -0.1875em;
+	background: #fff;
+	border: 1px solid #1f2733;
+	border-radius: 0.2em;
+}
+
+/* dragging along the timeline must not select text or move the page sideways */
+.InputfieldSelfHostedVideoBarChapter,
+.InputfieldSelfHostedVideoBarOverlay,
+.InputfieldSelfHostedVideoBarHandle {
+	touch-action: pan-y;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.InputfieldSelfHostedVideoBarChapter:focus-visible,
+.InputfieldSelfHostedVideoBarOverlay:focus-visible,
+.InputfieldSelfHostedVideoBarHandle:focus-visible {
+	outline: 2px solid var(--pw-main-color, #0b57d0);
+	outline-offset: 2px;
+}
+
+/* the time of what is being dragged */
+.InputfieldSelfHostedVideoBarTip {
+	position: absolute;
+	z-index: 3;
+	padding: 0.1em 0.5em;
+	font-size: 0.8em;
+	line-height: 1.5;
+	white-space: nowrap;
+	color: #fff;
+	background: #1f2733;
+	border-radius: 0.2em;
+	transform: translateX(-50%);
+	pointer-events: none;
+}
+
+.InputfieldSelfHostedVideoBarTip[hidden] {
+	display: none;
+}
+
+.InputfieldSelfHostedVideoBarHead {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 2px;
+	margin-left: -1px;
+	background: #c62828;
+	pointer-events: none;
+}
+
+.InputfieldSelfHostedVideoBarScale {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.2em;
+	font-size: 0.85em;
+	color: var(--pw-muted-color, #636b77) !important;
+}
+
+/* lists of chapters and overlays */
+.InputfieldSelfHostedVideoTimelineLists {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+	gap: 1.5em 2em;
+	align-items: start;
+}
+
+.InputfieldSelfHostedVideoChapter {
+	display: flex;
+	align-items: center;
+	gap: 0.4em;
+	margin: 0 0 0.4em 0;
+	padding: 0.15em;
+	border-left: 3px solid transparent;
+}
+
+.InputfieldSelfHostedVideoChapter.InputfieldSelfHostedVideoChapterNow {
+	border-left-color: var(--pw-text-color, #354b60);
+}
+
+.InputfieldSelfHostedVideoTimelinePanel input[type=text],
+.InputfieldSelfHostedVideoTimelinePanel input[type=number],
+.InputfieldSelfHostedVideoTimelinePanel textarea,
+.InputfieldSelfHostedVideoTimelinePanel select {
+	box-sizing: border-box;
+	width: 100%;
+	color: var(--pw-text-color, #354b60);
+}
+
+.InputfieldSelfHostedVideoTimelinePanel input[aria-invalid="true"] {
+	border-color: #c62828;
+}
+
+.InputfieldSelfHostedVideoTimelinePanel input.InputfieldSelfHostedVideoChapterTime {
+	flex: 0 0 5.5em;
+	width: 5.5em;
+}
+
+.InputfieldSelfHostedVideoTimelinePanel input.InputfieldSelfHostedVideoChapterTitle {
+	flex: 1 1 auto;
+	min-width: 6em;
+}
+
+.InputfieldSelfHostedVideoChapter .InputfieldSelfHostedVideoButton {
+	flex: 0 0 auto;
+}
+
+/* An overlay is closed until its name is clicked. The name is a button that looks like the legend
+   it is in; a closed overlay shows in a line what it says and when. */
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoOverlayToggle {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.15em;
+	min-height: 1.5rem;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	line-height: inherit;
+	color: inherit;
+	text-align: left;
+	text-transform: none;
+	background: none;
+	border: 0;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoOverlayToggle:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 2px;
+}
+
+.InputfieldSelfHostedVideoOverlayToggle .fa {
+	font-size: 1.15em;
+}
+
+.InputfieldSelfHostedVideoOverlayToggle[aria-expanded="true"] .fa {
+	transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.InputfieldSelfHostedVideoOverlayToggle .fa {
+		transition: transform 0.15s;
+	}
+}
+
+.InputfieldSelfHostedVideo fieldset.InputfieldSelfHostedVideoOverlayCard > .InputfieldSelfHostedVideoAreaBody[hidden] {
+	display: none;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoTimelinePanel p.InputfieldSelfHostedVideoOverlaySummary {
+	margin: 0.25rem 0 -0.35rem 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: var(--pw-text-color, #354b60);
+	cursor: pointer;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoTimelinePanel .InputfieldSelfHostedVideoOverlayOpen > p.InputfieldSelfHostedVideoOverlaySummary {
+	display: none;
+}
+
+.InputfieldSelfHostedVideoOverlayFoot {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 0.75em;
+}
+
+.InputfieldSelfHostedVideoOverlayName {
+	font-weight: bold;
+	color: var(--pw-text-color, #354b60);
+}
+
+.InputfieldSelfHostedVideoOverlayGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+	gap: 0.6em 0.75em;
+	align-items: start;
+}
+
+.InputfieldSelfHostedVideoOverlayWide,
+.InputfieldSelfHostedVideoOverlayTimes {
+	grid-column: 1 / -1;
+}
+
+.InputfieldSelfHostedVideoOverlayTimes {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(11em, 1fr));
+	gap: 0.6em 0.75em;
+	align-items: start;
+}
+
+.InputfieldSelfHostedVideoOverlayWide select {
+	max-width: min(22em, 100%);
+}
+
+/* a long option of a select must not widen the card beyond the screen */
+.InputfieldSelfHostedVideoOverlayField {
+	min-width: 0;
+}
+
+.InputfieldSelfHostedVideoOverlayField label {
+	display: block;
+	margin: 0 0 0.2em 0;
+	font-size: 0.875em;
+	font-weight: bold;
+	color: var(--pw-muted-color, #636b77);
+}
+
+.InputfieldSelfHostedVideoOverlayTimes .InputfieldSelfHostedVideoOverlayField {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	gap: 0 0.4em;
+	align-items: center;
+}
+
+.InputfieldSelfHostedVideoOverlayTimes .InputfieldSelfHostedVideoOverlayField label,
+.InputfieldSelfHostedVideoOverlayTimes .InputfieldSelfHostedVideoFieldHint {
+	grid-column: 1 / -1;
+}
+
+.InputfieldSelfHostedVideoFieldHint {
+	display: block;
+	margin-top: 0.2em;
+	font-size: 0.85em;
+	color: var(--pw-muted-color, #636b77) !important;
+}
+
+@media (max-width: 900px) {
+	.InputfieldSelfHostedVideoTimelineLists {
+		grid-template-columns: minmax(0, 1fr);
+	}
+	.InputfieldSelfHostedVideoChapter {
+		flex-wrap: wrap;
+	}
+}
+
+/* an upload on its way: text and buttons below the progress bar */
+.InputfieldSelfHostedVideoProgressRow {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4em 0.75em;
+	margin: 0.6em 0 0.2em 0;
+}
+
+.InputfieldSelfHostedVideoProgressText {
+	flex: 1 1 12em;
+	margin: 0;
+}
+
+.InputfieldSelfHostedVideoStalled .fa-spinner,
+.InputfieldSelfHostedVideoBlocked .fa-spinner,
+.InputfieldSelfHostedVideoOffline .fa-spinner {
+	animation: none;
+}
+
+/* waiting for the connection, or for the editor's decision about a file the browser cannot play:
+   said in words, marked by a bar at the side (not by a colour of the text, which has to stay readable in every theme) */
+.InputfieldSelfHostedVideo .InputfieldFileList .InputfieldSelfHostedVideoProgressText.InputfieldSelfHostedVideoWarning,
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoBox .InputfieldSelfHostedVideoReplaceStatus.InputfieldSelfHostedVideoWarning {
+	font-weight: bold;
+	color: var(--pw-text-color, #354b60);
+}
+
+.InputfieldSelfHostedVideoBlocked,
+.InputfieldSelfHostedVideoOffline {
+	box-shadow: inset 4px 0 0 #c77700;
+}
+
+.InputfieldSelfHostedVideoBlocked .InputfieldSelfHostedVideoProgressRow,
+.InputfieldSelfHostedVideoOffline .InputfieldSelfHostedVideoProgressRow {
+	padding-left: 0.6em;
+}
+
+.InputfieldSelfHostedVideoBlocked .ui-progressbar {
+	display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.InputfieldSelfHostedVideoProgress .fa-spinner {
+		animation: none;
+	}
+}
+
+/* messages for screen readers only */
+.InputfieldSelfHostedVideoSr,
+.InputfieldSelfHostedVideoLive {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* labels and hints: readable on every admin theme style, also where the theme greys them
+   out with rules marked important */
+.InputfieldSelfHostedVideoBox {
+	color: var(--pw-muted-color, #636b77);
+}
+
+.InputfieldSelfHostedVideoBox .detail:not(.ui-state-error-text),
+.InputfieldSelfHostedVideoProgress .detail:not(.ui-state-error-text),
+.InputfieldSelfHostedVideoBox .notes:not(.ui-state-error-text),
+#main .InputfieldSelfHostedVideoBox .notes:not(.ui-state-error-text) {
+	color: var(--pw-muted-color, #636b77) !important;
+}
+
+.InputfieldSelfHostedVideoLangText {
+	margin-bottom: 1em;
+}
+
+.InputfieldSelfHostedVideoLangText > label,
+.InputfieldSelfHostedVideoLangText > .InputfieldSelfHostedVideoLabel {
+	display: block;
+	margin: 0 0 0.25em 0;
+	font-weight: bold;
+}
+
+.InputfieldSelfHostedVideoLangText input[type=text],
+.InputfieldSelfHostedVideoFields .InputfieldFileDescription input[type=text],
+.InputfieldSelfHostedVideoFields .InputfieldFileDescription textarea {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* the theme's text colour, so that typed text stays readable in dark mode as well */
+.InputfieldSelfHostedVideoItem .InputfieldSelfHostedVideoBox .InputfieldSelfHostedVideoFields input[type=text],
+.InputfieldSelfHostedVideoItem .InputfieldSelfHostedVideoBox .InputfieldSelfHostedVideoFields textarea {
+	color: var(--pw-text-color, #354b60);
+}
+
+.InputfieldSelfHostedVideoLangInput {
+	margin-bottom: 0.35em;
+}
+
+.InputfieldSelfHostedVideoLangText .InputfieldFileDescription,
+.InputfieldSelfHostedVideoLangText .InputfieldFileTags,
+.InputfieldSelfHostedVideoLangText .langTabsContainer {
+	margin-bottom: 0;
+}
+
+/* the module's own paragraphs, not those of custom fields (":where" keeps the weight of the rule) */
+.InputfieldSelfHostedVideoFields p:where(:not(.InputfieldSelfHostedVideoCustom p)) {
+	margin: 0 0 0.5em 0;
+}
+
+/* custom fields of a video (the core's: a template named "field-" and the name of the video field)
+   follow the module's own inputs, with some air above */
+.InputfieldSelfHostedVideoCustom {
+	margin-top: 1.25em;
+}
+
+.InputfieldSelfHostedVideoCustom:empty {
+	display: none;
+}
+
+/* heading of the custom fields, written like "Title" or "Captions" */
+.InputfieldSelfHostedVideoFields .InputfieldSelfHostedVideoCustom > p.InputfieldSelfHostedVideoCustomLabel {
+	display: block;
+	margin: 0 0 0.5em 0;
+	font-weight: bold;
+}
+
+.InputfieldSelfHostedVideoFields p.InputfieldSelfHostedVideoNotes {
+	margin: 0.25em 0 0 0;
+}
+
+.InputfieldSelfHostedVideoNote {
+	margin: 0.75em 0 0 0;
+}
+
+.InputfieldSelfHostedVideoReference .InputfieldSelfHostedVideoNote {
+	margin-top: 1em;
+}
+
+/* narrow editors and phones: preview above the inputs */
+@media (max-width: 767px) {
+	.InputfieldSelfHostedVideoBox,
+	.InputfieldSelfHostedVideoBox.InputfieldSelfHostedVideoPortrait {
+		grid-template-columns: minmax(0, 1fr);
+	}
+	.InputfieldSelfHostedVideoBox.InputfieldSelfHostedVideoPortrait .InputfieldSelfHostedVideoPlayerWrap {
+		max-width: 13em;
+	}
+}
+
+/* Reusing a video of another page *************************************************************/
+
+.InputfieldSelfHostedVideoReuse {
+	margin-top: 0.75rem;
+}
+
+.InputfieldSelfHostedVideoReusePanel {
+	margin-top: 0.75rem;
+	padding: 1rem;
+	border: 1px solid var(--pw-border-color, rgba(128, 128, 128, 0.3));
+}
+
+.InputfieldSelfHostedVideoReusePanel[hidden] {
+	display: none;
+}
+
+/* the grey the admin theme gives to details is too pale in its older style */
+.InputfieldSelfHostedVideo p.InputfieldSelfHostedVideoReuseNote {
+	margin: 0 0 0.75rem;
+	color: var(--pw-muted-color, #636b77) !important;
+}
+
+.InputfieldSelfHostedVideoReuseSearch {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	align-items: flex-end;
+}
+
+.InputfieldSelfHostedVideoReuseField {
+	flex: 0 1 14rem;
+	min-width: 0;
+}
+
+.InputfieldSelfHostedVideoReuseField[hidden] {
+	display: none;
+}
+
+.InputfieldSelfHostedVideoReuseFieldQ {
+	flex: 1 1 16rem;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoReuseField label {
+	display: block;
+	margin: 0 0 0.2rem;
+	font-weight: bold;
+	color: var(--pw-text-color, #354b60);
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoReuseStatus {
+	margin: 0.75rem 0 0.5rem;
+	min-height: 1.5em;
+	color: var(--pw-text-color, #354b60);
+}
+
+.InputfieldSelfHostedVideoReuseList {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.InputfieldSelfHostedVideoReuseItem {
+	display: grid;
+	grid-template-columns: 7.5rem minmax(0, 1fr) auto;
+	gap: 0.5rem 1rem;
+	align-items: center;
+	margin: 0;
+	padding: 0.6rem 0;
+	border-top: 1px solid var(--pw-border-color, rgba(128, 128, 128, 0.3));
+	color: var(--pw-text-color, #354b60);
+}
+
+.InputfieldSelfHostedVideoReuseThumb {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 4.25rem;
+	overflow: hidden;
+	color: #fff;
+	background: #222;
+}
+
+.InputfieldSelfHostedVideoReuseThumb img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.InputfieldSelfHostedVideoReuseText > span,
+.InputfieldSelfHostedVideoReuseText > strong {
+	display: block;
+	overflow-wrap: anywhere;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoReuseFacts,
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoReuseWhere,
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoReuseTags {
+	font-size: 0.875rem;
+	color: var(--pw-muted-color, #636b77);
+}
+
+.InputfieldSelfHostedVideoReuseBadge {
+	display: inline-block;
+	padding: 0 0.5em;
+	font-size: 0.8125rem;
+	font-weight: normal;
+	white-space: nowrap;
+	border: 1px solid currentColor;
+	border-radius: 1em;
+}
+
+/* a video that is here already: the button stays, and says so */
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoButton.InputfieldSelfHostedVideoReuseDone {
+	cursor: default;
+	border-style: dashed;
+	background: none;
+	color: var(--pw-muted-color, #636b77);
+}
+
+.InputfieldSelfHostedVideoReuseMore {
+	margin-top: 0.75rem;
+}
+
+.InputfieldSelfHostedVideoReuseMore[hidden] {
+	display: none;
+}
+
+/* a video that cannot be deleted because other pages show it */
+.InputfieldSelfHostedVideo .InputfieldFileDelete.InputfieldSelfHostedVideoLocked {
+	cursor: help;
+}
+
+.InputfieldSelfHostedVideoBlocked {
+	margin: 0.5rem 0 0;
+	padding-left: 1.25rem;
+}
+
+.InputfieldSelfHostedVideoBlocked a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+@media (max-width: 599px) {
+	/* long button texts (translations) wrap instead of leaving the screen */
+	.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoButton {
+		max-width: 100%;
+		white-space: normal;
+		text-align: left;
+	}
+	.InputfieldSelfHostedVideoReuseItem {
+		grid-template-columns: 5.5rem minmax(0, 1fr);
+	}
+	.InputfieldSelfHostedVideoReuseThumb {
+		height: 3.25rem;
+	}
+	.InputfieldSelfHostedVideoReuseItem .InputfieldSelfHostedVideoButton {
+		grid-column: 1 / -1;
+		justify-self: start;
+	}
+}
+
+/* links in the notes of a video: told apart from the text by more than their colour */
+.InputfieldSelfHostedVideo .InputfieldFileData .InputfieldSelfHostedVideoNote a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+/* the tag that places a video in a text: it breaks where the area is narrow, and never scrolls */
+.InputfieldSelfHostedVideoTag code {
+	display: inline-block;
+	max-width: 100%;
+	box-sizing: border-box;
+	overflow: visible;
+	white-space: normal;
+	padding: 0.1em 0.35em;
+	font-size: 0.875em;
+	overflow-wrap: anywhere;
+	color: var(--pw-text-color, #354b60);
+	background: var(--pw-inputs-background, rgba(128, 128, 128, 0.12));
+	border-radius: 3px;
+	user-select: all;
+}
+
+/* the button of a point the module can fix itself ("Prepare for streaming") */
+.InputfieldSelfHostedVideoCheckAction {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.25em 0.6em;
+	margin-top: 0.4em;
+}
+
+.InputfieldSelfHostedVideoCheckAction .InputfieldSelfHostedVideoFaststart,
+.InputfieldSelfHostedVideoCheckAction .InputfieldSelfHostedVideoCheckReplace {
+	padding: 0.25em 0.8em;
+	font-size: inherit;
+}
+
+.InputfieldSelfHostedVideoFaststartDone {
+	margin: 0.5em 0 0;
+}
+
+/* the text of captions, edited in place */
+.InputfieldSelfHostedVideoCaptionEditor {
+	margin: 0.6em 0 0.8em;
+}
+
+.InputfieldSelfHostedVideoCaptionEditor .InputfieldSelfHostedVideoLabel {
+	display: block;
+	margin-bottom: 0.3em;
+	font-weight: bold;
+}
+
+.InputfieldSelfHostedVideoCaptionText.uk-textarea,
+.InputfieldSelfHostedVideoCaptionText {
+	width: 100%;
+	box-sizing: border-box;
+	min-height: 14em;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	font-size: 0.875rem;
+	line-height: 1.45;
+	white-space: pre;
+	overflow-wrap: normal;
+	overflow-x: auto;
+	resize: vertical;
+}
+
+.InputfieldSelfHostedVideoCaptionEditHint {
+	margin: 0.35em 0 0.5em;
+}
+
+.InputfieldSelfHostedVideoCaptionEditButtons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+}
+
+/* the three ways to a thumbnail: frame from the video, suggested pictures, image of your own */
+.InputfieldSelfHostedVideoTools .InputfieldSelfHostedVideoAreaBody > p.InputfieldSelfHostedVideoIntro {
+	margin: 0 0 0.35em 0;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoStep {
+	flex: 0 0 100%;
+	min-width: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4em;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoStep > p,
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoStep > ul {
+	flex: 0 0 100%;
+	margin: 0;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoStep > p[hidden] {
+	display: none;
+}
+
+.InputfieldSelfHostedVideo p.InputfieldSelfHostedVideoStepTitle {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	margin: 0.15em 0 0 0;
+	font-weight: bold;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoStepNumber {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 auto;
+	width: 1.6em;
+	height: 1.6em;
+	font-size: 0.875em;
+	font-weight: bold;
+	line-height: 1;
+	color: #fff;
+	background: var(--pw-main-color, #345fa3);
+	border-radius: 50%;
+}
+
+.InputfieldSelfHostedVideo hr.InputfieldSelfHostedVideoStepRule {
+	flex: 0 0 100%;
+	height: 0;
+	margin: 0.6em 0;
+	border: 0;
+	border-top: 1px solid #d0d4d9;
+	border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+	background: none;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoFramesFailed .InputfieldSelfHostedVideoFrameList {
+	display: none;
+}
+
+.InputfieldSelfHostedVideo ul.InputfieldSelfHostedVideoFrameList {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(5.5em, 1fr));
+	gap: 0.5em;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.InputfieldSelfHostedVideo ul.InputfieldSelfHostedVideoFrameList > li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoFrame {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	background: #1b1f24;
+	border: 2px solid transparent;
+	border-radius: 4px;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoFrame img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	object-fit: contain;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoFrame:hover {
+	border-color: color-mix(in srgb, var(--pw-text-color, #354b60) 55%, transparent);
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoFrame:focus-visible {
+	outline: 2px solid var(--pw-main-color, #345fa3);
+	outline-offset: 2px;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoFrame[aria-pressed="true"] {
+	border-color: var(--pw-main-color, #345fa3);
+	cursor: default;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoFrame[disabled] {
+	opacity: 0.5;
+	cursor: progress;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoFrameTime {
+	position: absolute;
+	right: 3px;
+	bottom: 3px;
+	padding: 0 0.3em;
+	font-size: 0.75em;
+	line-height: 1.5;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 2px;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoFrameMark {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	display: none;
+	width: 1.4em;
+	height: 1.4em;
+	font-size: 0.8em;
+	line-height: 1.4em;
+	text-align: center;
+	color: #fff;
+	background: var(--pw-main-color, #345fa3);
+	border-radius: 50%;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoFrame[aria-pressed="true"] .InputfieldSelfHostedVideoFrameMark {
+	display: block;
+}
+
+/* interrupted uploads that can go on: above the button that chooses files */
+.InputfieldSelfHostedVideoResume {
+	margin: 0 0 0.75em 0;
+}
+
+.InputfieldSelfHostedVideoResumeItem {
+	margin: 0 0 0.5em 0;
+	padding: 0.6em 0.8em;
+	border: 1px solid #d0d4d9;
+	border-color: color-mix(in srgb, currentColor 22%, transparent);
+	border-radius: 4px;
+	box-shadow: inset 4px 0 0 #c77700;
+}
+
+.InputfieldSelfHostedVideo p.InputfieldSelfHostedVideoResumeText {
+	margin: 0 0 0.5em 0;
+}
+
+.InputfieldSelfHostedVideo p.InputfieldSelfHostedVideoResumeButtons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4em;
+	margin: 0;
+}
+
+.InputfieldSelfHostedVideo p.InputfieldSelfHostedVideoResumeStatus {
+	margin: 0.4em 0 0 0;
+}
+
+.InputfieldSelfHostedVideo p.InputfieldSelfHostedVideoResumeStatus:empty {
+	display: none;
+}
+
+/* several files at once: one line for all, above the button that chooses files */
+.InputfieldSelfHostedVideoTotal {
+	margin: 0 0 0.75em 0;
+}
+
+.InputfieldSelfHostedVideo p.InputfieldSelfHostedVideoTotalText {
+	margin: 0.4em 0 0 0;
+}
+
+/* a paused upload: its bar stands still */
+.InputfieldSelfHostedVideoPaused .ui-progressbar-value {
+	opacity: 0.55;
+}
+
+/* whether other websites may embed the video */
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoEmbed select.InputfieldSelfHostedVideoEmbedSelect {
+	width: auto;
+	max-width: 100%;
+}
+
+/* the foot of each video: back to the top of the page, where it is saved */
+.InputfieldSelfHostedVideoFoot {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 1.25em;
+	padding-top: 0.75em;
+	border-top: 1px solid #d0d4d9;
+	border-top-color: color-mix(in srgb, currentColor 16%, transparent);
+}
+
+/* the theme's own rule for links in a file item needs this much weight */
+.pw-content .InputfieldSelfHostedVideo .ui-widget-content .InputfieldSelfHostedVideoTop,
+.InputfieldSelfHostedVideo .InputfieldFileData .InputfieldSelfHostedVideoTop,
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoTop,
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoTop:visited {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5em;
+	padding: 0.3em 0.85em 0.3em 0.35em;
+	font-size: 0.875em;
+	line-height: 1.5;
+	/* the main colour of the admin is too light for small text on white */
+	color: var(--pw-text-color, #354b60);
+	text-decoration: none;
+	border: 1px solid #c6ccd3;
+	border-color: color-mix(in srgb, currentColor 28%, transparent);
+	border-radius: 999px;
+	background: transparent;
+	transition: background-color 0.15s, border-color 0.15s;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoTopIcon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.6em;
+	height: 1.6em;
+	font-size: 0.85em;
+	color: #fff;
+	background: var(--pw-text-color, #354b60);
+	border-radius: 50%;
+	transition: transform 0.15s;
+}
+
+.pw-content .InputfieldSelfHostedVideo .ui-widget-content .InputfieldSelfHostedVideoTop:hover,
+.pw-content .InputfieldSelfHostedVideo .ui-widget-content .InputfieldSelfHostedVideoTop:focus-visible,
+.InputfieldSelfHostedVideo .InputfieldFileData .InputfieldSelfHostedVideoTop:hover,
+.InputfieldSelfHostedVideo .InputfieldFileData .InputfieldSelfHostedVideoTop:focus-visible {
+	background: #eef1f4;
+	background: color-mix(in srgb, currentColor 8%, transparent);
+	border-color: currentColor;
+	text-decoration: none;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoTop:hover .InputfieldSelfHostedVideoTopIcon {
+	transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoTop,
+	.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoTopIcon {
+		transition: none;
+	}
+	.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoTop:hover .InputfieldSelfHostedVideoTopIcon {
+		transform: none;
+	}
+}
+
+/* pages of a field with many videos: the videos of the other pages are out of view */
+.InputfieldSelfHostedVideo .InputfieldFileList > li.InputfieldSelfHostedVideoOffPage {
+	display: none !important;
+}
+
+.InputfieldSelfHostedVideoPager {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 0.75rem 1.5rem;
+	margin: 1rem 0;
+	color: var(--pw-text-color, #354b60);
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoPagerRange {
+	margin: 0;
+	font-size: 0.875rem;
+	color: var(--pw-muted-color, #636b77);
+}
+
+.InputfieldSelfHostedVideoPagerLinks {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4rem;
+	margin-left: auto;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoPagerNumbers {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.3rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoPagerNumbers li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoPager .InputfieldSelfHostedVideoPagerNumber,
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoPager .InputfieldSelfHostedVideoPagerStep {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.35em;
+	min-width: 2.4rem;
+	height: 2.4rem;
+	margin: 0;
+	padding: 0 0.7rem;
+	font: inherit;
+	font-weight: bold;
+	line-height: 1;
+	color: var(--pw-text-color, #354b60);
+	background: var(--pw-blocks-background, #fff);
+	border: 1px solid var(--pw-border-color, rgba(128, 128, 128, 0.3));
+	border-radius: 999px;
+	cursor: pointer;
+	transition: background-color 0.15s, border-color 0.15s;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoPager button:hover {
+	background: #eef2f8;
+	background: color-mix(in srgb, var(--pw-main-color, #345fa3) 9%, var(--pw-blocks-background, #fff));
+	border-color: currentColor;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoPager button:focus-visible {
+	outline: 2px solid var(--pw-text-color, #354b60);
+	outline-offset: 2px;
+}
+
+/* "Per page": how many videos a page shows */
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoPerPage {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5em;
+	margin: 0 0 0 auto;
+	padding-left: 1.25rem;
+	border-left: 1px solid var(--pw-border-color, rgba(128, 128, 128, 0.3));
+	font-size: 0.875rem;
+	font-weight: normal;
+	white-space: nowrap;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoPerPage select {
+	width: auto;
+	min-width: 5.5rem;
+	height: 2.4rem;
+	margin: 0;
+}
+
+.InputfieldSelfHostedVideoPagerLinks:empty {
+	display: none;
+}
+
+/* with page links, "Per page" follows them */
+.InputfieldSelfHostedVideoPagerLinks:not(:empty) + .InputfieldSelfHostedVideoPerPage {
+	margin-left: 0;
+}
+
+@media (max-width: 640px) {
+	.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoPerPage {
+		margin-left: 0;
+		padding-left: 0;
+		border-left: 0;
+	}
+	.InputfieldSelfHostedVideoPagerLinks {
+		margin-left: 0;
+	}
+}
+
+/* the page shown: filled, a little darker than the main colour for the contrast of its number */
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoPager .InputfieldSelfHostedVideoPagerCurrent {
+	color: #fff;
+	background: var(--pw-main-color, #345fa3);
+	background: color-mix(in srgb, var(--pw-main-color, #345fa3) 80%, #000);
+	border-color: transparent;
+	cursor: default;
+}
+
+/* "Previous" on the first page and "Next" on the last keep their place, so that the numbers stay put */
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoPager .InputfieldSelfHostedVideoPagerOff {
+	visibility: hidden;
+}
+
+.InputfieldSelfHostedVideoPagerGap {
+	padding: 0 0.2rem;
+	color: var(--pw-muted-color, #636b77);
+}
+
+/* phones: the numbers carry the pages, "Previous" and "Next" keep only their arrows */
+@media (max-width: 640px) {
+	.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoPager .InputfieldSelfHostedVideoPagerStep {
+		padding: 0;
+	}
+	.InputfieldSelfHostedVideoPagerStep span {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoPager button {
+		transition: none;
+	}
+}
+
+/* Order: the handle at the start of each header, by which a video is dragged ****************/
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoGrip {
+	display: inline-flex;
+	flex: none;
+	align-items: center;
+	justify-content: center;
+	align-self: stretch;
+	width: 1.9rem;
+	min-height: 2.75rem;
+	margin: -0.4rem 0 -0.4rem -0.35rem;
+	padding: 0;
+	color: inherit;
+	background: transparent;
+	border: 0;
+	border-radius: 6px;
+	cursor: grab;
+	touch-action: none;
+	opacity: 0.7;
+	transition: opacity 0.15s, background-color 0.15s;
+}
+
+/* six dots, the sign of a handle */
+.InputfieldSelfHostedVideoGripDots {
+	display: block;
+	width: 10px;
+	height: 16px;
+	background-image: radial-gradient(circle, currentColor 1.6px, transparent 1.9px);
+	background-size: 5px 5.33px;
+	background-position: 0 0;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoGrip:hover,
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoGrip:focus-visible,
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoGrip[aria-expanded="true"],
+.InputfieldSelfHostedVideo .InputfieldFileList > li:hover > .InputfieldSelfHostedVideoHead .InputfieldSelfHostedVideoGrip {
+	opacity: 1;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoGrip:hover,
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoGrip[aria-expanded="true"] {
+	background: rgba(0, 0, 0, 0.07);
+	background: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoGrip:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: -2px;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoGrip:active {
+	cursor: grabbing;
+}
+
+/* nothing to move in a list of one */
+.InputfieldFileSingle .InputfieldSelfHostedVideoGrip {
+	display: none;
+}
+
+/* while a video is dragged: all videos closed, the place it will land marked */
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoSorting > li > .InputfieldSelfHostedVideoBody,
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoSorting > li > .InputfieldSelfHostedVideoMoveMenu {
+	display: none !important;
+}
+
+.InputfieldSelfHostedVideo .InputfieldFileList > li.ui-sortable-helper {
+	box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+}
+
+.InputfieldSelfHostedVideo .InputfieldFileList > li.InputfieldSelfHostedVideoDropSlot {
+	visibility: visible !important;
+	margin-bottom: 0.5rem;
+	background: #eef2f8;
+	background: color-mix(in srgb, var(--pw-main-color, #345fa3) 10%, transparent);
+	border: 2px dashed var(--pw-main-color, #345fa3);
+	border-radius: 4px;
+}
+
+/* a video that was just moved: briefly marked */
+.InputfieldSelfHostedVideo .InputfieldFileList > li.InputfieldSelfHostedVideoMoved > .InputfieldSelfHostedVideoHead {
+	box-shadow: inset 4px 0 0 var(--pw-main-color, #345fa3);
+	transition: box-shadow 0.3s;
+}
+
+/* the menu of the handle: up, down, to the start, to the end, to a position */
+.InputfieldSelfHostedVideoMoveMenu {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4rem;
+	margin: 0;
+	padding: 0.6rem 0.75rem;
+	color: var(--pw-text-color, #354b60);
+	background: var(--pw-blocks-background, #fff);
+	border: 1px solid var(--pw-border-color, rgba(128, 128, 128, 0.3));
+	border-top: 0;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoMoveMenuTitle {
+	flex-basis: 100%;
+	margin: 0 0 0.15rem;
+	font-size: 0.875rem;
+	font-weight: bold;
+	overflow-wrap: anywhere;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoMoveAction {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3em;
+	height: 2.25rem;
+	margin: 0;
+	padding: 0 0.8rem 0 0.55rem;
+	font: inherit;
+	font-size: 0.875rem;
+	color: inherit;
+	background: var(--pw-blocks-background, #fff);
+	border: 1px solid var(--pw-border-color, rgba(128, 128, 128, 0.35));
+	border-radius: 999px;
+	cursor: pointer;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoMoveAction:hover:not([disabled]) {
+	background: #eef2f8;
+	background: color-mix(in srgb, var(--pw-main-color, #345fa3) 9%, var(--pw-blocks-background, #fff));
+	border-color: currentColor;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoMoveAction:focus-visible {
+	outline: 2px solid var(--pw-text-color, #354b60);
+	outline-offset: 2px;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoMoveAction[disabled] {
+	opacity: 0.45;
+	cursor: default;
+}
+
+.InputfieldSelfHostedVideoMovePosition {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4rem;
+	margin-left: auto;
+	padding-left: 0.75rem;
+	border-left: 1px solid var(--pw-border-color, rgba(128, 128, 128, 0.3));
+}
+
+.InputfieldSelfHostedVideoMovePosition label {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4em;
+	margin: 0;
+	font-size: 0.875rem;
+	font-weight: normal;
+}
+
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoMovePosition input[type=number] {
+	width: 4.5rem;
+	height: 2.25rem;
+	padding: 0 0.4rem;
+}
+
+@media (max-width: 640px) {
+	.InputfieldSelfHostedVideoMovePosition {
+		margin-left: 0;
+		padding-left: 0;
+		border-left: 0;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoGrip,
+	.InputfieldSelfHostedVideo .InputfieldFileList > li.InputfieldSelfHostedVideoMoved > .InputfieldSelfHostedVideoHead {
+		transition: none;
+	}
+}
+
+/* a video marked for deletion that a text of the page places (0.51.0) */
+.InputfieldSelfHostedVideoDeleteWarning {
+	margin: 0;
+	padding: .55em .9em;
+	border-left: 4px solid #b3261e;
+	background: #fdecea;
+	color: #5f1410;
+	line-height: 1.45;
+}
+.InputfieldSelfHostedVideoDeleteWarning[hidden] {
+	display: none;
+}
+
+/* what the player offers at the end of the video (0.52.0) */
+.InputfieldSelfHostedVideoEndLink[data-shv-hidden] {
+	display: none;
+}
+.InputfieldSelfHostedVideoEndLink {
+	margin-top: .5em;
+	padding-left: .9em;
+	border-left: 3px solid rgba(0, 0, 0, .12);
+}
+
+/* the upload area: the drop hint on one line with the button and the allowed extensions */
+.InputfieldSelfHostedVideo .InputfieldFileUpload {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: .5em 0;
+}
+.InputfieldSelfHostedVideo .InputfieldFileUpload .AjaxUploadDropHere {
+	position: static;
+	margin-left: auto;
+	padding-left: 1em;
+}
+
+/* the button a link of the Video Manager asked for (0.55.0) */
+.InputfieldSelfHostedVideo .InputfieldSelfHostedVideoButton.InputfieldSelfHostedVideoAsked {
+	outline: 3px solid #1a66b8;
+	outline-offset: 3px;
+	transition: outline-color .4s;
+}
