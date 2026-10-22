@@ -124,9 +124,28 @@ Captions, chapters and overlays are available as `$video->captions()`, `$video->
 
 ## Videos in a text
 
-Add the text formatter **Videos in text** to a text field (Setup > Fields > the field > Details). The text then shows a
-video wherever it has a tag such as `[[video intro.mp4]]`, and the rich text editor of the field gets a button
-"Insert video" that lists the videos of the page and writes the tag.
+A video of a page can be placed inside the text of the page, so that it stands between paragraphs where the editor wants it.
+
+Add the text formatter **Videos in text** to a text field (Setup > Fields > the field > Details). From then on
+
+* the rich text editor of the field (TinyMCE or CKEditor) has a button **Insert video** at the end of its toolbar. It lists
+  the videos of the page, lets the editor choose what is shown below the video (title, duration and description, only the
+  title, or nothing) and the place (left, right, centered, with a width), and writes the tag into the text. With the cursor
+  on a tag, the button changes that tag.
+* the text shows a video wherever it has a tag such as `[[video intro.mp4]]`. The tag can also be typed by hand or written
+  in Markdown.
+
+```
+[[video intro.mp4]]
+[[video intro.mp4 nocaption]]                 without title, duration and description
+[[video intro.mp4 align=right width=40]]      beside the text, 40 % wide
+[[video intro.mp4 start=1:23 captions=de]]    start at a moment, German captions on
+```
+
+The video has to be in a video field of the same page (uploaded there or reused from another page), so the checklist,
+protected videos and the Video Manager keep working for videos in texts too. A video that a text shows is not rendered a second
+time by `$page->videos->render()`. All tag options and the behaviour in detail are in the
+[documentation](docs/DOCUMENTATION.md#videos-in-a-text).
 
 ## Module configuration
 
