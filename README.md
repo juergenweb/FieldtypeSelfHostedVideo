@@ -63,11 +63,6 @@ website shows it in an accessible player. Large files, slow connections and sear
 New fields accept `mp4`, `webm` and `mov` files. The Video Manager is open to superusers; for other users give a role the
 permission `video-overview`.
 
-### Coming from FieldtypeVideoFile
-Up to version 0.39.0 the module was called FieldtypeVideoFile. Videos, fields and settings are taken over when you
-install the new module; the steps, and the few names to change in your own templates, are in the
-[documentation](docs/DOCUMENTATION.md).
-
 ## Output on the website
 
 ```php
