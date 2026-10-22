@@ -7,6 +7,7 @@
 /vendor export-ignore
 /composer.json export-ignore
 /composer.lock export-ignore
+/docs export-ignore
 
 # The pictures are only for the README on GitHub
 /images export-ignore
